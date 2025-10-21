@@ -1,0 +1,571 @@
+{
+  "common": {
+    "appName": {
+      "en": "Streamify Pro",
+      "ar": "ستريميفاي برو"
+    },
+    "loading": {
+      "en": "Loading...",
+      "ar": "جاري التحميل..."
+    },
+    "search": {
+      "en": "Search",
+      "ar": "بحث"
+    },
+    "viewAll": {
+      "en": "View All",
+      "ar": "عرض الكل"
+    },
+    "loadMore": {
+      "en": "Load More",
+      "ar": "تحميل المزيد"
+    },
+    "noResults": {
+      "en": "No results found",
+      "ar": "لم يتم العثور على نتائج"
+    },
+    "error": {
+      "en": "An error occurred",
+      "ar": "حدث خطأ"
+    },
+    "close": {
+      "en": "Close",
+      "ar": "إغلاق"
+    },
+    "save": {
+      "en": "Save",
+      "ar": "حفظ"
+    },
+    "cancel": {
+      "en": "Cancel",
+      "ar": "إلغاء"
+    },
+    "continue": {
+      "en": "Continue",
+      "ar": "متابعة"
+    },
+    "back": {
+      "en": "Back",
+      "ar": "رجوع"
+    },
+    "next": {
+      "en": "Next",
+      "ar": "التالي"
+    },
+    "previous": {
+      "en": "Previous",
+      "ar": "السابق"
+    },
+    "actions": {
+      "en": "Actions",
+      "ar": "الإجراءات"
+    }
+  },
+  "sidebar": {
+    "home": {
+      "en": "Home",
+      "ar": "الرئيسية"
+    },
+    "streaming": {
+      "en": "Streaming",
+      "ar": "البث"
+    },
+    "games": {
+      "en": "Games",
+      "ar": "الألعاب"
+    },
+    "fitness": {
+      "en": "Fitness",
+      "ar": "اللياقة"
+    },
+    "kids": {
+      "en": "Kids",
+      "ar": "الأطفال"
+    },
+    "favorites": {
+      "en": "Favorites",
+      "ar": "المفضلة"
+    },
+    "watchLater": {
+      "en": "Watch Later",
+      "ar": "المشاهدة لاحقاً"
+    },
+    "account": {
+      "en": "Account",
+      "ar": "الحساب"
+    },
+    "language": {
+      "en": "Language",
+      "ar": "اللغة"
+    },
+    "logout": {
+      "en": "Logout",
+      "ar": "تسجيل الخروج"
+    }
+  },
+  "home": {
+    "title": {
+      "en": "Dashboard",
+      "ar": "لوحة التحكم"
+    },
+    "welcomeTitle": {
+      "en": "Welcome to Streamify Pro",
+      "ar": "مرحباً بك في ستريميفاي برو"
+    },
+    "welcomeDescription": {
+      "en": "Your premium entertainment destination. Stream movies, play games, stay fit, and enjoy kids content all in one place.",
+      "ar": "وجهتك الترفيهية المتميزة. شاهد الأفلام، العب الألعاب، حافظ على لياقتك، واستمتع بمحتوى الأطفال في مكان واحد."
+    },
+    "startWatching": {
+      "en": "Start Watching",
+      "ar": "ابدأ المشاهدة"
+    },
+    "playGames": {
+      "en": "Play Games",
+      "ar": "العب الألعاب"
+    },
+    "getFit": {
+      "en": "Get Fit",
+      "ar": "احصل على اللياقة"
+    },
+    "streamingCard": {
+      "en": "videos and movies",
+      "ar": "فيديو وفيلم"
+    },
+    "gamesCard": {
+      "en": "HTML5 games ready to play",
+      "ar": "لعبة HTML5 جاهزة للعب"
+    },
+    "kidsCard": {
+      "en": "educational videos for children",
+      "ar": "فيديو تعليمي للأطفال"
+    },
+    "fitnessCard": {
+      "en": "workout videos",
+      "ar": "فيديو تمارين"
+    },
+    "explore": {
+      "en": "Explore",
+      "ar": "استكشف"
+    },
+    "playNow": {
+      "en": "Play Now",
+      "ar": "العب الآن"
+    },
+    "watch": {
+      "en": "Watch",
+      "ar": "شاهد"
+    },
+    "startTraining": {
+      "en": "Start Training",
+      "ar": "ابدأ التدريب"
+    }
+  },
+  "streaming": {
+    "title": {
+      "en": "Streaming",
+      "ar": "البث"
+    },
+    "searchPlaceholder": {
+      "en": "Search videos...",
+      "ar": "ابحث عن الفيديوهات..."
+    },
+    "loadingContent": {
+      "en": "Loading streaming content...",
+      "ar": "جاري تحميل محتوى البث..."
+    },
+    "failedToLoad": {
+      "en": "Failed to load streaming",
+      "ar": "فشل تحميل البث"
+    },
+    "noVideosAvailable": {
+      "en": "No videos available.",
+      "ar": "لا توجد فيديوهات متاحة."
+    },
+    "views": {
+      "en": "views",
+      "ar": "مشاهدة"
+    },
+    "view": {
+      "en": "view",
+      "ar": "مشاهدة"
+    },
+    "favorite": {
+      "en": "Favorite",
+      "ar": "مفضل"
+    },
+    "watchLater": {
+      "en": "Watch Later",
+      "ar": "شاهد لاحقاً"
+    }
+  },
+  "videoDetail": {
+    "pageTitle": {
+      "en": "Video Details",
+      "ar": "تفاصيل الفيديو"
+    },
+    "title": {
+      "en": "Video Details",
+      "ar": "تفاصيل الفيديو"
+    },
+    "unableToPlay": {
+      "en": "Unable to play this video.",
+      "ar": "تعذر تشغيل هذا الفيديو."
+    },
+    "videoUnavailable": {
+      "en": "The video may be unavailable or in an unsupported format.",
+      "ar": "قد يكون الفيديو غير متاح أو بتنسيق غير مدعوم."
+    },
+    "description": {
+      "en": "Description",
+      "ar": "الوصف"
+    },
+    "category": {
+      "en": "Category",
+      "ar": "الفئة"
+    },
+    "videoID": {
+      "en": "Video ID",
+      "ar": "معرف الفيديو"
+    },
+    "type": {
+      "en": "Type",
+      "ar": "النوع"
+    },
+    "views": {
+      "en": "Views",
+      "ar": "المشاهدات"
+    },
+    "duration": {
+      "en": "Duration",
+      "ar": "المدة"
+    },
+    "rating": {
+      "en": "Rating",
+      "ar": "التقييم"
+    },
+    "addedToFavorites": {
+      "en": "Added to Favorites",
+      "ar": "تمت الإضافة إلى المفضلة"
+    },
+    "removedFromFavorites": {
+      "en": "Removed from Favorites",
+      "ar": "تمت الإزالة من المفضلة"
+    },
+    "addedToWatchLater": {
+      "en": "Added to Watch Later",
+      "ar": "تمت الإضافة إلى المشاهدة لاحقاً"
+    },
+    "removedFromWatchLater": {
+      "en": "Removed from Watch Later",
+      "ar": "تمت الإزالة من المشاهدة لاحقاً"
+    },
+    "moreVideos": {
+      "en": "More Videos",
+      "ar": "المزيد من الفيديوهات"
+    }
+  },
+  "games": {
+    "title": {
+      "en": "Games",
+      "ar": "الألعاب"
+    },
+    "searchPlaceholder": {
+      "en": "Search games...",
+      "ar": "ابحث عن الألعاب..."
+    },
+    "loadingContent": {
+      "en": "Loading games...",
+      "ar": "جاري تحميل الألعاب..."
+    },
+    "failedToLoad": {
+      "en": "Failed to load games",
+      "ar": "فشل تحميل الألعاب"
+    },
+    "noGamesAvailable": {
+      "en": "No games available.",
+      "ar": "لا توجد ألعاب متاحة."
+    },
+    "plays": {
+      "en": "plays",
+      "ar": "لعبة"
+    },
+    "play": {
+      "en": "play",
+      "ar": "لعبة"
+    },
+    "premium": {
+      "en": "Premium",
+      "ar": "مميز"
+    },
+    "playGame": {
+      "en": "Play",
+      "ar": "العب"
+    },
+    "rating": {
+      "en": "Rating",
+      "ar": "التقييم"
+    }
+  },
+  "gameDetail": {
+    "pageTitle": {
+      "en": "Game Details",
+      "ar": "تفاصيل اللعبة"
+    },
+    "title": {
+      "en": "Game Details",
+      "ar": "تفاصيل اللعبة"
+    },
+    "unableToLoad": {
+      "en": "Unable to load this game.",
+      "ar": "تعذر تحميل هذه اللعبة."
+    },
+    "gameUnavailable": {
+      "en": "The game may be unavailable or in an unsupported format.",
+      "ar": "قد تكون اللعبة غير متاحة أو بتنسيق غير مدعوم."
+    },
+    "gameID": {
+      "en": "Game ID",
+      "ar": "معرف اللعبة"
+    },
+    "description": {
+      "en": "Description",
+      "ar": "الوصف"
+    },
+    "category": {
+      "en": "Category",
+      "ar": "الفئة"
+    },
+    "plays": {
+      "en": "Plays",
+      "ar": "مرات اللعب"
+    },
+    "rating": {
+      "en": "Rating",
+      "ar": "التقييم"
+    },
+    "similarGames": {
+      "en": "Similar Games",
+      "ar": "ألعاب مشابهة"
+    }
+  },
+  "fitness": {
+    "title": {
+      "en": "Fitness",
+      "ar": "اللياقة"
+    },
+    "searchPlaceholder": {
+      "en": "Search fitness videos...",
+      "ar": "ابحث عن فيديوهات اللياقة..."
+    },
+    "loadingContent": {
+      "en": "Loading fitness content...",
+      "ar": "جاري تحميل محتوى اللياقة..."
+    },
+    "failedToLoad": {
+      "en": "Failed to load fitness videos",
+      "ar": "فشل تحميل فيديوهات اللياقة"
+    },
+    "noVideosAvailable": {
+      "en": "No fitness videos available.",
+      "ar": "لا توجد فيديوهات لياقة متاحة."
+    },
+    "workoutVideo": {
+      "en": "Workout Video",
+      "ar": "فيديو تمرين"
+    },
+    "videoID": {
+      "en": "Video ID",
+      "ar": "معرف الفيديو"
+    }
+  },
+  "fitnessDetail": {
+    "title": {
+      "en": "Fitness Video",
+      "ar": "فيديو اللياقة"
+    },
+    "unableToPlay": {
+      "en": "Unable to play this fitness video.",
+      "ar": "تعذر تشغيل فيديو اللياقة هذا."
+    },
+    "videoRequiresConversion": {
+      "en": "The video may require conversion to a supported format.",
+      "ar": "قد يحتاج الفيديو إلى التحويل إلى تنسيق مدعوم."
+    },
+    "downloadVideo": {
+      "en": "Download Video",
+      "ar": "تحميل الفيديو"
+    },
+    "type": {
+      "en": "Type",
+      "ar": "النوع"
+    },
+    "videoID": {
+      "en": "Video ID",
+      "ar": "معرف الفيديو"
+    },
+    "moreFitnessVideos": {
+      "en": "More Fitness Videos",
+      "ar": "المزيد من فيديوهات اللياقة"
+    },
+    "description": {
+      "en": "Description",
+      "ar": "الوصف"
+    },
+    "tips": {
+      "en": "Tips",
+      "ar": "نصائح"
+    },
+    "setsReps": {
+      "en": "Sets & Reps",
+      "ar": "المجموعات والتكرارات"
+    }
+  },
+  "kids": {
+    "title": {
+      "en": "Kids",
+      "ar": "الأطفال"
+    },
+    "searchPlaceholder": {
+      "en": "Search kids content...",
+      "ar": "ابحث في محتوى الأطفال..."
+    },
+    "loadingContent": {
+      "en": "Loading kids content...",
+      "ar": "جاري تحميل محتوى الأطفال..."
+    },
+    "failedToLoad": {
+      "en": "Failed to load kids content",
+      "ar": "فشل تحميل محتوى الأطفال"
+    },
+    "noChannelsAvailable": {
+      "en": "No channels available.",
+      "ar": "لا توجد قنوات متاحة."
+    },
+    "videos": {
+      "en": "videos",
+      "ar": "فيديو"
+    },
+    "channel": {
+      "en": "Channel",
+      "ar": "القناة"
+    }
+  },
+  "kidsChannel": {
+    "title": {
+      "en": "Kids Channel",
+      "ar": "قناة الأطفال"
+    },
+    "playlists": {
+      "en": "Playlists",
+      "ar": "قوائم التشغيل"
+    },
+    "noPlaylistsAvailable": {
+      "en": "No playlists available.",
+      "ar": "لا توجد قوائم تشغيل متاحة."
+    }
+  },
+  "kidsVideo": {
+    "title": {
+      "en": "Kids Video",
+      "ar": "فيديو الأطفال"
+    },
+    "playlist": {
+      "en": "Playlist",
+      "ar": "قائمة التشغيل"
+    },
+    "unableToPlay": {
+      "en": "Unable to play this video.",
+      "ar": "تعذر تشغيل هذا الفيديو."
+    },
+    "moreFromPlaylist": {
+      "en": "More from this playlist",
+      "ar": "المزيد من قائمة التشغيل"
+    }
+  },
+  "favorites": {
+    "title": {
+      "en": "Favorites",
+      "ar": "المفضلة"
+    },
+    "noFavorites": {
+      "en": "No favorites yet.",
+      "ar": "لا توجد مفضلات بعد."
+    },
+    "game": {
+      "en": "Game",
+      "ar": "لعبة"
+    },
+    "streaming": {
+      "en": "Streaming",
+      "ar": "بث"
+    },
+    "kids": {
+      "en": "Kids",
+      "ar": "أطفال"
+    },
+    "fitness": {
+      "en": "Fitness",
+      "ar": "لياقة"
+    }
+  },
+  "watchLater": {
+    "title": {
+      "en": "Watch Later",
+      "ar": "المشاهدة لاحقاً"
+    },
+    "noItems": {
+      "en": "No items saved for later.",
+      "ar": "لا توجد عناصر محفوظة للمشاهدة لاحقاً."
+    }
+  },
+  "account": {
+    "title": {
+      "en": "Account",
+      "ar": "الحساب"
+    },
+    "username": {
+      "en": "Username",
+      "ar": "اسم المستخدم"
+    },
+    "memberSince": {
+      "en": "Member since",
+      "ar": "عضو منذ"
+    },
+    "unknown": {
+      "en": "Unknown",
+      "ar": "غير معروف"
+    },
+    "emailUs": {
+      "en": "Email us at",
+      "ar": "راسلنا على"
+    }
+  },
+  "auth": {
+    "signIn": {
+      "en": "Sign In",
+      "ar": "تسجيل الدخول"
+    },
+    "username": {
+      "en": "Username",
+      "ar": "اسم المستخدم"
+    },
+    "password": {
+      "en": "Password",
+      "ar": "كلمة المرور"
+    },
+    "enterUsername": {
+      "en": "Enter your username",
+      "ar": "أدخل اسم المستخدم"
+    },
+    "enterPassword": {
+      "en": "Enter your password",
+      "ar": "أدخل كلمة المرور"
+    },
+    "rememberMe": {
+      "en": "Remember me",
+      "ar": "تذكرني"
+    }
+  }
+}
+

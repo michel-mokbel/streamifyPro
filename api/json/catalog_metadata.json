@@ -1,0 +1,802 @@
+{
+    "generated_at": "2025-10-20 15:49:51",
+    "total_sources": 4,
+    "total_categories": 0,
+    "total_subcategories": 0,
+    "total_channels": 0,
+    "total_tags": 0,
+    "sources": {
+        "kids": {
+            "name": "kids",
+            "file": "kids-ar.json",
+            "file_size": 3974069,
+            "last_modified": "2025-10-20 11:57:04",
+            "content_type": "educational_videos",
+            "total_items": 2360,
+            "channels": {
+                "108": {
+                    "id": "108",
+                    "name": "Akili And Me",
+                    "description": "Akili and Me is a edutainment series from Ubongo Media, creators of Ubongo Kids. Kids, 3-6 year olds, will love joining Akili on her magical adventures in Lala Land, where they'll learn numbers, letters, drawing and English.",
+                    "playlists_count": 11,
+                    "total_items": 162,
+                    "categories": [
+                        "alphabet",
+                        "numbers",
+                        "stories"
+                    ]
+                },
+                "109": {
+                    "id": "109",
+                    "name": "SUPA STRIKAS",
+                    "description": "Supa Strikas is a Pan-African association, football-themed comic, about the titular football team dubbed \"The World's Greatest\". Despite their enormous talent, the players must adapt in a game where being the best is only the beginning, and where the opposition is always full of surprises.",
+                    "playlists_count": 5,
+                    "total_items": 65,
+                    "categories": []
+                },
+                "117": {
+                    "id": "117",
+                    "name": "F2 FREESTYLERS",
+                    "description": "Billy Wingrove and Jeremy Lynch present the best match play, tutorials, live performances, football entertainment, pranks and banter.",
+                    "playlists_count": 1,
+                    "total_items": 199,
+                    "categories": []
+                },
+                "118": {
+                    "id": "118",
+                    "name": "CBN | STORYTELLER CAFE",
+                    "description": "These animated episodes bring the Bible to life, for ages 5 -10. With a laptop computer as the stage, the characters dive into these miraculous stories to learn about God's love.",
+                    "playlists_count": 1,
+                    "total_items": 9,
+                    "categories": [
+                        "stories"
+                    ]
+                },
+                "121": {
+                    "id": "121",
+                    "name": "PLAYKIDS",
+                    "description": "Teach in a fun way to make a better world!",
+                    "playlists_count": 13,
+                    "total_items": 163,
+                    "categories": [
+                        "animals",
+                        "dance",
+                        "stories",
+                        "science"
+                    ]
+                },
+                "219": {
+                    "id": "219",
+                    "name": "CAT AND KEET",
+                    "description": "Cat and Keet live in the same house but are constantly at each other's throats; Keet always ends up doing something that irritates Cat, who tries to get even with him.",
+                    "playlists_count": 1,
+                    "total_items": 79,
+                    "categories": []
+                },
+                "220": {
+                    "id": "220",
+                    "name": "3 RABBITS",
+                    "description": "It's a funny cartoon for children about 3 Rabbits stuck in a deep cave from the series 3 Rabbits. Stuck in their cave the three rabbits notice a carrot sticking out of a water hole in this frozen world.",
+                    "playlists_count": 1,
+                    "total_items": 27,
+                    "categories": []
+                },
+                "221": {
+                    "id": "221",
+                    "name": "CHAI CHAI",
+                    "description": "A calm countryside teashop which is always busy.The happy teashop owner who makes the best tea.A waiter\/guard dog who is completly stupid,yet so proud of himeself.A naughty young monkey whose sole aim in life is to snatch all the snack in the teashop.With his entry the shop is no more calm, the owner no more happy and the dog no more proud .And the monkey has great time.",
+                    "playlists_count": 1,
+                    "total_items": 78,
+                    "categories": []
+                },
+                "222": {
+                    "id": "222",
+                    "name": "DARWIN AND NEWTS - SEASON 1",
+                    "description": "Darwin & Newts are two siblings who go on fantastic adventures, discovering and experimenting with the principles of early science and engineering, while exploring the natural wonders of the outside world. Joining the adventurous pair are Wapati, the wise moose; their neighbor Heni and her mischievous pet parrot, Kea; and the occasional grumpy frog named Burpee and his adorable friend Croakette!",
+                    "playlists_count": 1,
+                    "total_items": 40,
+                    "categories": []
+                },
+                "223": {
+                    "id": "223",
+                    "name": "DARWIN AND NEWTS - SEASON 2",
+                    "description": "Darwin and Newts is the animated series for children aged 3-7 years old who love to figure out how things work. The series is the result of focus group research with children and parents that motivated us to make a show for young children that would increase awareness and understanding of early learning science concepts.",
+                    "playlists_count": 1,
+                    "total_items": 64,
+                    "categories": []
+                },
+                "224": {
+                    "id": "224",
+                    "name": "GUMMY BEAR AND FRIENDS - SEASON 1",
+                    "description": "Gummy is full of enthusiasm, energy, and spontaneity. He is confident, naïve, untroubled, and quite kooky! Gummy loves to dance and sing. Music is at the centre of the series. Gummy is and what he does He loves sport and energetic activities: football, basketball, skateboarding.",
+                    "playlists_count": 1,
+                    "total_items": 39,
+                    "categories": []
+                },
+                "225": {
+                    "id": "225",
+                    "name": "GUMMY BEAR AND FRIENDS - SEASON 2",
+                    "description": "Gummy is full of enthusiasm, energy, and spontaneity. He is confident, naïve, untroubled, and quite kooky! Gummy loves to dance and sing. Music is at the centre of the series. Gummy is and what he does He loves sport and energetic activities: football, basketball, skateboarding.",
+                    "playlists_count": 1,
+                    "total_items": 44,
+                    "categories": []
+                },
+                "226": {
+                    "id": "226",
+                    "name": "LOLA AND VIRGINIA",
+                    "description": "Two 12-year-old girls fight daily over friends, boys and clothes.",
+                    "playlists_count": 1,
+                    "total_items": 52,
+                    "categories": []
+                },
+                "227": {
+                    "id": "227",
+                    "name": "LUCKY FRED - SEASON 1",
+                    "description": "Fred, a 13-year-old boy, and his robot, Friday, help secret agent Briana Brains with her mission.",
+                    "playlists_count": 1,
+                    "total_items": 53,
+                    "categories": []
+                },
+                "228": {
+                    "id": "228",
+                    "name": "HTDT",
+                    "description": "When all the King's horses and all the King's men couldn’t put Humpty Dumpty back together again they turned to Dr. Kizami Miyazaki, The King's top bio-nuclear scientist. Combining Hydro¬gen, the lightest element with a mass of 1 with Bombinium, the heaviest element with a mass of 238, Dr. Miyazaki was able to construct a polymer matrix to bind Humpty's pieces back together again. A highly powerful, yet extremely unstable force field was created, infusing Humpty Dumpty with awesome super¬powers. The radiation caused a realignment of Humpty Dumpty’s genetic molecular structure causing him to be possessed of both extreme mass and incredible weightlessness.",
+                    "playlists_count": 1,
+                    "total_items": 52,
+                    "categories": []
+                },
+                "229": {
+                    "id": "229",
+                    "name": "KONG KONG LAND",
+                    "description": "Animal fairies - Perry(eagle), Rodi(ladybug), Pan(panda), Crabo(crab) and Leocat(lynx) - live in shoe banding machine in the theme park 'Kong Kong Land'. Their goal is to collect foot smell as much as they can do. Because the foot smell is something like wealth and the most important resources in their environment. There is a marble containing compressed foot smell in the theme park and having the marble is the easiest way to be a boss. Animal fairies start using tricks to get the marble ....",
+                    "playlists_count": 1,
+                    "total_items": 12,
+                    "categories": []
+                },
+                "230": {
+                    "id": "230",
+                    "name": "SANDRA, THE FAIRYTALE DETECTIVE",
+                    "description": "Sandra is a little girl who is the lone descendant from a long line of fairytale detectives. Sandra seems like other kids her age, but when her assistant and friend Fo, a 500-year-old elf, arrives to say that there's a problem over in The Land of Once Upon a Time, Sandra dons her overcoat and jumps into action. Whatever the mystery, Sandra is on the case.",
+                    "playlists_count": 1,
+                    "total_items": 52,
+                    "categories": [
+                        "stories"
+                    ]
+                },
+                "231": {
+                    "id": "231",
+                    "name": "EGG ROY",
+                    "description": "Our hero, Eggroy, lives on a small remote island that humans don't know, where he was having a fun and happy day playing with his friends Joy and Mimi, Cha-cha. The lizard chef Khan, who specializes in egg cooking, will come to the island where they live. The peaceful and quiet island is suddenly in danger. Can the hero Egroy and his friends be the chef Khan? Khan, an egg expert, wants to catch wild eggs for the best food. However, the main character, Eggroy, and his friends are able to use brilliant ideas and excellent judgment Defeat Chef Khan. Through the episode of Egg Chef Khan and eggs, We realize how much the power of cooperation and unity.",
+                    "playlists_count": 1,
+                    "total_items": 60,
+                    "categories": []
+                },
+                "232": {
+                    "id": "232",
+                    "name": "EMMIE THE ELEPHANT - SEASON 1",
+                    "description": "Hey kids! Emmie our cute little elephant loves dancing & sings good english songs. It's time to enjoy the classical animated songs with Emmie dancing to the beats!",
+                    "playlists_count": 1,
+                    "total_items": 22,
+                    "categories": []
+                },
+                "233": {
+                    "id": "233",
+                    "name": "SAARI",
+                    "description": "The adventures of a creative group of friends who live on a beautiful island called Saari. In each episode, Pulpo the octopus, Buu the lady owl, the sensitive Pii, and Rikitiki the bohemian bird explore the fantastic and imaginary world of Saari, finding surprising and funny ways to face the challenges of childhood.",
+                    "playlists_count": 1,
+                    "total_items": 39,
+                    "categories": []
+                },
+                "234": {
+                    "id": "234",
+                    "name": "RAT-A-TAT - SEASON 1",
+                    "description": "There is a constant war between Doggy Don and the three clever mice who live in his house. However, with the help of Doggy Don's brother, an ex-army dog, they fight the mice to win back their house.",
+                    "playlists_count": 1,
+                    "total_items": 110,
+                    "categories": []
+                },
+                "235": {
+                    "id": "235",
+                    "name": "DARWIN AND NEWTS- DIY",
+                    "description": "In this new season of the series, the sprightly gang continues their encounter with new discoveries and learning all around various science topics.",
+                    "playlists_count": 1,
+                    "total_items": 80,
+                    "categories": []
+                },
+                "236": {
+                    "id": "236",
+                    "name": "LUCKY FRED - SEASON 2",
+                    "description": "Fred, a 13-year-old boy, and his robot, Friday, help secret agent Briana Brains with her mission.",
+                    "playlists_count": 1,
+                    "total_items": 53,
+                    "categories": []
+                },
+                "237": {
+                    "id": "237",
+                    "name": "VITAMINIX",
+                    "description": "The interesting world of food and the benefits of healthy eating for children",
+                    "playlists_count": 1,
+                    "total_items": 104,
+                    "categories": []
+                },
+                "238": {
+                    "id": "238",
+                    "name": "PURPLE DEVIL",
+                    "description": "A cartoon about the absurd, the tenderness and the big laughs. Follow the magical adventures and hilarious mishaps of Purple Devil and his kitty Kuroiaki as they struggle to overcome chronic eating, cake addiction, and propensity for trouble.",
+                    "playlists_count": 1,
+                    "total_items": 27,
+                    "categories": []
+                },
+                "239": {
+                    "id": "239",
+                    "name": "MONDOYAN",
+                    "description": "Everyday teenage problems mixed with adventure, action and humorous struggles against bizarre comical creatures.",
+                    "playlists_count": 1,
+                    "total_items": 26,
+                    "categories": []
+                },
+                "240": {
+                    "id": "240",
+                    "name": "DEE DEE THE LITTLE SORCERESS",
+                    "description": "Deedee is a sorceress… well… still learning, but will be a sorceress one day soon! She started practicing magic the day she found a book of spells in the back of a cupboard. You wouldn’t believe all the different spells in there : how to make things fly, how to change your luck, how to put somebody in a good mood, hot to make a musical instrument play on its own… etc… there are so many ! Magic doesn’t work the right way and the results are always surprising! Luckily Deedee & her friends are very close and together they always manage to resolve the situations. Values: The Importance of Friendship, Tolerance and Solidarity.",
+                    "playlists_count": 1,
+                    "total_items": 26,
+                    "categories": []
+                },
+                "241": {
+                    "id": "241",
+                    "name": "PAJAMA",
+                    "description": "PaJaMa is an endearing comedy series that follows the misadventures of Ja,a naughty kid as he experiences the small wonders of this world and the hilarious consequences Ja‛s innocent actions have on his unsuspecting father, Pa.",
+                    "playlists_count": 1,
+                    "total_items": 149,
+                    "categories": []
+                },
+                "242": {
+                    "id": "242",
+                    "name": "DARWIN-ARABIC",
+                    "description": "Arabic content",
+                    "playlists_count": 1,
+                    "total_items": 40,
+                    "categories": []
+                },
+                "243": {
+                    "id": "243",
+                    "name": "DEE DEE THE LITTLE SORCERESS ARABIC",
+                    "description": "Arabic content",
+                    "playlists_count": 1,
+                    "total_items": 26,
+                    "categories": []
+                },
+                "244": {
+                    "id": "244",
+                    "name": "MYTOONZ - BRIKO",
+                    "description": "This is the story of two best friends – a boy and a rabbit, a mystery box, and oodles of DIY fun! An activity-oriented show with undertones of conservation and recycling, Briko nudges kids and parents to spend quality time with each other, creating cool crafts from ordinary objects.",
+                    "playlists_count": 1,
+                    "total_items": 52,
+                    "categories": []
+                },
+                "245": {
+                    "id": "245",
+                    "name": "GUMMY BEAR AND FRIENDS - ARABIC",
+                    "description": "Tmp",
+                    "playlists_count": 1,
+                    "total_items": 39,
+                    "categories": []
+                },
+                "246": {
+                    "id": "246",
+                    "name": "ZOONICORN-ARABIC",
+                    "description": "Tmp",
+                    "playlists_count": 1,
+                    "total_items": 52,
+                    "categories": []
+                },
+                "247": {
+                    "id": "247",
+                    "name": "Bookworm -Arabic",
+                    "description": "Explore the educational world of Bookworm Gogo, a CGI animated TV series that ignites a love for learning and reading in kids.",
+                    "playlists_count": 1,
+                    "total_items": 24,
+                    "categories": []
+                },
+                "248": {
+                    "id": "248",
+                    "name": "Fruit Ninja - Arabic",
+                    "description": "From humble beginnings rise four Fruit Ninjas to rediscover the long lost art of Juice Jitsu. Their mission – to unlock hidden powers through the slicing of fruit and to protect their neighbours from bizarre villains they never knew existed!",
+                    "playlists_count": 1,
+                    "total_items": 13,
+                    "categories": []
+                },
+                "249": {
+                    "id": "249",
+                    "name": "Uma & Dewan- Arabic",
+                    "description": "Uma & Devan explores the daily lives of an lndian-American brother and sister, Uma, aged 7, and Devan, aged 5, as they investigate the world around them, staying true to their family Indian heritage, while at the same time opening their minds to all that surrounds them.",
+                    "playlists_count": 1,
+                    "total_items": 26,
+                    "categories": []
+                },
+                "250": {
+                    "id": "250",
+                    "name": "VITAMINIX ARABIC",
+                    "description": "The interesting world of food and the benefits of healthy eating for children.",
+                    "playlists_count": 1,
+                    "total_items": 94,
+                    "categories": []
+                },
+                "251": {
+                    "id": "251",
+                    "name": "COERVER - BEGINNER - SEASON 1 - ARABIC",
+                    "description": "World's best soccer skills for players at the beginners level.",
+                    "playlists_count": 1,
+                    "total_items": 30,
+                    "categories": []
+                },
+                "258": {
+                    "id": "258",
+                    "name": "LUCKY FRED - SEASON 1 - ARABIC",
+                    "description": "Fred, a 13-year-old boy, and his robot, Friday, help secret agent Briana Brains with her mission.",
+                    "playlists_count": 1,
+                    "total_items": 52,
+                    "categories": []
+                },
+                "277": {
+                    "id": "277",
+                    "name": "SPEED RACER",
+                    "description": "When the time orb, an auto safety device designed to “rewind time after an accident” is put into the Mach 5, a bolt of lightning strikes the orb, sending our heroes through a time portal to 50 years in the future, and into a world where humans are dependent on protective robots and are forbidden to drive cars for their own safety. To get home again, Speed needs an energy source that costs a fortune so, disguised as a robot, he enters a fantastic and grueling race where the drivers are deadly robots and humans are forbidden to participate. Will he win the prize money or be destroyed by ruthless robot racers? And can he and his friends stop an all out robot invasion against the human race?",
+                    "playlists_count": 1,
+                    "total_items": 26,
+                    "categories": []
+                }
+            },
+            "categories": {
+                "alphabet": 1,
+                "numbers": 1,
+                "stories": 4,
+                "animals": 1,
+                "dance": 1,
+                "science": 1
+            },
+            "subcategories": [],
+            "common_tags": {
+                "season": 913,
+                "that": 633,
+                "they": 625,
+                "are": 514,
+                "his": 504,
+                "you": 456,
+                "her": 455,
+                "this": 438,
+                "when": 423,
+                "their": 421,
+                "friends": 415,
+                "its": 410,
+                "generic": 404,
+                "all": 399,
+                "arabic": 387,
+                "from": 383,
+                "newts": 368,
+                "darwin": 360,
+                "akili": 354,
+                "out": 350
+            },
+            "channels_count": 40
+        },
+        "games": {
+            "name": "games",
+            "file": "games-ar.json",
+            "file_size": 178588,
+            "last_modified": "2025-10-20 11:57:04",
+            "content_type": "HTML5",
+            "total_items": 123,
+            "channels": [],
+            "categories": {
+                "Unknown": 123
+            },
+            "subcategories": {
+                "Ben 10": 8,
+                "Boomerang": 10,
+                "Cartoon Network": 10,
+                "Crash the Bash": 4,
+                "Daniel Tiger": 5,
+                "Dreamworks": 5,
+                "Looney Tunes": 5,
+                "Marvel": 4,
+                "Mr. Bean": 4,
+                "Nickelodeon": 10,
+                "Scooby-Doo": 5,
+                "SpongeBob SquarePants": 10,
+                "Star Wars": 7,
+                "Teenage Mutant Ninja Turtles": 7,
+                "The Amazing World of Gumball": 4,
+                "The Loud House": 6,
+                "The Smurfs": 7,
+                "Tom and Jerry": 11,
+                "Wacky Races": 1
+            },
+            "common_tags": {
+                "game": 129,
+                "enjoy": 123,
+                "exciting": 123,
+                "unknown": 123,
+                "jerry": 33,
+                "tom": 31,
+                "spongebob": 30,
+                "squarepants": 30,
+                "loud": 24,
+                "teenage": 23,
+                "turtles": 23,
+                "smurfs": 23,
+                "nickelodeon": 22,
+                "star": 21,
+                "mutant": 21,
+                "ninja": 21,
+                "cartoon": 20,
+                "network": 20,
+                "wars": 19,
+                "house": 18
+            }
+        },
+        "streaming": {
+            "name": "streaming",
+            "file": "streaming-ar.json",
+            "file_size": 1735895,
+            "last_modified": "2025-10-20 11:57:04",
+            "content_type": "Videos",
+            "total_items": 2162,
+            "channels": [],
+            "categories": {
+                "Extreme Movies": 16,
+                "Festivals of the World": 13,
+                "Frag TV": 45,
+                "Fresh Yoga with Katy Misson": 31,
+                "Globetrotting": 13,
+                "Gossip": 50,
+                "Hope on the Hudson": 9,
+                "Joke TV": 150,
+                "Kendyll Fitness": 5,
+                "LMAO": 55,
+                "Mobile Arts VOD 2024": 88,
+                "More Curious": 13,
+                "Movies News": 87,
+                "Ocean Safari": 7,
+                "On the Road": 26,
+                "Pretty TV": 193,
+                "Top 5 Compilation": 107,
+                "United Fight Alliance": 206,
+                "Xtrem Sports": 1043,
+                "Yoga with Audrey": 5
+            },
+            "subcategories": [],
+            "common_tags": {
+                "sports": 1076,
+                "xtrem": 1071,
+                "top": 397,
+                "five": 258,
+                "fight": 212,
+                "united": 207,
+                "ufa": 206,
+                "alliance": 206,
+                "episode": 197,
+                "clip": 197,
+                "pretty": 193,
+                "part": 160,
+                "joke": 150,
+                "lmao": 110,
+                "compilation": 110,
+                "movies": 105,
+                "trailer": 100,
+                "official": 90,
+                "mobile": 88,
+                "arts": 88
+            }
+        },
+        "fitness": {
+            "name": "fitness",
+            "file": "fitness-ar.json",
+            "file_size": 51706,
+            "last_modified": "2025-10-20 11:57:04",
+            "content_type": "fitness_videos",
+            "total_items": 42,
+            "channels": [],
+            "categories": {
+                "Strength – Lower Body": 8,
+                "Core \/ Abs": 15,
+                "Strength – Upper Body": 3,
+                "Core – Lower Back": 1,
+                "Cardio \/ Plyometric": 4,
+                "Core – Stability": 3,
+                "Lower Leg – Calves": 4,
+                "Mobility \/ Stretch": 2,
+                "Cardio \/ Core": 1,
+                "Lower Leg – Tibialis": 1
+            },
+            "subcategories": {
+                "قوة – الجزء السفلي من الجسم": 8,
+                "الجذع \/ البطن": 15,
+                "قوة – الجزء العلوي من الجسم": 3,
+                "الجذع – أسفل الظهر": 1,
+                "كارديو \/ بليومترية": 4,
+                "استقرار الجذع": 3,
+                "أسفل الساق – السمانة": 4,
+                "مرونة \/ إطالة": 2,
+                "كارديو \/ الجذع": 1,
+                "أسفل الساق – الظنبوبية الأمامية": 1
+            },
+            "common_tags": {
+                "your": 153,
+                "core": 76,
+                "back": 44,
+                "while": 43,
+                "exercise": 41,
+                "keep": 40,
+                "leg": 32,
+                "lower": 31,
+                "body": 25,
+                "engage": 22,
+                "that": 22,
+                "keeping": 21,
+                "side": 21,
+                "abs": 20,
+                "legs": 17,
+                "flat": 16,
+                "engaged": 15,
+                "performed": 15,
+                "hips": 14,
+                "knees": 14
+            }
+        }
+    },
+    "categories_by_source": [],
+    "subcategories_by_source": [],
+    "channels_by_source": [],
+    "tags_frequency": [],
+    "content_types": [],
+    "ai_mapping_rules": {
+        "user_request_patterns": {
+            "games": {
+                "tags": [
+                    "game"
+                ],
+                "sources": [
+                    "games"
+                ]
+            },
+            "interactive_games": {
+                "tags": [
+                    "game"
+                ],
+                "sources": [
+                    "games"
+                ]
+            },
+            "alphabet": {
+                "tags": [
+                    "alphabet",
+                    "letter",
+                    "educational"
+                ],
+                "sources": [
+                    "kids"
+                ]
+            },
+            "numbers": {
+                "tags": [
+                    "number",
+                    "counting",
+                    "math"
+                ],
+                "sources": [
+                    "kids"
+                ]
+            },
+            "animals": {
+                "tags": [
+                    "animal",
+                    "nature"
+                ],
+                "sources": [
+                    "kids"
+                ]
+            },
+            "songs": {
+                "tags": [
+                    "song",
+                    "music"
+                ],
+                "sources": [
+                    "kids"
+                ]
+            },
+            "stories": {
+                "tags": [
+                    "story",
+                    "tale"
+                ],
+                "sources": [
+                    "kids"
+                ]
+            },
+            "fitness": {
+                "tags": [
+                    "fitness",
+                    "exercise"
+                ],
+                "sources": [
+                    "fitness"
+                ]
+            }
+        },
+        "recommended_search_strategy": {
+            "for_games": "Use tags=[\"game\"] AND sources=[\"games\"]",
+            "for_educational": "Use sources=[\"kids\"] with appropriate tags",
+            "for_specific_channels": "Use channel_id array with specific IDs",
+            "for_fitness": "Use sources=[\"fitness\"]"
+        }
+    },
+    "catalog_structure": {
+        "kids": {
+            "content_type": "educational_videos",
+            "total_items": 2360,
+            "key_categories": [
+                "alphabet",
+                "numbers",
+                "stories",
+                "animals",
+                "dance",
+                "science"
+            ],
+            "available_channels": [
+                108,
+                109,
+                117,
+                118,
+                121,
+                219,
+                220,
+                221,
+                222,
+                223,
+                224,
+                225,
+                226,
+                227,
+                228,
+                229,
+                230,
+                231,
+                232,
+                233,
+                234,
+                235,
+                236,
+                237,
+                238,
+                239,
+                240,
+                241,
+                242,
+                243,
+                244,
+                245,
+                246,
+                247,
+                248,
+                249,
+                250,
+                251,
+                258,
+                277
+            ],
+            "common_tags": [
+                "season",
+                "that",
+                "they",
+                "are",
+                "his",
+                "you",
+                "her",
+                "this",
+                "when",
+                "their",
+                "friends",
+                "its",
+                "generic",
+                "all",
+                "arabic"
+            ]
+        },
+        "games": {
+            "content_type": "HTML5",
+            "total_items": 123,
+            "key_categories": [
+                "Unknown"
+            ],
+            "available_channels": [],
+            "common_tags": [
+                "game",
+                "enjoy",
+                "exciting",
+                "unknown",
+                "jerry",
+                "tom",
+                "spongebob",
+                "squarepants",
+                "loud",
+                "teenage",
+                "turtles",
+                "smurfs",
+                "nickelodeon",
+                "star",
+                "mutant"
+            ]
+        },
+        "streaming": {
+            "content_type": "Videos",
+            "total_items": 2162,
+            "key_categories": [
+                "Extreme Movies",
+                "Festivals of the World",
+                "Frag TV",
+                "Fresh Yoga with Katy Misson",
+                "Globetrotting",
+                "Gossip",
+                "Hope on the Hudson",
+                "Joke TV",
+                "Kendyll Fitness",
+                "LMAO"
+            ],
+            "available_channels": [],
+            "common_tags": [
+                "sports",
+                "xtrem",
+                "top",
+                "five",
+                "fight",
+                "united",
+                "ufa",
+                "alliance",
+                "episode",
+                "clip",
+                "pretty",
+                "part",
+                "joke",
+                "lmao",
+                "compilation"
+            ]
+        },
+        "fitness": {
+            "content_type": "fitness_videos",
+            "total_items": 42,
+            "key_categories": [
+                "Strength – Lower Body",
+                "Core \/ Abs",
+                "Strength – Upper Body",
+                "Core – Lower Back",
+                "Cardio \/ Plyometric",
+                "Core – Stability",
+                "Lower Leg – Calves",
+                "Mobility \/ Stretch",
+                "Cardio \/ Core",
+                "Lower Leg – Tibialis"
+            ],
+            "available_channels": [],
+            "common_tags": [
+                "your",
+                "core",
+                "back",
+                "while",
+                "exercise",
+                "keep",
+                "leg",
+                "lower",
+                "body",
+                "engage",
+                "that",
+                "keeping",
+                "side",
+                "abs",
+                "legs"
+            ]
+        }
+    }
+}

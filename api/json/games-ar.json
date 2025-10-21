@@ -1,0 +1,2624 @@
+{
+    "Service": {
+        "Name": "Games Box",
+        "Icon": "http://mcontentnew.s3.amazonaws.com/Pictures/8/0fdc551c-f6a8-4bec-946f-d6e7bea86d46.png"
+    },
+    "Content": [
+        {
+            "HTML5": [
+                {
+                    "Name": "Ben 10",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben 10/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 887806229,
+                            "Package_id": "Ben 10/Alien Rivals",
+                            "Title": "Alien Rivals",
+                            "Description": "Enjoy the exciting game Alien Rivals!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Alien+Rivals/logo.en.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Alien+Rivals/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Alien+Rivals/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "المنافسون الفضائيون",
+                            "description_ar": "استمتع باللعبة المثيرة Alien Rivals!"
+                        },
+                        {
+                            "ID": 2042324837,
+                            "Package_id": "Ben 10/Blockade Blitz",
+                            "Title": "Blockade Blitz",
+                            "Description": "Enjoy the exciting game Blockade Blitz!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Blockade+Blitz/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Blockade+Blitz/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "حصار بليتز",
+                            "description_ar": "استمتع باللعبة المثيرة Blockade Blitz!"
+                        },
+                        {
+                            "ID": -1597410219,
+                            "Package_id": "Ben 10/Escape Route",
+                            "Title": "Escape Route",
+                            "Description": "Enjoy the exciting game Escape Route!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Escape+Route/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Escape+Route/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "طريق الهروب",
+                            "description_ar": "استمتع باللعبة المثيرة Escape Route!"
+                        },
+                        {
+                            "ID": -887154178,
+                            "Package_id": "Ben 10/Heatblast Fight",
+                            "Title": "Heatblast Fight",
+                            "Description": "Enjoy the exciting game Heatblast Fight!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Heatblast+Fight/assets/ui/logo_ben10.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Heatblast+Fight/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Heatblast+Fight/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "قتال هيت بلاست",
+                            "description_ar": "استمتع باللعبة المثيرة Heatblast Fight!"
+                        },
+                        {
+                            "ID": 1103396333,
+                            "Package_id": "Ben 10/No Arm Done",
+                            "Title": "No Arm Done",
+                            "Description": "Enjoy the exciting game No Arm Done!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/No+Arm+Done/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/No+Arm+Done/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "لم يتم الانتهاء من الذراع",
+                            "description_ar": "استمتع باللعبة المثيرة No Arm Done!"
+                        },
+                        {
+                            "ID": 1774912086,
+                            "Package_id": "Ben 10/Tomb Of Doom",
+                            "Title": "Tomb Of Doom",
+                            "Description": "Enjoy the exciting game Tomb Of Doom!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Tomb+Of+Doom/img/menu/logo_ar.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Tomb+Of+Doom/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Tomb+Of+Doom/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "قبر الموت",
+                            "description_ar": "استمتع باللعبة المثيرة Tomb Of Doom!"
+                        },
+                        {
+                            "ID": 1137006315,
+                            "Package_id": "Ben 10/Wildvine Shoot",
+                            "Title": "Wildvine Shoot",
+                            "Description": "Enjoy the exciting game Wildvine Shoot!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Wildvine+Shoot/assets/ui/logo_ben10.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Wildvine+Shoot/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Wildvine+Shoot/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "جلسة تصوير وايلدفين",
+                            "description_ar": "استمتع باللعبة المثيرة Wildvine Shoot!"
+                        },
+                        {
+                            "ID": 1615557409,
+                            "Package_id": "Ben 10/Xlr8 Avoid",
+                            "Title": "Xlr8 Avoid",
+                            "Description": "Enjoy the exciting game Xlr8 Avoid!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Xlr8+Avoid/assets/ui/logo_ben10.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Xlr8+Avoid/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Ben+10/Xlr8+Avoid/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Ben 10"
+                            ],
+                            "title_ar": "تجنب XLR8",
+                            "description_ar": "استمتع باللعبة المثيرة Xlr8 Avoid!"
+                        }
+                    ],
+                    "name_ar": "بن 10"
+                },
+                {
+                    "Name": "Boomerang",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 1395210345,
+                            "Package_id": "Boomerang/Alice & Lewis - Find It",
+                            "Title": "Alice & Lewis - Find It",
+                            "Description": "Enjoy the exciting game Alice & Lewis - Find It!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Alice+&+Lewis+-+Find+It/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Alice+&+Lewis+-+Find+It/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Alice+&+Lewis+-+Find+It/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "أليس ولويس - ابحث عنه",
+                            "description_ar": "استمتع باللعبة المثيرة Alice & Lewis - Find It!"
+                        },
+                        {
+                            "ID": -1870424690,
+                            "Package_id": "Boomerang/Alice & Lewis - Jigsaw Puzzle",
+                            "Title": "Alice & Lewis - Jigsaw Puzzle",
+                            "Description": "Enjoy the exciting game Alice & Lewis - Jigsaw Puzzle!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Alice+&+Lewis+-+Jigsaw+Puzzle/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Alice+&+Lewis+-+Jigsaw+Puzzle/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Alice+&+Lewis+-+Jigsaw+Puzzle/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "أليس ولويس - أحجية الصور المقطوعة",
+                            "description_ar": "استمتع باللعبة المثيرة Alice & Lewis - Jigsaw Puzzle!"
+                        },
+                        {
+                            "ID": 1575800782,
+                            "Package_id": "Boomerang/Boomerang All Stars - Basket Zorb",
+                            "Title": "Boomerang All Stars - Basket Zorb",
+                            "Description": "Enjoy the exciting game Boomerang All Stars - Basket Zorb!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Boomerang+All+Stars+-+Basket+Zorb/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Boomerang+All+Stars+-+Basket+Zorb/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "نجوم بوميرانغ - سلة زورب",
+                            "description_ar": "استمتع باللعبة المثيرة Boomerang All Stars - Basket Zorb!"
+                        },
+                        {
+                            "ID": 1176821737,
+                            "Package_id": "Boomerang/Boomerang All Stars - Sky Dive",
+                            "Title": "Boomerang All Stars - Sky Dive",
+                            "Description": "Enjoy the exciting game Boomerang All Stars - Sky Dive!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Boomerang+All+Stars+-+Sky+Dive/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Boomerang+All+Stars+-+Sky+Dive/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "بوميرانغ أول ستارز - سكاي دايف",
+                            "description_ar": "استمتع باللعبة المثيرة Boomerang All Stars - Sky Dive!"
+                        },
+                        {
+                            "ID": -956570066,
+                            "Package_id": "Boomerang/Boomerang All Stars - Star Striker",
+                            "Title": "Boomerang All Stars - Star Striker",
+                            "Description": "Enjoy the exciting game Boomerang All Stars - Star Striker!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Boomerang+All+Stars+-+Star+Striker/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Boomerang+All+Stars+-+Star+Striker/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "نجوم بوميرانغ - مهاجم النجوم",
+                            "description_ar": "استمتع باللعبة المثيرة Boomerang All Stars - Star Striker!"
+                        },
+                        {
+                            "ID": 1531548617,
+                            "Package_id": "Boomerang/Dorothy And The Wizard Of Oz - Cookie Magic",
+                            "Title": "Dorothy And The Wizard Of Oz - Cookie Magic",
+                            "Description": "Enjoy the exciting game Dorothy And The Wizard Of Oz - Cookie Magic!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Dorothy+And+The+Wizard+Of+Oz+-+Cookie+Magic/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Dorothy+And+The+Wizard+Of+Oz+-+Cookie+Magic/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "دوروثي وساحر أوز - كوكيز ماجيك",
+                            "description_ar": "استمتع باللعبة المثيرة دوروثي وساحر أوز - كوكيز ماجيك!"
+                        },
+                        {
+                            "ID": 296841186,
+                            "Package_id": "Boomerang/Master Moley - Tunnel Dash",
+                            "Title": "Master Moley - Tunnel Dash",
+                            "Description": "Enjoy the exciting game Master Moley - Tunnel Dash!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Master+Moley+-+Tunnel+Dash/images/title/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Master+Moley+-+Tunnel+Dash/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Master+Moley+-+Tunnel+Dash/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "ماستر مولي - نفق داش",
+                            "description_ar": "استمتع باللعبة المثيرة Master Moley - Tunnel Dash!"
+                        },
+                        {
+                            "ID": -1610919303,
+                            "Package_id": "Boomerang/Moley - Mole Catcher",
+                            "Title": "Moley - Mole Catcher",
+                            "Description": "Enjoy the exciting game Moley - Mole Catcher!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Moley+-+Mole+Catcher/img/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Moley+-+Mole+Catcher/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Moley+-+Mole+Catcher/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "مولي - صائد الخلد",
+                            "description_ar": "استمتع باللعبة المثيرة مولي - صائد الخلد!"
+                        },
+                        {
+                            "ID": 1916495151,
+                            "Package_id": "Boomerang/Moley - Moletown Chase",
+                            "Title": "Moley - Moletown Chase",
+                            "Description": "Enjoy the exciting game Moley - Moletown Chase!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Moley+-+Moletown+Chase/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Moley+-+Moletown+Chase/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/Moley+-+Moletown+Chase/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "مولي - مولتاون تشيس",
+                            "description_ar": "استمتع باللعبة المثيرة Moley - Moletown Chase!"
+                        },
+                        {
+                            "ID": -1241285584,
+                            "Package_id": "Boomerang/run-dorothy",
+                            "Title": "run-dorothy",
+                            "Description": "Enjoy the exciting game run-dorothy!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/run-dorothy/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/run-dorothy/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Boomerang/run-dorothy/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Boomerang"
+                            ],
+                            "title_ar": "ران دوروثي",
+                            "description_ar": "استمتع باللعبة المثيرة run-dorothy!"
+                        }
+                    ],
+                    "name_ar": "بوميرانج"
+                },
+                {
+                    "Name": "Cartoon Network",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon Network/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -1848093301,
+                            "Package_id": "Cartoon Network/Cartoon Network Eager Egg Hunt",
+                            "Title": "Cartoon Network Eager Egg Hunt",
+                            "Description": "Enjoy the exciting game Cartoon Network Eager Egg Hunt!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Eager+Egg+Hunt/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Eager+Egg+Hunt/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Eager+Egg+Hunt/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "كرتون نتورك إيجر إيج هانت",
+                            "description_ar": "استمتع باللعبة المثيرة Cartoon Network Eager Egg Hunt!"
+                        },
+                        {
+                            "ID": 1210166423,
+                            "Package_id": "Cartoon Network/Cartoon Network Penalty Power 2021",
+                            "Title": "Cartoon Network Penalty Power 2021",
+                            "Description": "Enjoy the exciting game Cartoon Network Penalty Power 2021!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Penalty+Power+2021/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Penalty+Power+2021/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Penalty+Power+2021/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "كرتون نتورك بينالتي باور 2021",
+                            "description_ar": "استمتع باللعبة المثيرة Cartoon Network Penalty Power 2021!"
+                        },
+                        {
+                            "ID": 694974689,
+                            "Package_id": "Cartoon Network/Cartoon Network Skate Rush",
+                            "Title": "Cartoon Network Skate Rush",
+                            "Description": "Enjoy the exciting game Cartoon Network Skate Rush!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Skate+Rush/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Skate+Rush/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Skate+Rush/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "كرتون نتورك سكيت راش",
+                            "description_ar": "استمتع باللعبة المثيرة Cartoon Network Skate Rush!"
+                        },
+                        {
+                            "ID": 1001040062,
+                            "Package_id": "Cartoon Network/Cartoon Network Strike! Ultimate Bowling",
+                            "Title": "Cartoon Network Strike! Ultimate Bowling",
+                            "Description": "Enjoy the exciting game Cartoon Network Strike! Ultimate Bowling!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Strike!+Ultimate+Bowling/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Strike!+Ultimate+Bowling/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Strike!+Ultimate+Bowling/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "كرتون نتورك سترايك! البولينج النهائي",
+                            "description_ar": "استمتع بلعبة كرتون نتورك سترايك! البولينج الممتعة!"
+                        },
+                        {
+                            "ID": -796385040,
+                            "Package_id": "Cartoon Network/Cartoon Network Summer Games 2020",
+                            "Title": "Cartoon Network Summer Games 2020",
+                            "Description": "Enjoy the exciting game Cartoon Network Summer Games 2020!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Summer+Games+2020/bin/images/logos/logo_en.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Summer+Games+2020/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Cartoon+Network+Summer+Games+2020/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "ألعاب كرتون نتورك الصيفية 2020",
+                            "description_ar": "استمتع باللعبة المثيرة Cartoon Network Summer Games 2020!"
+                        },
+                        {
+                            "ID": -1798131447,
+                            "Package_id": "Cartoon Network/Regular Show - Battle Of The Behemoths",
+                            "Title": "Regular Show - Battle Of The Behemoths",
+                            "Description": "Enjoy the exciting game Regular Show - Battle Of The Behemoths!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Regular+Show+-+Battle+Of+The+Behemoths/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Regular+Show+-+Battle+Of+The+Behemoths/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "العرض العادي - معركة الوحوش العملاقة",
+                            "description_ar": "استمتع باللعبة المثيرة Regular Show - Battle Of The Behemoths!"
+                        },
+                        {
+                            "ID": -747193505,
+                            "Package_id": "Cartoon Network/Table Tennis Ultra Mega Tournament",
+                            "Title": "Table Tennis Ultra Mega Tournament",
+                            "Description": "Enjoy the exciting game Table Tennis Ultra Mega Tournament!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Table+Tennis+Ultra+Mega+Tournament/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Table+Tennis+Ultra+Mega+Tournament/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "بطولة تنس الطاولة الكبرى",
+                            "description_ar": "استمتع بلعبة Table Tennis Ultra Mega Tournament المثيرة!"
+                        },
+                        {
+                            "ID": -1716081242,
+                            "Package_id": "Cartoon Network/The Fungies - Fungie Finder",
+                            "Title": "The Fungies - Fungie Finder",
+                            "Description": "Enjoy the exciting game The Fungies - Fungie Finder!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/The+Fungies+-+Fungie+Finder/img/logo_game.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/The+Fungies+-+Fungie+Finder/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/The+Fungies+-+Fungie+Finder/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "الفطريات - الباحث عن الفطريات",
+                            "description_ar": "استمتع باللعبة المثيرة The Fungies - Fungie Finder!"
+                        },
+                        {
+                            "ID": -1433353902,
+                            "Package_id": "Cartoon Network/The Fungies - Fungie Jumper",
+                            "Title": "The Fungies - Fungie Jumper",
+                            "Description": "Enjoy the exciting game The Fungies - Fungie Jumper!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/The+Fungies+-+Fungie+Jumper/img/logo1.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/The+Fungies+-+Fungie+Jumper/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/The+Fungies+-+Fungie+Jumper/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "الفطريات - قافز الفطريات",
+                            "description_ar": "استمتع باللعبة المثيرة The Fungies - Fungie Jumper!"
+                        },
+                        {
+                            "ID": 1420124692,
+                            "Package_id": "Cartoon Network/Uncle Grandpa Peanut Butter Flutter",
+                            "Title": "Uncle Grandpa Peanut Butter Flutter",
+                            "Description": "Enjoy the exciting game Uncle Grandpa Peanut Butter Flutter!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Uncle+Grandpa+Peanut+Butter+Flutter/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Uncle+Grandpa+Peanut+Butter+Flutter/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Cartoon+Network/Uncle+Grandpa+Peanut+Butter+Flutter/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Cartoon Network"
+                            ],
+                            "title_ar": "العم جدو زبدة الفول السوداني",
+                            "description_ar": "استمتع باللعبة المثيرة Uncle Grandpa Peanut Butter Flutter!"
+                        }
+                    ],
+                    "name_ar": "كرتون نتورك"
+                },
+                {
+                    "Name": "Crash the Bash",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash the Bash/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -2113860295,
+                            "Package_id": "Crash the Bash/Crash the Bash - Classic Catch",
+                            "Title": "Crash the Bash - Classic Catch",
+                            "Description": "Enjoy the exciting game Crash the Bash - Classic Catch!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Classic+Catch/assets/preloader/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Classic+Catch/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Classic+Catch/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Crash the Bash"
+                            ],
+                            "title_ar": "كراش ذا باش - الصيد الكلاسيكي",
+                            "description_ar": "استمتع باللعبة المثيرة Crash the Bash - Classic Catch!"
+                        },
+                        {
+                            "ID": 802039500,
+                            "Package_id": "Crash the Bash/Crash the Bash - Drink Break",
+                            "Title": "Crash the Bash - Drink Break",
+                            "Description": "Enjoy the exciting game Crash the Bash - Drink Break!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Drink+Break/assets/mainassets/screens/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Drink+Break/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Drink+Break/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Crash the Bash"
+                            ],
+                            "title_ar": "كراش ذا باش - استراحة الشراب",
+                            "description_ar": "استمتع باللعبة المثيرة Crash the Bash - Drink Break!"
+                        },
+                        {
+                            "ID": -1710113716,
+                            "Package_id": "Crash the Bash/Crash the Bash - Fully 6",
+                            "Title": "Crash the Bash - Fully 6",
+                            "Description": "Enjoy the exciting game Crash the Bash - Fully 6!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Fully+6/assets/preloader/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Fully+6/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Fully+6/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Crash the Bash"
+                            ],
+                            "title_ar": "كراش ذا باش - فولي 6",
+                            "description_ar": "استمتع باللعبة المثيرة Crash the Bash - Fully 6!"
+                        },
+                        {
+                            "ID": 1953705866,
+                            "Package_id": "Crash the Bash/Crash the Bash - Wobbly Dad",
+                            "Title": "Crash the Bash - Wobbly Dad",
+                            "Description": "Enjoy the exciting game Crash the Bash - Wobbly Dad!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Wobbly+Dad/assets/preloader/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Wobbly+Dad/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Crash+the+Bash/Crash+the+Bash+-+Wobbly+Dad/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Crash the Bash"
+                            ],
+                            "title_ar": "كراش ذا باش - الأب المتذبذب",
+                            "description_ar": "استمتع باللعبة المثيرة Crash the Bash - Wobbly Dad!"
+                        }
+                    ],
+                    "name_ar": "تحطم الباش"
+                },
+                {
+                    "Name": "Daniel Tiger",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel Tiger/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 134590611,
+                            "Package_id": "Daniel Tiger/Daniel Tiger - Feel The Music",
+                            "Title": "Daniel Tiger - Feel The Music",
+                            "Description": "Enjoy the exciting game Daniel Tiger - Feel The Music!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Feel+The+Music/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Feel+The+Music/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Feel+The+Music/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Daniel Tiger"
+                            ],
+                            "title_ar": "دانيال تايجر - اشعر بالموسيقى",
+                            "description_ar": "استمتع باللعبة المثيرة Daniel Tiger - Feel The Music!"
+                        },
+                        {
+                            "ID": 1108367881,
+                            "Package_id": "Daniel Tiger/Daniel Tiger - Hide And Seek",
+                            "Title": "Daniel Tiger - Hide And Seek",
+                            "Description": "Enjoy the exciting game Daniel Tiger - Hide And Seek!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Hide+And+Seek/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Hide+And+Seek/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Hide+And+Seek/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Daniel Tiger"
+                            ],
+                            "title_ar": "دانيال تايجر - الغميضة",
+                            "description_ar": "استمتع باللعبة المثيرة Daniel Tiger - Hide And Seek!"
+                        },
+                        {
+                            "ID": -103168269,
+                            "Package_id": "Daniel Tiger/Daniel Tiger - Let's Make Believe",
+                            "Title": "Daniel Tiger - Let's Make Believe",
+                            "Description": "Enjoy the exciting game Daniel Tiger - Let's Make Believe!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Let's+Make+Believe/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Let's+Make+Believe/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+Let's+Make+Believe/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Daniel Tiger"
+                            ],
+                            "title_ar": "دانيال تايجر - دعونا نتخيل",
+                            "description_ar": "استمتع باللعبة المثيرة Daniel Tiger - Let's Make Believe!"
+                        },
+                        {
+                            "ID": 1012298617,
+                            "Package_id": "Daniel Tiger/Daniel Tiger - My Bedtime",
+                            "Title": "Daniel Tiger - My Bedtime",
+                            "Description": "Enjoy the exciting game Daniel Tiger - My Bedtime!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+My+Bedtime/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+My+Bedtime/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+My+Bedtime/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Daniel Tiger"
+                            ],
+                            "title_ar": "دانيال تايجر - وقت نومي",
+                            "description_ar": "استمتع باللعبة المثيرة Daniel Tiger - My Bedtime!"
+                        },
+                        {
+                            "ID": 558007048,
+                            "Package_id": "Daniel Tiger/Daniel Tiger - My Fish Tank",
+                            "Title": "Daniel Tiger - My Fish Tank",
+                            "Description": "Enjoy the exciting game Daniel Tiger - My Fish Tank!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+My+Fish+Tank/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+My+Fish+Tank/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Daniel+Tiger/Daniel+Tiger+-+My+Fish+Tank/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Daniel Tiger"
+                            ],
+                            "title_ar": "دانيال تايجر - حوض السمك الخاص بي",
+                            "description_ar": "استمتع باللعبة المثيرة Daniel Tiger - My Fish Tank!"
+                        }
+                    ],
+                    "name_ar": "دانيال تايجر"
+                },
+                {
+                    "Name": "Dreamworks",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 876284747,
+                            "Package_id": "Dreamworks/Boss Baby - Matching Pairs",
+                            "Title": "Boss Baby - Matching Pairs",
+                            "Description": "Enjoy the exciting game Boss Baby - Matching Pairs!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Boss+Baby+-+Matching+Pairs/img/logo_cn.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Boss+Baby+-+Matching+Pairs/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Boss+Baby+-+Matching+Pairs/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Dreamworks"
+                            ],
+                            "title_ar": "بوس بيبي - مطابقة الأزواج",
+                            "description_ar": "استمتع باللعبة المثيرة Boss Baby - Matching Pairs!"
+                        },
+                        {
+                            "ID": 1777992040,
+                            "Package_id": "Dreamworks/Kung Fu Panda - Paw'Some Panda",
+                            "Title": "Kung Fu Panda - Paw'Some Panda",
+                            "Description": "Enjoy the exciting game Kung Fu Panda - Paw'Some Panda!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Kung+Fu+Panda+-+Paw'Some+Panda/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Kung+Fu+Panda+-+Paw'Some+Panda/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Dreamworks"
+                            ],
+                            "title_ar": "كونغ فو باندا - Paw'Some Panda",
+                            "description_ar": "استمتع باللعبة المثيرة Kung Fu Panda - Paw'Some Panda!"
+                        },
+                        {
+                            "ID": -962185849,
+                            "Package_id": "Dreamworks/The Adventures of Puss In Boots - Barrel Run",
+                            "Title": "The Adventures of Puss In Boots - Barrel Run",
+                            "Description": "Enjoy the exciting game The Adventures of Puss In Boots - Barrel Run!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/The+Adventures+of+Puss+In+Boots+-+Barrel+Run/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/The+Adventures+of+Puss+In+Boots+-+Barrel+Run/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Dreamworks"
+                            ],
+                            "title_ar": "مغامرات القط ذو الحذاء - سباق البراميل",
+                            "description_ar": "استمتع باللعبة المثيرة مغامرات القط ذو الحذاء - سباق البراميل!"
+                        },
+                        {
+                            "ID": -1919528616,
+                            "Package_id": "Dreamworks/The Adventures of Puss In Boots - Catch The Thief",
+                            "Title": "The Adventures of Puss In Boots - Catch The Thief",
+                            "Description": "Enjoy the exciting game The Adventures of Puss In Boots - Catch The Thief!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/The+Adventures+of+Puss+In+Boots+-+Catch+The+Thief/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/The+Adventures+of+Puss+In+Boots+-+Catch+The+Thief/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Dreamworks"
+                            ],
+                            "title_ar": "مغامرات القط ذو الحذاء - القبض على اللص",
+                            "description_ar": "استمتع باللعبة المثيرة مغامرات القط ذو الحذاء - القبض على اللص!"
+                        },
+                        {
+                            "ID": 1438985557,
+                            "Package_id": "Dreamworks/Trolls - Memory Match",
+                            "Title": "Trolls - Memory Match",
+                            "Description": "Enjoy the exciting game Trolls - Memory Match!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Trolls+-+Memory+Match/images/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Trolls+-+Memory+Match/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Dreamworks/Trolls+-+Memory+Match/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Dreamworks"
+                            ],
+                            "title_ar": "ترولز - مطابقة الذاكرة",
+                            "description_ar": "استمتع باللعبة المثيرة Trolls - Memory Match!"
+                        }
+                    ],
+                    "name_ar": "دريم ووركس"
+                },
+                {
+                    "Name": "Looney Tunes",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney Tunes/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -2125235140,
+                            "Package_id": "Looney Tunes/Looney Tunes (New) - Fearless Flier",
+                            "Title": "Looney Tunes (New) - Fearless Flier",
+                            "Description": "Enjoy the exciting game Looney Tunes (New) - Fearless Flier!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+(New)+-+Fearless+Flier/res/img/logo/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+(New)+-+Fearless+Flier/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+(New)+-+Fearless+Flier/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Looney Tunes"
+                            ],
+                            "title_ar": "لوني تونز (جديد) - فيرلس فلاير",
+                            "description_ar": "استمتع باللعبة المثيرة Looney Tunes (جديد) - Fearless Flier!"
+                        },
+                        {
+                            "ID": -2137164669,
+                            "Package_id": "Looney Tunes/Looney Tunes (New) - Snap!",
+                            "Title": "Looney Tunes (New) - Snap!",
+                            "Description": "Enjoy the exciting game Looney Tunes (New) - Snap!!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+(New)+-+Snap!/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+(New)+-+Snap!/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Looney Tunes"
+                            ],
+                            "title_ar": "لوني تونز (جديد) - سناب!",
+                            "description_ar": "استمتع باللعبة المثيرة Looney Tunes (جديد) - Snap!!"
+                        },
+                        {
+                            "ID": -377535281,
+                            "Package_id": "Looney Tunes/Looney Tunes - Acme Rocket Dash",
+                            "Title": "Looney Tunes - Acme Rocket Dash",
+                            "Description": "Enjoy the exciting game Looney Tunes - Acme Rocket Dash!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+-+Acme+Rocket+Dash/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+-+Acme+Rocket+Dash/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Looney Tunes"
+                            ],
+                            "title_ar": "لوني تونز - أكمي روكيت داش",
+                            "description_ar": "استمتع باللعبة المثيرة Looney Tunes - Acme Rocket Dash!"
+                        },
+                        {
+                            "ID": -1760938399,
+                            "Package_id": "Looney Tunes/Looney Tunes - Avalanche Snowboarding",
+                            "Title": "Looney Tunes - Avalanche Snowboarding",
+                            "Description": "Enjoy the exciting game Looney Tunes - Avalanche Snowboarding!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+-+Avalanche+Snowboarding/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+-+Avalanche+Snowboarding/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Looney Tunes"
+                            ],
+                            "title_ar": "لوني تونز - التزلج على الجليد",
+                            "description_ar": "استمتع باللعبة المثيرة Looney Tunes - Avalanche Snowboarding!"
+                        },
+                        {
+                            "ID": 1941778458,
+                            "Package_id": "Looney Tunes/Looney Tunes - Tweety Takes Off",
+                            "Title": "Looney Tunes - Tweety Takes Off",
+                            "Description": "Enjoy the exciting game Looney Tunes - Tweety Takes Off!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+-+Tweety+Takes+Off/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Looney+Tunes/Looney+Tunes+-+Tweety+Takes+Off/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Looney Tunes"
+                            ],
+                            "title_ar": "لوني تونز - تويتي ينطلق",
+                            "description_ar": "استمتع باللعبة المثيرة Looney Tunes - Tweety Takes Off!"
+                        }
+                    ],
+                    "name_ar": "لوني تونز"
+                },
+                {
+                    "Name": "Marvel",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 752255652,
+                            "Package_id": "Marvel/Marvel Avengers - Hydra Dash",
+                            "Title": "Marvel Avengers - Hydra Dash",
+                            "Description": "Enjoy the exciting game Marvel Avengers - Hydra Dash!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/Marvel+Avengers+-+Hydra+Dash/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/Marvel+Avengers+-+Hydra+Dash/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Marvel"
+                            ],
+                            "title_ar": "مارفل أفينجرز - هيدرا داش",
+                            "description_ar": "استمتع باللعبة المثيرة Marvel Avengers - Hydra Dash!"
+                        },
+                        {
+                            "ID": 1519859153,
+                            "Package_id": "Marvel/Spider-Man - Masked Missions",
+                            "Title": "Spider-Man - Masked Missions",
+                            "Description": "Enjoy the exciting game Spider-Man - Masked Missions!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/Spider-Man+-+Masked+Missions/assets/mainassets/hud/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/Spider-Man+-+Masked+Missions/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/Spider-Man+-+Masked+Missions/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Marvel"
+                            ],
+                            "title_ar": "سبايدر مان - مهمات مقنعة",
+                            "description_ar": "استمتع باللعبة المثيرة Spider-Man - Masked Missions!"
+                        },
+                        {
+                            "ID": 1260782299,
+                            "Package_id": "Marvel/Spider-Man - Mysterio Rush",
+                            "Title": "Spider-Man - Mysterio Rush",
+                            "Description": "Enjoy the exciting game Spider-Man - Mysterio Rush!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/Spider-Man+-+Mysterio+Rush/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/Spider-Man+-+Mysterio+Rush/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Marvel"
+                            ],
+                            "title_ar": "سبايدر مان - ميستيريو راش",
+                            "description_ar": "استمتع باللعبة المثيرة Spider-Man - Mysterio Rush!"
+                        },
+                        {
+                            "ID": 1880163173,
+                            "Package_id": "Marvel/The Incredible Hulk - Chitauri Takedown",
+                            "Title": "The Incredible Hulk - Chitauri Takedown",
+                            "Description": "Enjoy the exciting game The Incredible Hulk - Chitauri Takedown!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/The+Incredible+Hulk+-+Chitauri+Takedown/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Marvel/The+Incredible+Hulk+-+Chitauri+Takedown/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Marvel"
+                            ],
+                            "title_ar": "الهيكل المذهل - تشيتوري تاك داون",
+                            "description_ar": "استمتع باللعبة المثيرة The Incredible Hulk - Chitauri Takedown!"
+                        }
+                    ],
+                    "name_ar": "أعجوبة"
+                },
+                {
+                    "Name": "Mr. Bean",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr. Bean/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 1213287308,
+                            "Package_id": "Mr. Bean/Mr. Bean - Backyard Junk",
+                            "Title": "Mr. Bean - Backyard Junk",
+                            "Description": "Enjoy the exciting game Mr. Bean - Backyard Junk!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Backyard+Junk/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Backyard+Junk/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Mr. Bean"
+                            ],
+                            "title_ar": "السيد بين - خردة الفناء الخلفي",
+                            "description_ar": "استمتع باللعبة المثيرة Mr. Bean - Backyard Junk!"
+                        },
+                        {
+                            "ID": -731425382,
+                            "Package_id": "Mr. Bean/Mr. Bean - Bean Skidding",
+                            "Title": "Mr. Bean - Bean Skidding",
+                            "Description": "Enjoy the exciting game Mr. Bean - Bean Skidding!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Bean+Skidding/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Bean+Skidding/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Mr. Bean"
+                            ],
+                            "title_ar": "السيد بين - بين سكيدينج",
+                            "description_ar": "استمتع باللعبة المثيرة Mr. Bean - Bean Skidding!"
+                        },
+                        {
+                            "ID": 982946212,
+                            "Package_id": "Mr. Bean/Mr. Bean - Goldfish Loopy Loopy",
+                            "Title": "Mr. Bean - Goldfish Loopy Loopy",
+                            "Description": "Enjoy the exciting game Mr. Bean - Goldfish Loopy Loopy!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Goldfish+Loopy+Loopy/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Goldfish+Loopy+Loopy/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Mr. Bean"
+                            ],
+                            "title_ar": "السيد بين - السمكة الذهبية لوبي لوبي",
+                            "description_ar": "استمتع باللعبة المثيرة Mr. Bean - Goldfish Loopy Loopy!"
+                        },
+                        {
+                            "ID": 1448965991,
+                            "Package_id": "Mr. Bean/Mr. Bean - Matching Pairs",
+                            "Title": "Mr. Bean - Matching Pairs",
+                            "Description": "Enjoy the exciting game Mr. Bean - Matching Pairs!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Matching+Pairs/img/logo_cn.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Matching+Pairs/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Mr.+Bean/Mr.+Bean+-+Matching+Pairs/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Mr. Bean"
+                            ],
+                            "title_ar": "السيد بين - مطابقة الأزواج",
+                            "description_ar": "استمتع باللعبة المثيرة Mr. Bean - Matching Pairs!"
+                        }
+                    ],
+                    "name_ar": "السيد بين"
+                },
+                {
+                    "Name": "Nickelodeon",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -460209788,
+                            "Package_id": "Nickelodeon/Nick Baseball Stars",
+                            "Title": "Nick Baseball Stars",
+                            "Description": "Enjoy the exciting game Nick Baseball Stars!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Baseball+Stars/assets/ui_title/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Baseball+Stars/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Baseball+Stars/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "نيك نجوم البيسبول",
+                            "description_ar": "استمتع باللعبة المثيرة Nick Baseball Stars!"
+                        },
+                        {
+                            "ID": -2000993210,
+                            "Package_id": "Nickelodeon/Nick Racing Stars",
+                            "Title": "Nick Racing Stars",
+                            "Description": "Enjoy the exciting game Nick Racing Stars!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Racing+Stars/assets/ui_character/logo_alvins.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Racing+Stars/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Racing+Stars/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "نيك راسينغ ستارز",
+                            "description_ar": "استمتع باللعبة المثيرة Nick Racing Stars!"
+                        },
+                        {
+                            "ID": -1985907571,
+                            "Package_id": "Nickelodeon/Nick Soccer Stars 2",
+                            "Title": "Nick Soccer Stars 2",
+                            "Description": "Enjoy the exciting game Nick Soccer Stars 2!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Soccer+Stars+2/assets/ui/title/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Soccer+Stars+2/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Soccer+Stars+2/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "نيك نجوم كرة القدم 2",
+                            "description_ar": "استمتع باللعبة المثيرة Nick Soccer Stars 2!"
+                        },
+                        {
+                            "ID": 1635292580,
+                            "Package_id": "Nickelodeon/Nick Summer Sports Stars",
+                            "Title": "Nick Summer Sports Stars",
+                            "Description": "Enjoy the exciting game Nick Summer Sports Stars!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Summer+Sports+Stars/assets/ui/shared/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Summer+Sports+Stars/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nick+Summer+Sports+Stars/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "نيك نجوم الرياضة الصيفية",
+                            "description_ar": "استمتع باللعبة المثيرة Nick Summer Sports Stars!"
+                        },
+                        {
+                            "ID": 661228190,
+                            "Package_id": "Nickelodeon/Nickelodeon - Capture The Slime",
+                            "Title": "Nickelodeon - Capture The Slime",
+                            "Description": "Enjoy the exciting game Nickelodeon - Capture The Slime!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+-+Capture+The+Slime/assets/mainassets/screens/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+-+Capture+The+Slime/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+-+Capture+The+Slime/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "نيكلوديون - التقاط الوحل",
+                            "description_ar": "استمتع باللعبة المثيرة Nickelodeon - Capture The Slime!"
+                        },
+                        {
+                            "ID": -535240827,
+                            "Package_id": "Nickelodeon/Nickelodeon Basketball Stars 3",
+                            "Title": "Nickelodeon Basketball Stars 3",
+                            "Description": "Enjoy the exciting game Nickelodeon Basketball Stars 3!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Basketball+Stars+3/assets/bootstrap/images/logo152x152.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Basketball+Stars+3/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Basketball+Stars+3/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "نجوم كرة السلة نيكلوديون 3",
+                            "description_ar": "استمتع باللعبة المثيرة Nickelodeon Basketball Stars 3!"
+                        },
+                        {
+                            "ID": 1585232632,
+                            "Package_id": "Nickelodeon/Nickelodeon Cooking Contest",
+                            "Title": "Nickelodeon Cooking Contest",
+                            "Description": "Enjoy the exciting game Nickelodeon Cooking Contest!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Cooking+Contest/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Cooking+Contest/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "مسابقة الطبخ على قناة نيكلوديون",
+                            "description_ar": "استمتع بلعبة Nickelodeon Cooking Contest المثيرة!"
+                        },
+                        {
+                            "ID": 820159834,
+                            "Package_id": "Nickelodeon/Nickelodeon Hall Of Games",
+                            "Title": "Nickelodeon Hall Of Games",
+                            "Description": "Enjoy the exciting game Nickelodeon Hall Of Games!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Hall+Of+Games/assets/backtoschool/title/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Hall+Of+Games/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Hall+Of+Games/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "قاعة ألعاب نيكلوديون",
+                            "description_ar": "استمتع باللعبة المثيرة Nickelodeon Hall Of Games!"
+                        },
+                        {
+                            "ID": 637958881,
+                            "Package_id": "Nickelodeon/Nickelodeon Hardest Game Ever",
+                            "Title": "Nickelodeon Hardest Game Ever",
+                            "Description": "Enjoy the exciting game Nickelodeon Hardest Game Ever!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Hardest+Game+Ever/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Hardest+Game+Ever/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "أصعب لعبة على الإطلاق من نيكلوديون",
+                            "description_ar": "استمتع باللعبة المثيرة Nickelodeon Hardest Game Ever!"
+                        },
+                        {
+                            "ID": 999169445,
+                            "Package_id": "Nickelodeon/Nickelodeon Ultimate Mini-Golf Universe",
+                            "Title": "Nickelodeon Ultimate Mini-Golf Universe",
+                            "Description": "Enjoy the exciting game Nickelodeon Ultimate Mini-Golf Universe!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Ultimate+Mini-Golf+Universe/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Nickelodeon/Nickelodeon+Ultimate+Mini-Golf+Universe/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Nickelodeon"
+                            ],
+                            "title_ar": "عالم نيكلوديون للجولف المصغر",
+                            "description_ar": "استمتع باللعبة المثيرة Nickelodeon Ultimate Mini-Golf Universe!"
+                        }
+                    ],
+                    "name_ar": "نيكلوديون"
+                },
+                {
+                    "Name": "Scooby-Doo",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -1277374855,
+                            "Package_id": "Scooby-Doo/Be Cool Scooby-Doo! Sandwich Tower",
+                            "Title": "Be Cool Scooby-Doo! Sandwich Tower",
+                            "Description": "Enjoy the exciting game Be Cool Scooby-Doo! Sandwich Tower!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Be+Cool+Scooby-Doo!+Sandwich+Tower/images/logojuego-sheet0.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Be+Cool+Scooby-Doo!+Sandwich+Tower/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Be+Cool+Scooby-Doo!+Sandwich+Tower/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Scooby-Doo"
+                            ],
+                            "title_ar": "كن هادئًا يا سكوبي دو! برج الساندويتش",
+                            "description_ar": "استمتع بلعبة Be Cool Scooby-Doo! Sandwich Tower المثيرة!"
+                        },
+                        {
+                            "ID": -475465033,
+                            "Package_id": "Scooby-Doo/Scooby Doo - Drop'em Scooby",
+                            "Title": "Scooby Doo - Drop'em Scooby",
+                            "Description": "Enjoy the exciting game Scooby Doo - Drop'em Scooby!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby+Doo+-+Drop'em+Scooby/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby+Doo+-+Drop'em+Scooby/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Scooby-Doo"
+                            ],
+                            "title_ar": "سكوبي دو - أسقطهم سكوبي",
+                            "description_ar": "استمتع باللعبة المثيرة Scooby Doo - Drop'em Scooby!"
+                        },
+                        {
+                            "ID": 2122201172,
+                            "Package_id": "Scooby-Doo/Scooby-Doo - Downhill Dash 2",
+                            "Title": "Scooby-Doo - Downhill Dash 2",
+                            "Description": "Enjoy the exciting game Scooby-Doo - Downhill Dash 2!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby-Doo+-+Downhill+Dash+2/assets/images/logo.json",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby-Doo+-+Downhill+Dash+2/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby-Doo+-+Downhill+Dash+2/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Scooby-Doo"
+                            ],
+                            "title_ar": "سكوبي دو - داونهيل داش 2",
+                            "description_ar": "استمتع باللعبة المثيرة Scooby-Doo - Downhill Dash 2!"
+                        },
+                        {
+                            "ID": -320904672,
+                            "Package_id": "Scooby-Doo/Scooby-Doo - Hallway Mayhem",
+                            "Title": "Scooby-Doo - Hallway Mayhem",
+                            "Description": "Enjoy the exciting game Scooby-Doo - Hallway Mayhem!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby-Doo+-+Hallway+Mayhem/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby-Doo+-+Hallway+Mayhem/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Scooby-Doo"
+                            ],
+                            "title_ar": "سكوبي دو - فوضى القاعة",
+                            "description_ar": "استمتع باللعبة المثيرة Scooby-Doo - Hallway Mayhem!"
+                        },
+                        {
+                            "ID": -1695643754,
+                            "Package_id": "Scooby-Doo/Scooby-Doo - Search 'N Scare",
+                            "Title": "Scooby-Doo - Search 'N Scare",
+                            "Description": "Enjoy the exciting game Scooby-Doo - Search 'N Scare!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby-Doo+-+Search+'N+Scare/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Scooby-Doo/Scooby-Doo+-+Search+'N+Scare/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Scooby-Doo"
+                            ],
+                            "title_ar": "سكوبي دو - ابحث و رعب",
+                            "description_ar": "استمتع باللعبة المثيرة Scooby-Doo - Search 'N Scare!"
+                        }
+                    ],
+                    "name_ar": "سكوبي دو"
+                },
+                {
+                    "Name": "SpongeBob SquarePants",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob SquarePants/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -1980392825,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Beachy Keen!",
+                            "Title": "SpongeBob SquarePants - Beachy Keen!",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Beachy Keen!!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Beachy+Keen!/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Beachy+Keen!/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Beachy+Keen!/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - بيتشي كين!",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - بيتشي كين!!"
+                        },
+                        {
+                            "ID": -1665540041,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Bikini Bottom Button Bash",
+                            "Title": "SpongeBob SquarePants - Bikini Bottom Button Bash",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Bikini Bottom Button Bash!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Bikini+Bottom+Button+Bash/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Bikini+Bottom+Button+Bash/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Bikini+Bottom+Button+Bash/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - حفلة أزرار أسفل البكيني",
+                            "description_ar": "استمتع باللعبة المثيرة SpongeBob SquarePants - Bikini Bottom Button Bash!"
+                        },
+                        {
+                            "ID": 893653528,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Lost Treasures",
+                            "Title": "SpongeBob SquarePants - Lost Treasures",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Lost Treasures!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Lost+Treasures/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Lost+Treasures/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Lost+Treasures/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - الكنوز المفقودة",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - الكنوز المفقودة!"
+                        },
+                        {
+                            "ID": -1897586957,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Monster Island Adventures",
+                            "Title": "SpongeBob SquarePants - Monster Island Adventures",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Monster Island Adventures!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Monster+Island+Adventures/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Monster+Island+Adventures/en/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - مغامرات جزيرة الوحوش",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - مغامرات جزيرة الوحوش!"
+                        },
+                        {
+                            "ID": -351937948,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Monster Island",
+                            "Title": "SpongeBob SquarePants - Monster Island",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Monster Island!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Monster+Island/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Monster+Island/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - جزيرة الوحوش",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - جزيرة الوحوش!"
+                        },
+                        {
+                            "ID": -1635861805,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Sandy's Sponge Stacker",
+                            "Title": "SpongeBob SquarePants - Sandy's Sponge Stacker",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Sandy's Sponge Stacker!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Sandy's+Sponge+Stacker/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Sandy's+Sponge+Stacker/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Sandy's+Sponge+Stacker/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - لعبة تركيب الإسفنج الخاصة بساندي",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - سبونج ستاكر ساندي!"
+                        },
+                        {
+                            "ID": -1665521340,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Tasty Pastry Party",
+                            "Title": "SpongeBob SquarePants - Tasty Pastry Party",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Tasty Pastry Party!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Tasty+Pastry+Party/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Tasty+Pastry+Party/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - حفلة معجنات لذيذة",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - حفلة المعجنات اللذيذة!"
+                        },
+                        {
+                            "ID": -1373628312,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - The Ultimate Krabby Patty Challenge",
+                            "Title": "SpongeBob SquarePants - The Ultimate Krabby Patty Challenge",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - The Ultimate Krabby Patty Challenge!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+The+Ultimate+Krabby+Patty+Challenge/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+The+Ultimate+Krabby+Patty+Challenge/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - تحدي كرابي باتي النهائي",
+                            "description_ar": "استمتع باللعبة المثيرة SpongeBob SquarePants - The Ultimate Krabby Patty Challenge!"
+                        },
+                        {
+                            "ID": 2123613934,
+                            "Package_id": "SpongeBob SquarePants/SpongeBob SquarePants - Tighty Whitey Tumble",
+                            "Title": "SpongeBob SquarePants - Tighty Whitey Tumble",
+                            "Description": "Enjoy the exciting game SpongeBob SquarePants - Tighty Whitey Tumble!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Tighty+Whitey+Tumble/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/SpongeBob+SquarePants+-+Tighty+Whitey+Tumble/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - تايتي وايتي تمبل",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - تايتي وايتي تامبل!"
+                        },
+                        {
+                            "ID": 1670910247,
+                            "Package_id": "SpongeBob SquarePants/Spongebob SquarePants - Word Blocks",
+                            "Title": "Spongebob SquarePants - Word Blocks",
+                            "Description": "Enjoy the exciting game Spongebob SquarePants - Word Blocks!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/Spongebob+SquarePants+-+Word+Blocks/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/SpongeBob+SquarePants/Spongebob+SquarePants+-+Word+Blocks/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "SpongeBob SquarePants"
+                            ],
+                            "title_ar": "سبونج بوب سكوير بانتس - مكعبات الكلمات",
+                            "description_ar": "استمتع باللعبة المثيرة سبونج بوب سكوير بانتس - كلمات بلوك!"
+                        }
+                    ],
+                    "name_ar": "سبونج بوب سكوير بانتس"
+                },
+                {
+                    "Name": "Star Wars",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star Wars/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -2141822979,
+                            "Package_id": "Star Wars/LEGO Star Wars Battle Run",
+                            "Title": "LEGO Star Wars Battle Run",
+                            "Description": "Enjoy the exciting game LEGO Star Wars Battle Run!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/LEGO+Star+Wars+Battle+Run/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/LEGO+Star+Wars+Battle+Run/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Star Wars"
+                            ],
+                            "title_ar": "ليغو حرب النجوم معركة ران",
+                            "description_ar": "استمتع باللعبة المثيرة LEGO Star Wars Battle Run!"
+                        },
+                        {
+                            "ID": 501945739,
+                            "Package_id": "Star Wars/Star Wars Arcade",
+                            "Title": "Star Wars Arcade",
+                            "Description": "Enjoy the exciting game Star Wars Arcade!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Arcade/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Arcade/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Star Wars"
+                            ],
+                            "title_ar": "حرب النجوم أركيد",
+                            "description_ar": "استمتع باللعبة المثيرة Star Wars Arcade!"
+                        },
+                        {
+                            "ID": -713008327,
+                            "Package_id": "Star Wars/Star Wars Rebels - Chopper Chase",
+                            "Title": "Star Wars Rebels - Chopper Chase",
+                            "Description": "Enjoy the exciting game Star Wars Rebels - Chopper Chase!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rebels+-+Chopper+Chase/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rebels+-+Chopper+Chase/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Star Wars"
+                            ],
+                            "title_ar": "حرب النجوم المتمردون - مطاردة المروحية",
+                            "description_ar": "استمتع باللعبة المثيرة Star Wars Rebels - Chopper Chase!"
+                        },
+                        {
+                            "ID": -1037326006,
+                            "Package_id": "Star Wars/Star Wars Rebels - Special Ops",
+                            "Title": "Star Wars Rebels - Special Ops",
+                            "Description": "Enjoy the exciting game Star Wars Rebels - Special Ops!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rebels+-+Special+Ops/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rebels+-+Special+Ops/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Star Wars"
+                            ],
+                            "title_ar": "حرب النجوم المتمردون - العمليات الخاصة",
+                            "description_ar": "استمتع باللعبة المثيرة Star Wars Rebels - Special Ops!"
+                        },
+                        {
+                            "ID": 639949324,
+                            "Package_id": "Star Wars/Star Wars Rebels - Team Tactics",
+                            "Title": "Star Wars Rebels - Team Tactics",
+                            "Description": "Enjoy the exciting game Star Wars Rebels - Team Tactics!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rebels+-+Team+Tactics/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rebels+-+Team+Tactics/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Star Wars"
+                            ],
+                            "title_ar": "حرب النجوم المتمردون - تكتيكات الفريق",
+                            "description_ar": "استمتع باللعبة المثيرة Star Wars Rebels - Team Tactics!"
+                        },
+                        {
+                            "ID": -824721967,
+                            "Package_id": "Star Wars/Star Wars Rogue One - Boots On The Ground",
+                            "Title": "Star Wars Rogue One - Boots On The Ground",
+                            "Description": "Enjoy the exciting game Star Wars Rogue One - Boots On The Ground!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rogue+One+-+Boots+On+The+Ground/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/Star+Wars+Rogue+One+-+Boots+On+The+Ground/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Star Wars"
+                            ],
+                            "title_ar": "حرب النجوم روج ون - أحذية على الأرض",
+                            "description_ar": "استمتع باللعبة المثيرة Star Wars Rogue One - Boots On The Ground!"
+                        },
+                        {
+                            "ID": 1296322184,
+                            "Package_id": "Star Wars/X-Wing Fighter",
+                            "Title": "X-Wing Fighter",
+                            "Description": "Enjoy the exciting game X-Wing Fighter!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/X-Wing+Fighter/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Star+Wars/X-Wing+Fighter/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Star Wars"
+                            ],
+                            "title_ar": "مقاتلة إكس وينج",
+                            "description_ar": "استمتع باللعبة المثيرة X-Wing Fighter!"
+                        }
+                    ],
+                    "name_ar": "حرب النجوم"
+                },
+                {
+                    "Name": "Teenage Mutant Ninja Turtles",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage Mutant Ninja Turtles/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 460633274,
+                            "Package_id": "Teenage Mutant Ninja Turtles/Power Rangers vs Teenage Mutant Ninja Turtles - Ultimate Hero Clash 2",
+                            "Title": "Power Rangers vs Teenage Mutant Ninja Turtles - Ultimate Hero Clash 2",
+                            "Description": "Enjoy the exciting game Power Rangers vs Teenage Mutant Ninja Turtles - Ultimate Hero Clash 2!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Power+Rangers+vs+Teenage+Mutant+Ninja+Turtles+-+Ultimate+Hero+Clash+2/assets/mainassets/screens/modeselect/logo_pr.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Power+Rangers+vs+Teenage+Mutant+Ninja+Turtles+-+Ultimate+Hero+Clash+2/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Power+Rangers+vs+Teenage+Mutant+Ninja+Turtles+-+Ultimate+Hero+Clash+2/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Teenage Mutant Ninja Turtles"
+                            ],
+                            "title_ar": "باور رينجرز ضد سلاحف النينجا - Ultimate Hero Clash 2",
+                            "description_ar": "استمتع باللعبة المثيرة Power Rangers vs Teenage Mutant Ninja Turtles - Ultimate Hero Clash 2!"
+                        },
+                        {
+                            "ID": -1302591690,
+                            "Package_id": "Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles (Rise of) - Bumper Bros",
+                            "Title": "Teenage Mutant Ninja Turtles (Rise of) - Bumper Bros",
+                            "Description": "Enjoy the exciting game Teenage Mutant Ninja Turtles (Rise of) - Bumper Bros!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+(Rise+of)+-+Bumper+Bros/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+(Rise+of)+-+Bumper+Bros/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Teenage Mutant Ninja Turtles"
+                            ],
+                            "title_ar": "سلاحف النينجا المراهقة المتحولة (صعود) - Bumper Bros",
+                            "description_ar": "استمتع باللعبة المثيرة Teenage Mutant Ninja Turtles (Rise of) - Bumper Bros!"
+                        },
+                        {
+                            "ID": 878264331,
+                            "Package_id": "Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles (Rise of) - City Showdown",
+                            "Title": "Teenage Mutant Ninja Turtles (Rise of) - City Showdown",
+                            "Description": "Enjoy the exciting game Teenage Mutant Ninja Turtles (Rise of) - City Showdown!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+(Rise+of)+-+City+Showdown/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+(Rise+of)+-+City+Showdown/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Teenage Mutant Ninja Turtles"
+                            ],
+                            "title_ar": "سلاحف النينجا المراهقة المتحولة (صعود) - مواجهة المدينة",
+                            "description_ar": "استمتع باللعبة المثيرة Teenage Mutant Ninja Turtles (Rise of) - City Showdown!"
+                        },
+                        {
+                            "ID": 1320350929,
+                            "Package_id": "Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles - Build'N Battle",
+                            "Title": "Teenage Mutant Ninja Turtles - Build'N Battle",
+                            "Description": "Enjoy the exciting game Teenage Mutant Ninja Turtles - Build'N Battle!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Build'N+Battle/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Build'N+Battle/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Build'N+Battle/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Teenage Mutant Ninja Turtles"
+                            ],
+                            "title_ar": "سلاحف النينجا المراهقة المتحولة - بناء المعركة",
+                            "description_ar": "استمتع باللعبة المثيرة Teenage Mutant Ninja Turtles - Build'N Battle!"
+                        },
+                        {
+                            "ID": 218030383,
+                            "Package_id": "Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles - Pizza Quest",
+                            "Title": "Teenage Mutant Ninja Turtles - Pizza Quest",
+                            "Description": "Enjoy the exciting game Teenage Mutant Ninja Turtles - Pizza Quest!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Pizza+Quest/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Pizza+Quest/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Pizza+Quest/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Teenage Mutant Ninja Turtles"
+                            ],
+                            "title_ar": "سلاحف النينجا المراهقة المتحولة - مهمة البيتزا",
+                            "description_ar": "استمتع باللعبة المثيرة Teenage Mutant Ninja Turtles - Pizza Quest!"
+                        },
+                        {
+                            "ID": 1614494531,
+                            "Package_id": "Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles - Test Your Teenage Turtle Trivia",
+                            "Title": "Teenage Mutant Ninja Turtles - Test Your Teenage Turtle Trivia",
+                            "Description": "Enjoy the exciting game Teenage Mutant Ninja Turtles - Test Your Teenage Turtle Trivia!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Test+Your+Teenage+Turtle+Trivia/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Test+Your+Teenage+Turtle+Trivia/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Test+Your+Teenage+Turtle+Trivia/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Teenage Mutant Ninja Turtles"
+                            ],
+                            "title_ar": "سلاحف النينجا المراهقة المتحولة - اختبر معلوماتك عن السلاحف المراهقة",
+                            "description_ar": "استمتع باللعبة المثيرة Teenage Mutant Ninja Turtles - اختبر معلوماتك عن السلاحف المراهقة!"
+                        },
+                        {
+                            "ID": 2135793430,
+                            "Package_id": "Teenage Mutant Ninja Turtles/Teenage Mutant Ninja Turtles - Totally Turtles",
+                            "Title": "Teenage Mutant Ninja Turtles - Totally Turtles",
+                            "Description": "Enjoy the exciting game Teenage Mutant Ninja Turtles - Totally Turtles!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Totally+Turtles/assets/preloader/logo.webp",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Totally+Turtles/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Teenage+Mutant+Ninja+Turtles/Teenage+Mutant+Ninja+Turtles+-+Totally+Turtles/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Teenage Mutant Ninja Turtles"
+                            ],
+                            "title_ar": "سلاحف النينجا المراهقة المتحولة - سلاحف كاملة",
+                            "description_ar": "استمتع باللعبة المثيرة Teenage Mutant Ninja Turtles - Totally Turtles!"
+                        }
+                    ],
+                    "name_ar": "سلاحف النينجا المراهقة المتحولة"
+                },
+                {
+                    "Name": "The Amazing World of Gumball",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/The Amazing World of Gumball/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 1559689167,
+                            "Package_id": "The Amazing World of Gumball/Gumball - Disc Duel",
+                            "Title": "Gumball - Disc Duel",
+                            "Description": "Enjoy the exciting game Gumball - Disc Duel!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Disc+Duel/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Disc+Duel/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Amazing World of Gumball"
+                            ],
+                            "title_ar": "غامبول - مبارزة القرص",
+                            "description_ar": "استمتع باللعبة المثيرة Gumball - Disc Duel!"
+                        },
+                        {
+                            "ID": -2100056049,
+                            "Package_id": "The Amazing World of Gumball/Gumball - Downhill Dash",
+                            "Title": "Gumball - Downhill Dash",
+                            "Description": "Enjoy the exciting game Gumball - Downhill Dash!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Downhill+Dash/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Downhill+Dash/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Amazing World of Gumball"
+                            ],
+                            "title_ar": "غامبول - داونهيل داش",
+                            "description_ar": "استمتع باللعبة المثيرة Gumball - Downhill Dash!"
+                        },
+                        {
+                            "ID": 432454461,
+                            "Package_id": "The Amazing World of Gumball/Gumball - Go Long!",
+                            "Title": "Gumball - Go Long!",
+                            "Description": "Enjoy the exciting game Gumball - Go Long!!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Go+Long!/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Go+Long!/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Amazing World of Gumball"
+                            ],
+                            "title_ar": "غامبول - اذهب طويلًا!",
+                            "description_ar": "استمتع باللعبة المثيرة غامبول - جو لونج!!"
+                        },
+                        {
+                            "ID": 1635152878,
+                            "Package_id": "The Amazing World of Gumball/Gumball - Tension in Detention",
+                            "Title": "Gumball - Tension in Detention",
+                            "Description": "Enjoy the exciting game Gumball - Tension in Detention!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Tension+in+Detention/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Tension+in+Detention/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Amazing+World+of+Gumball/Gumball+-+Tension+in+Detention/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Amazing World of Gumball"
+                            ],
+                            "title_ar": "غامبول - التوتر في الاحتجاز",
+                            "description_ar": "استمتع باللعبة المثيرة غامبول - التوتر في الاحتجاز!"
+                        }
+                    ],
+                    "name_ar": "عالم غامبول المدهش"
+                },
+                {
+                    "Name": "The Loud House",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/The Loud House/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 1731250537,
+                            "Package_id": "The Loud House/The Loud House - Ace Savvy on the Case",
+                            "Title": "The Loud House - Ace Savvy on the Case",
+                            "Description": "Enjoy the exciting game The Loud House - Ace Savvy on the Case!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Ace+Savvy+on+the+Case/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Ace+Savvy+on+the+Case/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Ace+Savvy+on+the+Case/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Loud House"
+                            ],
+                            "title_ar": "البيت الصاخب - خبير في القضية",
+                            "description_ar": "استمتع باللعبة المثيرة The Loud House - Ace Savvy on the Case!"
+                        },
+                        {
+                            "ID": 781343233,
+                            "Package_id": "The Loud House/The Loud House - Are You Naughty or Nice",
+                            "Title": "The Loud House - Are You Naughty or Nice",
+                            "Description": "Enjoy the exciting game The Loud House - Are You Naughty or Nice!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Are+You+Naughty+or+Nice/logo_w_bg.jpg",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Are+You+Naughty+or+Nice/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Are+You+Naughty+or+Nice/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Loud House"
+                            ],
+                            "title_ar": "البيت الصاخب - هل أنت شقي أم لطيف؟",
+                            "description_ar": "استمتع باللعبة المثيرة The Loud House - هل أنت شقي أم لطيف!"
+                        },
+                        {
+                            "ID": 1233423702,
+                            "Package_id": "The Loud House/The Loud House - Linc In Charge Loud Laundry",
+                            "Title": "The Loud House - Linc In Charge Loud Laundry",
+                            "Description": "Enjoy the exciting game The Loud House - Linc In Charge Loud Laundry!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Linc+In+Charge+Loud+Laundry/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Linc+In+Charge+Loud+Laundry/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Linc+In+Charge+Loud+Laundry/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Loud House"
+                            ],
+                            "title_ar": "البيت الصاخب - لينك المسؤول عن الغسيل الصاخب",
+                            "description_ar": "استمتع باللعبة المثيرة The Loud House - Linc In Charge Loud Laundry!"
+                        },
+                        {
+                            "ID": -645951485,
+                            "Package_id": "The Loud House/The Loud House - Rockin' Out Loud",
+                            "Title": "The Loud House - Rockin' Out Loud",
+                            "Description": "Enjoy the exciting game The Loud House - Rockin' Out Loud!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Rockin'+Out+Loud/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Rockin'+Out+Loud/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Loud House"
+                            ],
+                            "title_ar": "ذا لاود هاوس - روكين آوت لاود",
+                            "description_ar": "استمتع باللعبة المثيرة The Loud House - Rockin' Out Loud!"
+                        },
+                        {
+                            "ID": 1976666181,
+                            "Package_id": "The Loud House/The Loud House - Surprise Party Living Loud",
+                            "Title": "The Loud House - Surprise Party Living Loud",
+                            "Description": "Enjoy the exciting game The Loud House - Surprise Party Living Loud!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Surprise+Party+Living+Loud/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Surprise+Party+Living+Loud/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Surprise+Party+Living+Loud/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Loud House"
+                            ],
+                            "title_ar": "البيت الصاخب - حفلة مفاجئة عيش بصوت عالٍ",
+                            "description_ar": "استمتع باللعبة المثيرة The Loud House - Surprise Party Living Loud!"
+                        },
+                        {
+                            "ID": 545979995,
+                            "Package_id": "The Loud House/The Loud House - Surprise Party",
+                            "Title": "The Loud House - Surprise Party",
+                            "Description": "Enjoy the exciting game The Loud House - Surprise Party!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Surprise+Party/src/assets/images/scenes/logo_large.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Surprise+Party/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Loud+House/The+Loud+House+-+Surprise+Party/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Loud House"
+                            ],
+                            "title_ar": "البيت الصاخب - حفلة مفاجئة",
+                            "description_ar": "استمتع باللعبة المثيرة The Loud House - Surprise Party!"
+                        }
+                    ],
+                    "name_ar": "البيت الصاخب"
+                },
+                {
+                    "Name": "The Smurfs",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/The Smurfs/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": 127937713,
+                            "Package_id": "The Smurfs/The Smurfs - Counting Game",
+                            "Title": "The Smurfs - Counting Game",
+                            "Description": "Enjoy the exciting game The Smurfs - Counting Game!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Counting+Game/images/logo-sheet0.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Counting+Game/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Counting+Game/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Smurfs"
+                            ],
+                            "title_ar": "السنافر - لعبة العد",
+                            "description_ar": "استمتع باللعبة المثيرة The Smurfs - Counting Game!"
+                        },
+                        {
+                            "ID": -41036570,
+                            "Package_id": "The Smurfs/The Smurfs - Learn With The Smurfs",
+                            "Title": "The Smurfs - Learn With The Smurfs",
+                            "Description": "Enjoy the exciting game The Smurfs - Learn With The Smurfs!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Learn+With+The+Smurfs/images/logo-sheet0.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Learn+With+The+Smurfs/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Learn+With+The+Smurfs/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Smurfs"
+                            ],
+                            "title_ar": "السنافر - تعلم مع السنافر",
+                            "description_ar": "استمتع باللعبة المثيرة السنافر - تعلم مع السنافر!"
+                        },
+                        {
+                            "ID": -1742507228,
+                            "Package_id": "The Smurfs/The Smurfs - Music Game",
+                            "Title": "The Smurfs - Music Game",
+                            "Description": "Enjoy the exciting game The Smurfs - Music Game!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Music+Game/images/logosmurf-sheet0.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Music+Game/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Music+Game/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Smurfs"
+                            ],
+                            "title_ar": "السنافر - لعبة الموسيقى",
+                            "description_ar": "استمتع باللعبة المثيرة The Smurfs - Music Game!"
+                        },
+                        {
+                            "ID": 1491415228,
+                            "Package_id": "The Smurfs/The Smurfs - Penalty Shout-Out",
+                            "Title": "The Smurfs - Penalty Shout-Out",
+                            "Description": "Enjoy the exciting game The Smurfs - Penalty Shout-Out!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Penalty+Shout-Out/images/logo-sheet0.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Penalty+Shout-Out/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Penalty+Shout-Out/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Smurfs"
+                            ],
+                            "title_ar": "السنافر - صرخة جزاء",
+                            "description_ar": "استمتع باللعبة المثيرة The Smurfs - Penalty Shout-Out!"
+                        },
+                        {
+                            "ID": 452707822,
+                            "Package_id": "The Smurfs/The Smurfs - Smurfberries' Drop",
+                            "Title": "The Smurfs - Smurfberries' Drop",
+                            "Description": "Enjoy the exciting game The Smurfs - Smurfberries' Drop!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfberries'+Drop/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfberries'+Drop/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Smurfs"
+                            ],
+                            "title_ar": "السنافر - سقوط توت السنافر",
+                            "description_ar": "استمتع باللعبة المثيرة The Smurfs - Smurfberries' Drop!"
+                        },
+                        {
+                            "ID": -1888036480,
+                            "Package_id": "The Smurfs/The Smurfs - Smurfy Coloring",
+                            "Title": "The Smurfs - Smurfy Coloring",
+                            "Description": "Enjoy the exciting game The Smurfs - Smurfy Coloring!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfy+Coloring/images/logocoloring-sheet0.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfy+Coloring/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfy+Coloring/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Smurfs"
+                            ],
+                            "title_ar": "السنافر - تلوين السنافر",
+                            "description_ar": "استمتع باللعبة المثيرة The Smurfs - Smurfy Coloring!"
+                        },
+                        {
+                            "ID": 1813527924,
+                            "Package_id": "The Smurfs/The Smurfs - Smurfy Snowboard",
+                            "Title": "The Smurfs - Smurfy Snowboard",
+                            "Description": "Enjoy the exciting game The Smurfs - Smurfy Snowboard!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfy+Snowboard/images/logosmurfy-sheet0.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfy+Snowboard/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/The+Smurfs/The+Smurfs+-+Smurfy+Snowboard/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "The Smurfs"
+                            ],
+                            "title_ar": "السنافر - لوح التزلج السنافر",
+                            "description_ar": "استمتع باللعبة المثيرة The Smurfs - Smurfy Snowboard!"
+                        }
+                    ],
+                    "name_ar": "السنافر"
+                },
+                {
+                    "Name": "Tom and Jerry",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom and Jerry/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -1515364148,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - Bandit Munchers",
+                            "Title": "Tom and Jerry - Bandit Munchers",
+                            "Description": "Enjoy the exciting game Tom and Jerry - Bandit Munchers!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Bandit+Munchers/img/ui/logo.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Bandit+Munchers/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Bandit+Munchers/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - قطاع الطرق",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - Bandit Munchers!"
+                        },
+                        {
+                            "ID": 927407515,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - Blast Off!",
+                            "Title": "Tom and Jerry - Blast Off!",
+                            "Description": "Enjoy the exciting game Tom and Jerry - Blast Off!!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Blast+Off!/assets/images/localization/logo_game_title_en.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Blast+Off!/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Blast+Off!/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "False",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - إنطلاق!",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - بلاست أوف!!"
+                        },
+                        {
+                            "ID": -345996158,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - Chasing Jerry",
+                            "Title": "Tom and Jerry - Chasing Jerry",
+                            "Description": "Enjoy the exciting game Tom and Jerry - Chasing Jerry!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Chasing+Jerry/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Chasing+Jerry/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - مطاردة جيري",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - مطاردة جيري!"
+                        },
+                        {
+                            "ID": 1383133973,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - Chocolate Chase",
+                            "Title": "Tom and Jerry - Chocolate Chase",
+                            "Description": "Enjoy the exciting game Tom and Jerry - Chocolate Chase!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Chocolate+Chase/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Chocolate+Chase/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - مطاردة الشوكولاتة",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - مطاردة الشوكولاتة!"
+                        },
+                        {
+                            "ID": -660068633,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - Holiday Havoc",
+                            "Title": "Tom and Jerry - Holiday Havoc",
+                            "Description": "Enjoy the exciting game Tom and Jerry - Holiday Havoc!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Holiday+Havoc/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Holiday+Havoc/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - عطلة هافوك",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - Holiday Havoc!"
+                        },
+                        {
+                            "ID": -587191852,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - Hush Rush",
+                            "Title": "Tom and Jerry - Hush Rush",
+                            "Description": "Enjoy the exciting game Tom and Jerry - Hush Rush!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Hush+Rush/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Hush+Rush/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - هاش راش",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - Hush Rush!"
+                        },
+                        {
+                            "ID": 1009495534,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - Musical Stairs",
+                            "Title": "Tom and Jerry - Musical Stairs",
+                            "Description": "Enjoy the exciting game Tom and Jerry - Musical Stairs!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Musical+Stairs/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+Musical+Stairs/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - السلالم الموسيقية",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - السلالم الموسيقية!"
+                        },
+                        {
+                            "ID": -1834821989,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - River Recycle",
+                            "Title": "Tom and Jerry - River Recycle",
+                            "Description": "Enjoy the exciting game Tom and Jerry - River Recycle!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+River+Recycle/media/images/base/preloader/logo-1x.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+River+Recycle/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+River+Recycle/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - إعادة تدوير النهر",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - إعادة تدوير النهر!"
+                        },
+                        {
+                            "ID": -2068971040,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - TJ Smashing",
+                            "Title": "Tom and Jerry - TJ Smashing",
+                            "Description": "Enjoy the exciting game Tom and Jerry - TJ Smashing!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+TJ+Smashing/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+TJ+Smashing/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - تي جيه سماشينج",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - TJ Smashing!"
+                        },
+                        {
+                            "ID": 1349920838,
+                            "Package_id": "Tom and Jerry/Tom and Jerry - What's the Catch",
+                            "Title": "Tom and Jerry - What's the Catch",
+                            "Description": "Enjoy the exciting game Tom and Jerry - What's the Catch!",
+                            "Thumbnail": null,
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+What's+the+Catch/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Tom+and+Jerry+-+What's+the+Catch/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "توم وجيري - ما هي المشكلة؟",
+                            "description_ar": "استمتع باللعبة المثيرة توم وجيري - ما هي الصيد!"
+                        },
+                        {
+                            "ID": -1311306975,
+                            "Package_id": "Tom and Jerry/Wacky Races",
+                            "Title": "Wacky Races",
+                            "Description": "Enjoy the exciting game Wacky Races!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Wacky+Races/Wacky+Races+-+Highway+Heroes/assets/images/localisation/logo_en.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Wacky+Races/Wacky+Races+-+Highway+Heroes/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Tom+and+Jerry/Wacky+Races/Wacky+Races+-+Highway+Heroes/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Tom and Jerry"
+                            ],
+                            "title_ar": "سباقات مجنونة",
+                            "description_ar": "استمتع باللعبة المثيرة Wacky Races!"
+                        }
+                    ],
+                    "name_ar": "توم وجيري"
+                },
+                {
+                    "Name": "Wacky Races",
+                    "Icon": "https://gamesbox.s3.eu-central-1.amazonaws.com/Wacky Races/logo.png",
+                    "categoryNameAr": null,
+                    "Content": [
+                        {
+                            "ID": -1960717853,
+                            "Package_id": "Wacky Races/Wacky Races",
+                            "Title": "Wacky Races",
+                            "Description": "Enjoy the exciting game Wacky Races!",
+                            "Thumbnail": "https://gamesbox.s3.eu-central-1.amazonaws.com/Wacky+Races/Wacky+Races/Wacky+Races+-+Highway+Heroes/assets/images/localisation/logo_en.png",
+                            "Thumbnail_Large": "https://gamesbox.s3.eu-central-1.amazonaws.com/Wacky+Races/Wacky+Races/Wacky+Races+-+Highway+Heroes/screenshot.jpg",
+                            "Content": "https://gamesbox.s3.eu-central-1.amazonaws.com/Wacky+Races/Wacky+Races/Wacky+Races+-+Highway+Heroes/index.html",
+                            "PlayCount": "0",
+                            "ViewCount": "0",
+                            "isPremium": "True",
+                            "avrate": "0",
+                            "ownrate": "0",
+                            "isFavorite": "False",
+                            "Category": [
+                                "Wacky Races"
+                            ],
+                            "title_ar": "سباقات مجنونة",
+                            "description_ar": "استمتع باللعبة المثيرة Wacky Races!"
+                        }
+                    ],
+                    "name_ar": "سباقات مجنونة"
+                }
+            ]
+        }
+    ]
+}
