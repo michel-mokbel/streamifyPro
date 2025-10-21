@@ -108,9 +108,7 @@ final class Recommender {
         $mood = strtolower($prefs['mood'] ?? 'learning');
         $max = (int)($prefs['max_items'] ?? 8);
 
-        $filtered = array_filter($this->catalog, function($it) use ($age, $lang, $wants) {
-            if ($age !== null && !($it['age_min'] <= $age && $age <= $it['age_max'])) return false;
-            if ($lang && $it['language'] !== $lang) return false;
+        $filtered = array_filter($this->catalog, function($it) use ($wants) {
             if ($wants !== 'both' && $it['type'] !== rtrim($wants, 's')) return false;
             // simple guardrail
             if (in_array('adult', $it['tags'] ?? [], true) || in_array('violence', $it['tags'] ?? [], true)) return false;
@@ -126,10 +124,6 @@ final class Recommender {
             if ($mood === 'active' && (in_array('dance', $tags, true) || in_array('exercise', $tags, true) || in_array('game', $tags, true))) $score += 1.5;
             $score += min(2.0, (($it['rating'] ?? 0.0) / 5.0) * 2.0);
             $score += min(2.0, log(1 + (int)($it['popularity'] ?? 0)) / 5.0);
-            if ($age !== null && $age <= 6) {
-                if (($it['duration_sec'] ?? 0) > 900) $score -= 1.0;
-                if (($it['duration_sec'] ?? 0) <= 420) $score += 0.5;
-            }
             $text = strtolower(($it['title'] ?? '').' '.($it['description'] ?? '').' '.implode(' ', $tags));
             foreach (['educational','learning','abc','math','shapes','phonics','science'] as $kw) {
                 if (strpos($text, $kw) !== false) $score += 0.3;
@@ -146,31 +140,21 @@ final class Recommender {
 
     public function buildEducationalPlaylist(int $age, string $language='en', int $targetMinutes=30): array {
         $target = $targetMinutes * 60;
-        $lang = strtolower($language);
 
-        // 1) Primary pool: educational videos, exact language
-        $pool = array_filter($this->catalog, function($it) use ($age, $lang) {
+        // 1) Primary pool: educational videos (any language/age)
+        $pool = array_filter($this->catalog, function($it) {
             return !empty($it['is_educational'])
                 && ($it['type'] ?? '') === 'video'
-                && ($it['language'] ?? '') === $lang
-                && ($it['age_min'] <= $age && $age <= $it['age_max']);
+                && !in_array('adult', $it['tags'] ?? [], true)
+                && !in_array('violence', $it['tags'] ?? [], true);
         });
 
-        // 2) Fallback A: educational videos any language
+        // 2) Fallback: any kid-safe videos any language
         if (empty($pool)) {
-            $pool = array_filter($this->catalog, function($it) use ($age) {
-                return !empty($it['is_educational'])
-                    && ($it['type'] ?? '') === 'video'
-                    && ($it['age_min'] <= $age && $age <= $it['age_max']);
-            });
-        }
-
-        // 3) Fallback B: any kid-safe videos any language
-        if (empty($pool)) {
-            $pool = array_filter($this->catalog, function($it) use ($age) {
+            $pool = array_filter($this->catalog, function($it) {
                 if (($it['type'] ?? '') !== 'video') return false;
                 if (in_array('adult', $it['tags'] ?? [], true) || in_array('violence', $it['tags'] ?? [], true)) return false;
-                return ($it['age_min'] <= $age && $age <= $it['age_max']);
+                return true;
             });
         }
 
@@ -441,8 +425,6 @@ final class Recommender {
     }
 
     public function searchCatalogStructured(array $filters, int $max=12): array {
-        $age = $filters['age'] ?? null;
-        $lang = strtolower($filters['language'] ?? '');
         $source = strtolower($filters['source'] ?? '');
         $category = strtolower($filters['category'] ?? '');
         $subcategory = strtolower($filters['subcategory'] ?? '');
@@ -452,26 +434,23 @@ final class Recommender {
         $type = $type !== 'both' ? rtrim($type, 's') : '';
 
         $steps = [
-            [$source, $category, $subcategory, $channel, $playlist, $lang, $type],
-            [$source, $category, '', '', '', $lang, $type],
-            [$source, '', '', '', '', $lang, $type],
-            ['', '', '', '', '', $lang, $type],
-            ['', '', '', '', '', '', $type],
-            ['', '', '', '', '', '', ''],
+            [$source, $category, $subcategory, $channel, $playlist, $type],
+            [$source, $category, '', '', '', $type],
+            [$source, '', '', '', '', $type],
+            ['', '', '', '', '', $type],
+            ['', '', '', '', '', ''],
         ];
 
         $cands = $this->catalog;
         $best = [];
         foreach ($steps as $s) {
-            [$S, $C, $SC, $CH, $PL, $L, $T] = $s;
-            $filtered = array_filter($cands, function($it) use ($age,$S,$C,$SC,$CH,$PL,$L,$T) {
-                if ($age !== null && !($it['age_min'] <= $age && $age <= $it['age_max'])) return false;
+            [$S, $C, $SC, $CH, $PL, $T] = $s;
+            $filtered = array_filter($cands, function($it) use ($S,$C,$SC,$CH,$PL,$T) {
                 if ($S !== '' && strtolower($it['source'] ?? '') !== $S) return false;
                 if ($C !== '' && strtolower($it['category'] ?? '') !== $C) return false;
                 if ($SC !== '' && strtolower($it['subcategory'] ?? '') !== $SC) return false;
                 if ($CH !== '' && strtolower($it['channel'] ?? '') !== $CH) return false;
                 if ($PL !== '' && strtolower($it['playlist'] ?? '') !== $PL) return false;
-                if ($L !== '' && strtolower($it['language'] ?? '') !== $L) return false;
                 if ($T !== '' && strtolower($it['type'] ?? '') !== $T) return false;
                 if (in_array('adult', $it['tags'] ?? [], true) || in_array('violence', $it['tags'] ?? [], true)) return false;
                 return true;
