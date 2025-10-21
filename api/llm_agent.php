@@ -517,128 +517,212 @@ function gemini_call(array $payload, string $apiKey, string $model): array {
     return $data;
 }
 
-// 1) First call — tool forcing enabled
-$req1 = [
-    'contents' => [
-        ['role'=>'user','parts'=>[['text'=>$system]]],
-        ['role'=>'user','parts'=>[['text'=>$message]]]
-    ],
-    'tools' => $tools,
-    'generationConfig' => [
-        'temperature' => 0,
-        'maxOutputTokens' => 1000,
-        'response_mime_type' => 'application/json'
-    ],
-    'toolConfig' => [
-        'functionCallingConfig' => [
-            'mode' => 'ANY'
-        ]
-    ]
-];
-$r1 = gemini_call($req1, $API_KEY, $MODEL);
-
-// Inspect first response for a tool call
-$call = null;
-$parts = $r1['candidates'][0]['content']['parts'] ?? [];
-foreach ($parts as $p) {
-    if (!empty($p['functionCall'])) { $call = $p['functionCall']; break; }
-}
-
-if (!$call) {
-    // Gemini didn't make a function call - use intelligent fallback
-    $tool_result = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
-} else {
-    // Execute the function call that Gemini made
-    $name = $call['name'] ?? '';
-    $args = $call['args'] ?? [];
-
+function execute_tool_call(
+    string $name,
+    array $args,
+    Recommender $rec,
+    CatalogIndex $index,
+    int $age,
+    string $lang,
+    string $message,
+    ?array $fullMetadata
+): array {
     switch ($name) {
         case 'list_taxonomy':
-            $tool_result = tool_list_taxonomy($index);
-            break;
+            return tool_list_taxonomy($index);
 
         case 'search_catalog':
-            $tool_result = tool_search_catalog($rec, $args, $age, $lang);
-            if (empty($tool_result['items'])) {
-                $fallbackResult = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
-                if (!empty($fallbackResult['items'])) $tool_result = $fallbackResult;
+            $result = tool_search_catalog($rec, $args, $age, $lang);
+            if (empty($result['items'])) {
+                $fallback = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
+                if (!empty($fallback['items'])) {
+                    $result = $fallback;
+                }
             }
-            break;
+            return $result;
 
         case 'search_catalog_structured':
             $args['age']      = $args['age'] ?? $age;
             $args['language'] = $args['language'] ?? $lang;
-            $tool_result = tool_search_catalog_structured($rec, $args);
-            if (empty($tool_result['items'])) {
-                // backup to generic structured search to avoid empty items
-                $tool_result = tool_search_catalog_structured($rec, [
-                    'age'=>$age,'language'=>$lang,'max_items'=>12
+            $result = tool_search_catalog_structured($rec, $args);
+            if (empty($result['items'])) {
+                $result = tool_search_catalog_structured($rec, [
+                    'age' => $age,
+                    'language' => $lang,
+                    'max_items' => 12
                 ]);
             }
-            break;
+            return $result;
 
         case 'build_playlist':
-            $tool_result = tool_build_playlist($rec, $args, $age, $lang);
-            if (empty($tool_result['items'])) {
-                $fallbackResult = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
-                if (!empty($fallbackResult['items'])) $tool_result = $fallbackResult;
+            $result = tool_build_playlist($rec, $args, $age, $lang);
+            if (empty($result['items'])) {
+                $fallback = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
+                if (!empty($fallback['items'])) {
+                    $result = $fallback;
+                }
             }
-            break;
+            return $result;
 
         case 'search_by_metadata':
-            $tool_result = tool_search_by_metadata($rec, $args);
-            if (empty($tool_result['items'])) {
-                $fallbackResult = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
-                if (!empty($fallbackResult['items'])) $tool_result = $fallbackResult;
+            $result = tool_search_by_metadata($rec, $args);
+            if (empty($result['items'])) {
+                $fallback = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
+                if (!empty($fallback['items'])) {
+                    $result = $fallback;
+                }
             }
-            break;
+            return $result;
 
         default:
             json_error(400, 'Unknown tool: ' . $name);
     }
 }
 
+$messages = [
+    ['role' => 'user', 'parts' => [['text' => $system]]],
+    ['role' => 'user', 'parts' => [['text' => $message]]]
+];
+
+$lastToolResult = null;
+$finalResponse = null;
+
+for ($round = 0; $round < 6; $round++) {
+    $req = [
+        'contents' => $messages,
+        'tools' => $tools,
+        'generationConfig' => [
+            'temperature' => 0,
+            'maxOutputTokens' => 1000,
+            'response_mime_type' => 'application/json'
+        ],
+        'toolConfig' => [
+            'functionCallingConfig' => [
+                'mode' => 'ANY'
+            ]
+        ]
+    ];
+
+    $response = gemini_call($req, $API_KEY, $MODEL);
+    $candidate = $response['candidates'][0] ?? null;
+    if (!$candidate) {
+        break;
+    }
+
+    $parts = $candidate['content']['parts'] ?? [];
+    $call = null;
+    foreach ($parts as $part) {
+        if (!empty($part['functionCall'])) {
+            $call = $part['functionCall'];
+            break;
+        }
+    }
+
+    if ($call) {
+        $name = $call['name'] ?? '';
+        $args = $call['args'] ?? [];
+        $result = execute_tool_call($name, $args, $rec, $index, $age, $lang, $message, $fullMetadata);
+        $lastToolResult = $result;
+
+        $messages[] = ['role' => 'model', 'parts' => [['functionCall' => $call]]];
+        $messages[] = [
+            'role' => 'tool',
+            'parts' => [[
+                'functionResponse' => [
+                    'name' => $name,
+                    'response' => $result
+                ]
+            ]]
+        ];
+
+        // Allow the model to make another decision unless it already produced suggestions
+        if (($result['result_type'] ?? '') !== 'taxonomy' && !empty($result['items'])) {
+            // Capture as potential final result but continue one more turn for summary if needed
+            $finalResponse = $finalResponse ?? $result;
+        }
+
+        continue;
+    }
+
+    $text = '';
+    foreach ($parts as $part) {
+        if (isset($part['text'])) {
+            $text .= (string)$part['text'];
+        }
+    }
+
+    if ($text !== '') {
+        $decoded = json_decode($text, true);
+        if (is_array($decoded)) {
+            $finalResponse = $decoded;
+        } elseif (!$finalResponse && $lastToolResult) {
+            // If the model replied with plain text, fall back to the last tool output
+            $finalResponse = $lastToolResult;
+        }
+    }
+
+    break;
+}
+
+if (!$finalResponse && $lastToolResult && ($lastToolResult['result_type'] ?? '') !== 'taxonomy') {
+    $finalResponse = $lastToolResult;
+}
+
+if (!$finalResponse) {
+    $finalResponse = intelligentFallback($rec, $message, $age, $lang, $fullMetadata);
+}
+
 // FINAL SAFETY CHECKS — never return empty items
-if (empty($tool_result['items'])) {
+if (empty($finalResponse['items'])) {
     // Try videos then games, then any
     $fallback = tool_search_catalog_structured($rec, [
-        'age'=>$age, 'language'=>$lang, 'wants'=>'videos', 'max_items'=>8
+        'age' => $age,
+        'language' => $lang,
+        'wants' => 'videos',
+        'max_items' => 8
     ]);
     if (empty($fallback['items'])) {
         $fallback = tool_search_catalog_structured($rec, [
-            'age'=>$age, 'language'=>$lang, 'wants'=>'games', 'max_items'=>8
+            'age' => $age,
+            'language' => $lang,
+            'wants' => 'games',
+            'max_items' => 8
         ]);
     }
     if (empty($fallback['items'])) {
         $fallback = tool_search_catalog_structured($rec, [
-            'age'=>$age, 'language'=>$lang, 'max_items'=>8
+            'age' => $age,
+            'language' => $lang,
+            'max_items' => 8
         ]);
     }
     if (!empty($fallback['items'])) {
-        $tool_result = $fallback;
+        $finalResponse = $fallback;
     } else {
         // Last resort attempts
-        $emergency = tool_search_catalog($rec, ['tags'=>['educational'],'sources'=>['kids'],'max_items'=>10], $age, $lang);
+        $emergency = tool_search_catalog($rec, ['tags' => ['educational'], 'sources' => ['kids'], 'max_items' => 10], $age, $lang);
         if (!empty($emergency['items'])) {
-            $tool_result = $emergency;
+            $finalResponse = $emergency;
         } else {
-            $any = tool_search_catalog($rec, ['max_items'=>10], $age, $lang);
-            if (!empty($any['items'])) $tool_result = $any;
+            $any = tool_search_catalog($rec, ['max_items' => 10], $age, $lang);
+            if (!empty($any['items'])) {
+                $finalResponse = $any;
+            }
         }
     }
 }
 
 // Normalize response structure
-if (!isset($tool_result['items']) || !is_array($tool_result['items'])) {
-    $tool_result['items'] = [];
+if (!isset($finalResponse['items']) || !is_array($finalResponse['items'])) {
+    $finalResponse['items'] = [];
 }
-if (!isset($tool_result['summary'])) {
-    $tool_result['summary'] = 'Content suggestions for you.';
+if (!isset($finalResponse['summary'])) {
+    $finalResponse['summary'] = 'Content suggestions for you.';
 }
-if (!isset($tool_result['result_type'])) {
-    $tool_result['result_type'] = 'suggestions';
+if (!isset($finalResponse['result_type'])) {
+    $finalResponse['result_type'] = 'suggestions';
 }
 
 // Return plain JSON (no 'text' wrapping)
-echo json_encode($tool_result, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+echo json_encode($finalResponse, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
 exit;
