@@ -317,12 +317,10 @@ $tools = [[
         ],
         [
             'name' => 'search_catalog_structured',
-            'description' => 'Structured search using taxonomy (source/category/subcategory/channel/playlist). Non-empty guarantee.',
+            'description' => 'Structured search using taxonomy (source/category/subcategory/channel/playlist). Focus on categories mentioned by the user.',
             'parameters' => [
                 'type'=>'object',
                 'properties'=>[
-                    'age'        => ['type'=>'integer'],
-                    'language'   => ['type'=>'string'],
                     'source'     => ['type'=>'string'],
                     'category'   => ['type'=>'string'],
                     'subcategory'=> ['type'=>'string'],
@@ -330,8 +328,7 @@ $tools = [[
                     'playlist'   => ['type'=>'string'],
                     'wants'      => ['type'=>'string','enum'=>['videos','games','both']],
                     'max_items'  => ['type'=>'integer']
-                ],
-                'required'=>['age','language']
+                ]
             ]
         ],
         [
@@ -405,8 +402,8 @@ if ($fullMetadata) {
 
 $system .= "\n\n=== CRITICAL INSTRUCTIONS ===
 1. ALWAYS call list_taxonomy first to learn real sources/categories/subcategories/channels/playlists and languages.
-2. ANALYZE the user request and plan with the taxonomy (age, language, wants, mood).
-3. Prefer calling search_catalog_structured with concrete taxonomy keys to guarantee results. For time-boxed requests, call build_playlist.
+2. ANALYZE the user request and plan with the taxonomy, focusing on the category terms the user mentions.
+3. Prefer calling search_catalog_structured with concrete taxonomy keys to guarantee results. Do not filter by age, language, or duration. For time-boxed requests, call build_playlist.
 4. For any mention of 'games' or 'interactive games': call search_catalog(tags=['game'], sources=['games']).
 5. NEVER say 'I couldn't find'. Always call a function and return items.
 6. Respond as compact JSON: {\"summary\",\"result_type\",\"items\"}.";
@@ -542,13 +539,9 @@ function execute_tool_call(
             return $result;
 
         case 'search_catalog_structured':
-            $args['age']      = $args['age'] ?? $age;
-            $args['language'] = $args['language'] ?? $lang;
             $result = tool_search_catalog_structured($rec, $args);
             if (empty($result['items'])) {
                 $result = tool_search_catalog_structured($rec, [
-                    'age' => $age,
-                    'language' => $lang,
                     'max_items' => 12
                 ]);
             }
@@ -676,23 +669,17 @@ if (!$finalResponse) {
 if (empty($finalResponse['items'])) {
     // Try videos then games, then any
     $fallback = tool_search_catalog_structured($rec, [
-        'age' => $age,
-        'language' => $lang,
         'wants' => 'videos',
         'max_items' => 8
     ]);
     if (empty($fallback['items'])) {
         $fallback = tool_search_catalog_structured($rec, [
-            'age' => $age,
-            'language' => $lang,
             'wants' => 'games',
             'max_items' => 8
         ]);
     }
     if (empty($fallback['items'])) {
         $fallback = tool_search_catalog_structured($rec, [
-            'age' => $age,
-            'language' => $lang,
             'max_items' => 8
         ]);
     }
