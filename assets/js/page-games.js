@@ -3,17 +3,14 @@
   'use strict';
 
   document.addEventListener('DOMContentLoaded', init);
-  
-  // Re-initialize when language changes
-  window.addEventListener('languageChanged', init);
 
   async function init() {
     const container = document.getElementById('games-content');
     if (!container) return;
 
     try {
-      // Get current language
-      const currentLang = localStorage.getItem('streamify_language') || 'en';
+      // Get current language from HTML tag (set by PHP)
+      const currentLang = document.documentElement.getAttribute('lang') || 'en';
       const data = await fetchData('games', currentLang);
 
       const bubbles = document.getElementById('games-category-bubbles');
@@ -34,7 +31,19 @@
           const categoryId = `game-category-${category.Name.toLowerCase().replace(/\s+/g, '-')}`;
           
           // Get category name (Arabic if available)
-          const categoryName = currentLang === 'ar' && category.name_ar ? category.name_ar : category.Name;
+          let categoryName = category.Name;
+          if (currentLang === 'ar') {
+            // Try categoryNameAr from JSON first
+            if (category.categoryNameAr) {
+              categoryName = category.categoryNameAr;
+            } else if (window.i18n && typeof window.i18n.t === 'function') {
+              // Fall back to translation system
+              const translatedName = window.i18n.t(`gameCategories.${category.Name}`);
+              if (translatedName && translatedName !== `gameCategories.${category.Name}`) {
+                categoryName = translatedName;
+              }
+            }
+          }
 
           // Bubble
           const bubble = document.createElement('div');
@@ -67,14 +76,16 @@
             loadWrap.className = 'text-center w-100 mt-3 mb-4';
             const btn = document.createElement('button');
             btn.className = 'btn btn-outline-primary';
-            btn.textContent = `Load More (${category.Content.length - INITIAL_GAMES_TO_SHOW} more)`;
+            const loadMoreText = window.i18n?.t('games.loadMore') || 'Load More';
+            const moreText = window.i18n?.t('games.more') || 'more';
+            btn.textContent = `${loadMoreText} (${category.Content.length - INITIAL_GAMES_TO_SHOW} ${moreText})`;
             let index = INITIAL_GAMES_TO_SHOW;
             btn.addEventListener('click', () => {
               const next = category.Content.slice(index, index + INITIAL_GAMES_TO_SHOW);
               next.forEach(game => grid.appendChild(createGameCard(game, category)));
               index += next.length;
               if (index >= category.Content.length) loadWrap.remove();
-              else btn.textContent = `Load More (${category.Content.length - index} more)`;
+              else btn.textContent = `${loadMoreText} (${category.Content.length - index} ${moreText})`;
             });
             loadWrap.appendChild(btn);
             section.appendChild(loadWrap);
@@ -126,10 +137,15 @@
     const playcount = frag.querySelector('.game-playcount');
     const premium = frag.querySelector('.premium-badge');
 
-    // Get current language and use Arabic translations if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    // Get current language from HTML tag
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const gameTitle = currentLang === 'ar' && game.title_ar ? game.title_ar : game.Title;
     const gameDesc = currentLang === 'ar' && game.description_ar ? game.description_ar : game.Description;
+    
+    // Debug logging
+    if (currentLang === 'ar') {
+     // console.log(`🎮 Game Card: Language=${currentLang}, Title=${game.Title}, Title_AR=${game.title_ar}, Using: ${gameTitle}`);
+    }
     
     title.textContent = gameTitle || 'Untitled Game';
     desc.textContent = gameDesc || '';
@@ -137,7 +153,15 @@
     const metrics = getSyntheticGameMetrics(game);
     const playsText = metrics.plays === 1 ? (window.i18n?.t('games.play') || 'play') : (window.i18n?.t('games.plays') || 'plays');
     playcount.textContent = `${formatNumber(metrics.plays)} ${playsText}`;
-    if (game.isPremium === 'True') premium.classList.remove('d-none');
+    
+    // Premium badge translation
+    if (game.isPremium === 'True') {
+      premium.classList.remove('d-none');
+      const premiumText = premium.querySelector('span');
+      if (premiumText && window.i18n && typeof window.i18n.t === 'function') {
+        premiumText.textContent = window.i18n.t('games.premium') || 'Premium';
+      }
+    }
 
     applyLazyLoading(img, game.Thumbnail_Large || game.Thumbnail || window.PLACEHOLDER_IMAGE, game.Title || 'Game');
 

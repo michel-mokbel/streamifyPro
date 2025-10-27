@@ -10,6 +10,11 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Set default language if not set
+if (!isset($_SESSION['ui_lang'])) {
+    $_SESSION['ui_lang'] = 'en';
+}
+
 // Helpers
 function current_user() {
     return isset($_SESSION['user']) ? $_SESSION['user'] : null;
@@ -27,6 +32,20 @@ function require_auth() {
         header('Location: index.php');
         exit;
     }
+}
+
+// Language helpers
+function get_language() {
+    return $_SESSION['ui_lang'] ?? 'en';
+}
+
+function get_direction() {
+    $lang = get_language();
+    return ($lang === 'ar') ? 'rtl' : 'ltr';
+}
+
+function set_language($lang) {
+    $_SESSION['ui_lang'] = $lang;
 }
 ?>
 

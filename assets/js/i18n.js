@@ -1,39 +1,22 @@
 /**
- * Internationalization (i18n) module for Streamify Pro
- * Handles language switching and translations
+ * Simple i18n - ONLY translates text, NO switching logic!
+ * Language is set by PHP session, we just translate the page
  */
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'streamify_language';
-  let currentLanguage = localStorage.getItem(STORAGE_KEY) || 'en';
   let translations = {};
-  let languages = [];
+  const currentLang = document.documentElement.getAttribute('lang') || 'en';
 
-  // Load languages and translations
+  // Load translations and translate page
   async function init() {
     try {
-      const [langsData, transData] = await Promise.all([
-        fetch('./api/json/languages.json').then(r => r.json()),
-        fetch('./api/json/translations.json').then(r => r.json())
-      ]);
-
-      languages = langsData.languages || [];
-      translations = transData;
-
-      // Set initial language
-      const savedLang = localStorage.getItem(STORAGE_KEY);
-      if (savedLang && languages.some(l => l.code === savedLang)) {
-        currentLanguage = savedLang;
-      } else {
-        currentLanguage = langsData.default || 'en';
-      }
-
-      applyLanguage(currentLanguage);
+      translations = await fetch('./api/json/translations.json').then(r => r.json());
+     // console.log('✅ i18n: Translations loaded. Current language:', currentLang);
       translatePage();
-      setupLanguageSwitcher();
+    //  console.log('✅ i18n: Page translated');
     } catch (e) {
-      console.error('Failed to load translations:', e);
+      console.error('❌ i18n: Failed to load translations:', e);
     }
   }
 
@@ -46,164 +29,69 @@
       if (value && typeof value === 'object') {
         value = value[k];
       } else {
-        return key; // Return key if not found
+        return key;
       }
     }
 
-    if (value && typeof value === 'object' && value[currentLanguage]) {
-      return value[currentLanguage];
+    if (value && typeof value === 'object' && value[currentLang]) {
+      return value[currentLang];
     }
 
-    return key; // Return key if translation not found
-  }
-
-  // Apply language settings (dir, lang attribute)
-  function applyLanguage(lang) {
-    const language = languages.find(l => l.code === lang);
-    if (!language) return;
-
-    document.documentElement.setAttribute('lang', lang);
-    document.documentElement.setAttribute('dir', language.dir || 'ltr');
-    document.body.setAttribute('data-lang', lang);
-    
-    currentLanguage = lang;
-    localStorage.setItem(STORAGE_KEY, lang);
+    return key;
   }
 
   // Translate all elements with data-i18n attribute
   function translatePage() {
-    document.querySelectorAll('[data-i18n]').forEach(element => {
+    const elements = document.querySelectorAll('[data-i18n]');
+   // console.log(`🔤 i18n: Found ${elements.length} elements to translate`);
+    
+    let translatedCount = 0;
+    elements.forEach(element => {
       const key = element.getAttribute('data-i18n');
       const translation = t(key);
       
-      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-        if (element.hasAttribute('placeholder')) {
-          element.placeholder = translation;
+      if (translation && translation !== key) {
+        translatedCount++;
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+          if (element.hasAttribute('placeholder')) {
+            element.placeholder = translation;
+          } else {
+            element.value = translation;
+          }
         } else {
-          element.value = translation;
+          element.textContent = translation;
         }
-      } else {
-        element.textContent = translation;
       }
     });
+    //console.log(`✅ i18n: Translated ${translatedCount}/${elements.length} elements`);
 
-    // Translate placeholders separately
     document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
       const key = element.getAttribute('data-i18n-placeholder');
       element.placeholder = t(key);
     });
 
-    // Translate titles
     document.querySelectorAll('[data-i18n-title]').forEach(element => {
       const key = element.getAttribute('data-i18n-title');
       element.title = t(key);
     });
   }
 
-  // Setup language switcher UI
-  function setupLanguageSwitcher() {
-    // Setup modal-based language switcher
-    setupLanguageModal();
-  }
-
-  // Setup language modal functionality
-  function setupLanguageModal() {
-    const modal = document.getElementById('languageModal');
-    if (!modal) return;
-
-    // Update modal state when it's shown
-    modal.addEventListener('show.bs.modal', () => {
-      updateLanguageModalState();
-    });
-
-    // Add click handlers for language options
-    modal.querySelectorAll('.language-option').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const lang = btn.getAttribute('data-lang');
-        switchLanguage(lang);
-        
-        // Close modal after selection
-        const modalInstance = bootstrap.Modal.getInstance(modal);
-        if (modalInstance) {
-          modalInstance.hide();
-        }
-      });
-    });
-  }
-
-  // Update language modal state
-  function updateLanguageModalState() {
-    const modal = document.getElementById('languageModal');
-    if (!modal) return;
-
-    modal.querySelectorAll('.language-option').forEach(btn => {
-      const lang = btn.getAttribute('data-lang');
-      if (lang === currentLanguage) {
-        btn.classList.add('active');
-      } else {
-        btn.classList.remove('active');
-      }
-    });
-  }
-
-  // Update switcher state (legacy function - kept for compatibility)
-  function updateSwitcherState(switcher) {
-    if (!switcher) return;
-    switcher.querySelectorAll('[data-lang]').forEach(btn => {
-      if (btn.getAttribute('data-lang') === currentLanguage) {
-        btn.classList.add('active');
-      } else {
-        btn.classList.remove('active');
-      }
-    });
-  }
-
-  // Switch to a different language
-  function switchLanguage(lang) {
-    if (lang === currentLanguage) return;
-    
-    applyLanguage(lang);
-    translatePage();
-    
-    // Update modal state
-    updateLanguageModalState();
-
-    // Trigger custom event
-    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { language: lang } }));
-    
-    // Reload dynamic content if needed
-    if (typeof window.reloadPageContent === 'function') {
-      window.reloadPageContent();
-    }
-  }
-
-  // Get current language
+  // Helper functions to get language info
   function getCurrentLanguage() {
-    return currentLanguage;
+    return document.documentElement.getAttribute('lang') || 'en';
   }
 
-  // Get current language direction
   function getCurrentDirection() {
-    const language = languages.find(l => l.code === currentLanguage);
-    return language ? language.dir : 'ltr';
+    return document.documentElement.getAttribute('dir') || 'ltr';
   }
 
-  // Expose API
-  window.i18n = {
-    init,
-    t,
-    switchLanguage,
-    translatePage,
-    getCurrentLanguage,
-    getCurrentDirection
-  };
+  // Expose simple API
+  window.i18n = { t, translatePage, getCurrentLanguage, getCurrentDirection };
 
-  // Auto-initialize on DOM ready
+  // Auto-initialize
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
   }
 })();
-

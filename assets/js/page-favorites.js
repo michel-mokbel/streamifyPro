@@ -1,15 +1,13 @@
 (function () {
   'use strict';
 
+  // Initialize on DOM ready
   document.addEventListener('DOMContentLoaded', initFavoritesPage);
-  
-  // Listen for language changes and reload content
-  window.addEventListener('languageChanged', initFavoritesPage);
 
   function initFavoritesPage() {
     const container = document.getElementById('fav-list');
     if (!container) {
-      console.log('Favorites container not found');
+      //console.log('Favorites container not found');
       return;
     }
 
@@ -17,18 +15,18 @@
       ? readCookieList(COOKIE_KEYS.favorites)
       : [];
 
-    console.log('Favorites list:', list);
+   // console.log('Favorites list:', list);
 
     if (!Array.isArray(list) || list.length === 0) {
       let noFavoritesText = 'No favorites yet.';
-      if (window.i18n && window.i18n.t) {
+      // Try to translate
+      if (window.i18n && typeof window.i18n.t === 'function') {
         const translated = window.i18n.t('favorites.noFavorites');
-        // Only use translation if it's not the key itself
-        if (translated !== 'favorites.noFavorites') {
+        if (translated && translated !== 'favorites.noFavorites') {
           noFavoritesText = translated;
         }
       }
-      console.log('Setting empty state:', noFavoritesText);
+    //  console.log('Setting empty state:', noFavoritesText);
       container.innerHTML = `<div class="alert alert-info">${noFavoritesText}</div>`;
       return;
     }
@@ -124,9 +122,9 @@
           const container = document.getElementById('fav-list');
           if (container && container.children.length === 0) {
             let noFavoritesText = 'No favorites yet.';
-            if (window.i18n && window.i18n.t) {
+            if (window.i18n && typeof window.i18n.t === 'function') {
               const translated = window.i18n.t('favorites.noFavorites');
-              if (translated !== 'favorites.noFavorites') {
+              if (translated && translated !== 'favorites.noFavorites') {
                 noFavoritesText = translated;
               }
             }
@@ -165,7 +163,7 @@
     const watchLaterText = window.i18n?.t('streaming.watchLater') || 'Watch Later';
     
     // Get current language and use Arabic translations if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const videoTitle = currentLang === 'ar' && item.title_ar ? item.title_ar : item.title;
     
     wrap.innerHTML = `
@@ -368,7 +366,7 @@
     const watchLaterText = window.i18n?.t('streaming.watchLater') || 'Watch Later';
     
     // Get current language and use Arabic title if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const title = currentLang === 'ar' && item.title_ar ? item.title_ar : (item.title || fitnessVideoText);
     
     // Category logic: Use Arabic category if in Arabic, otherwise use English category
@@ -470,14 +468,14 @@
     if (wrapper && wrapper.parentNode) wrapper.parentNode.removeChild(wrapper);
     const container = document.getElementById('fav-list');
     if (container && container.children.length === 0) {
-            let noFavoritesText = 'No favorites yet.';
-            if (window.i18n && window.i18n.t) {
-              const translated = window.i18n.t('favorites.noFavorites');
-              if (translated !== 'favorites.noFavorites') {
-                noFavoritesText = translated;
-              }
-            }
-            container.innerHTML = `<div class="alert alert-info">${noFavoritesText}</div>`;
+      let noFavoritesText = 'No favorites yet.';
+      if (window.i18n && typeof window.i18n.t === 'function') {
+        const translated = window.i18n.t('favorites.noFavorites');
+        if (translated && translated !== 'favorites.noFavorites') {
+          noFavoritesText = translated;
+        }
+      }
+      container.innerHTML = `<div class="alert alert-info">${noFavoritesText}</div>`;
     }
   }
 })();

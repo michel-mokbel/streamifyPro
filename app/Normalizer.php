@@ -37,14 +37,36 @@ final class Normalizer {
         return $out;
     }
 
+    private static function absolutize(?string $url): ?string {
+        if (!$url) return null;
+        $u = trim((string)$url);
+        if ($u === '') return null;
+        if (preg_match('#^https?://#i', $u)) return $u;
+        if ($u[0] !== '/') $u = '/' . $u;
+        return $u;
+    }
+
+    private static function pickThumb(string $source, array $candidates, string $fallback): string {
+        foreach ($candidates as $c) {
+            $val = is_string($c) ? $c : (is_null($c) ? null : (string)$c);
+            if ($val && trim($val) !== '') {
+                return self::absolutize($val) ?? $fallback;
+            }
+        }
+        return $fallback;
+    }
+
     private static function mk(array $r): array {
+        $tags = self::sanitizeTags($r['tags'] ?? []);
+        $category = $r['category'] ?? self::deriveCategory($tags, $r['title'] ?? '', $r['source'] ?? '');
+        
         return [
             'id' => (string)($r['id'] ?? uniqid('item_', true)),
             'type' => strtolower((string)($r['type'] ?? 'video')),
             'source' => (string)($r['source'] ?? 'unknown'),
             'title' => (string)($r['title'] ?? ''),
             'description' => (string)($r['description'] ?? ''),
-            'tags' => self::sanitizeTags($r['tags'] ?? []),
+            'tags' => $tags,
             'age_min' => (int)($r['age_min'] ?? 0),
             'age_max' => (int)($r['age_max'] ?? 99),
             'language' => strtolower((string)($r['language'] ?? 'en')),
@@ -56,8 +78,64 @@ final class Normalizer {
             'content_url' => $r['content_url'] ?? null,
             'channel_id' => $r['channel_id'] ?? null,
             'playlist_id' => $r['playlist_id'] ?? null,
-            'category' => $r['category'] ?? null,
+            'subcategory' => $r['subcategory'] ?? null,
+            'category' => $category,
         ];
+    }
+    
+    private static function deriveCategory(array $tags, string $title, string $source): string {
+        $titleLower = strtolower($title);
+        $tagsLower = array_map('strtolower', $tags);
+        
+        // Check tags and title for category keywords
+        $checks = array_merge($tagsLower, [$titleLower]);
+        
+        // Category detection rules
+        if (self::containsAny($checks, ['alphabet', 'letter', 'abc', 'phonics', 'حروف', 'أبجدية'])) {
+            return 'alphabet';
+        }
+        if (self::containsAny($checks, ['animal', 'zoo', 'wildlife', 'حيوان'])) {
+            return 'animals';
+        }
+        if (self::containsAny($checks, ['number', 'count', 'math', 'أرقام', 'رياضيات'])) {
+            return 'numbers';
+        }
+        if (self::containsAny($checks, ['story', 'stories', 'tale', 'bedtime', 'قصص', 'حكاية'])) {
+            return 'stories';
+        }
+        if (self::containsAny($checks, ['science', 'experiment', 'discover', 'علوم', 'تجربة'])) {
+            return 'science';
+        }
+        if (self::containsAny($checks, ['dance', 'dancing', 'movement', 'رقص'])) {
+            return 'dance';
+        }
+        // Be strict for games to avoid misclassifying kids videos that mention "play"
+        if ($source === 'games' || in_array('game', $tagsLower, true) || in_array('games', $tagsLower, true)) {
+            return 'games';
+        }
+        if (self::containsAny($checks, ['fitness', 'exercise', 'workout', 'sport', 'تمرين', 'رياضة']) || $source === 'fitness') {
+            return 'fitness';
+        }
+        if (self::containsAny($checks, ['music', 'song', 'sing', 'rhyme', 'أغنية', 'موسيقى'])) {
+            return 'music';
+        }
+        if (self::containsAny($checks, ['cartoon', 'animation', 'animated', 'رسوم', 'كرتون'])) {
+            return 'cartoons';
+        }
+        
+        // Default category
+        return 'educational';
+    }
+    
+    private static function containsAny(array $haystack, array $needles): bool {
+        foreach ($haystack as $str) {
+            foreach ($needles as $needle) {
+                if (strpos($str, $needle) !== false) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     private static function fromKids(array $json, string $fname): array {
@@ -74,34 +152,33 @@ final class Normalizer {
                     $title = $v['title'] ?? $v['Title'] ?? '';
                     $desc = $v['description'] ?? $v['Description'] ?? '';
                     $duration = (int)($v['Duration'] ?? ($v['duration'] ?? 120)); // 2 minutes default for kids videos
-                    $thumb = $v['imageCropped'] ?? ($v['imageFile'] ?? ($v['Thumbnail'] ?? null));
+                    $thumb = self::pickThumb('kids', [
+                        $v['imageCropped'] ?? null,
+                        $v['imageFile'] ?? null,
+                        $v['Thumbnail'] ?? null,
+                        $v['thumb'] ?? null,
+                        $v['logo'] ?? null,
+                    ], '/assets/img/placeholders/kids-480x270.png');
                     $src = $v['sourceFile'] ?? ($v['Url'] ?? ($v['URL'] ?? null));
+                    // Extract tags from channel/playlist/title
                     $tags = ['kids','educational'];
+                    $contextStr = strtolower($ch['name'] ?? '') . ' ' . strtolower($pl['name'] ?? '') . ' ' . strtolower($title);
+                    
+                    // Add specific tags based on context
+                    if (strpos($contextStr, 'alphabet') !== false || strpos($contextStr, 'letter') !== false) {
+                        $tags[] = 'alphabet';
+                    }
+                    if (strpos($contextStr, 'number') !== false || strpos($contextStr, 'count') !== false) {
+                        $tags[] = 'numbers';
+                    }
+                    if (strpos($contextStr, 'animal') !== false) {
+                        $tags[] = 'animals';
+                    }
+                    if (strpos($contextStr, 'story') !== false || strpos($contextStr, 'stories') !== false) {
+                        $tags[] = 'stories';
+                    }
+                    
                     $out[] = self::mk([
-                'source' => 'fitness',
-                'category' => strtolower((string)($v['category_en'] ?? 'fitness')),
-                'subcategory' => '',
-                'channel' => '',
-                'playlist' => '',
-
-                        'source' => 'streaming',
-                        'category' => strtolower((string)($ch['category'] ?? '')),
-                        'subcategory' => '',
-                        'channel' => '',
-                        'playlist' => '',
-
-                        'source' => 'games',
-                        'category' => strtolower((string)($ch['category'] ?? '')),
-                        'subcategory' => '',
-                        'channel' => '',
-                        'playlist' => '',
-
-                        'source' => 'kids',
-                        'category' => strtolower((string)($ch['name'] ?? '')),
-                        'subcategory' => strtolower((string)($pl['name'] ?? '')),
-                        'channel' => strtolower((string)($ch['name'] ?? '')),
-                        'playlist' => strtolower((string)($pl['name'] ?? '')),
-
                         'id' => (string)($v['id'] ?? $v['ID'] ?? uniqid('kids_', true)),
                         'type' => 'video',
                         'source' => 'kids',
@@ -119,6 +196,8 @@ final class Normalizer {
                         'content_url' => $src,
                         'channel_id' => $channelId,
                         'playlist_id' => $playlistId,
+                        'channel_name' => $ch['name'] ?? null,
+                        'playlist_name' => $pl['name'] ?? null,
                     ]);
                 }
             }
@@ -133,12 +212,19 @@ final class Normalizer {
         foreach ($groups as $g) {
             $html5 = $g['HTML5'] ?? [];
             foreach ($html5 as $cat) {
-                $catName = $cat['Name'] ?? 'games';
+                $catName = strtolower((string)($cat['Name'] ?? 'games'));
                 $items = $cat['Content'] ?? [];
                 foreach ($items as $it) {
                     $title = $it['Title'] ?? ($it['Package_id'] ?? 'Game');
                     $desc = $it['Description'] ?? '';
-                    $thumb = $it['Thumbnail'] ?? null;
+                    $thumb = self::pickThumb('games', [
+                        $it['Thumbnail_Large'] ?? null,
+                        $it['Thumb'] ?? null,
+                        $it['Logo'] ?? null,
+                        $it['logo'] ?? null,
+                        $it['Image'] ?? null,
+                        $it['image'] ?? null,
+                    ], 'https://via.placeholder.com/480x270?text=Game');
                     $src = $it['Url'] ?? ($it['URL'] ?? null);
                     $tags = ['game', $catName];
                     $out[] = self::mk([
@@ -157,7 +243,8 @@ final class Normalizer {
                         'rating' => (float)($it['avrate'] ?? 0),
                         'popularity' => (int)($it['PlayCount'] ?? 0),
                         'content_url' => $src,
-                        'category' => $catName,
+                        'category' => 'games',
+                        'subcategory' => $catName,
                     ]);
                 }
             }
@@ -177,7 +264,12 @@ final class Normalizer {
                 foreach ($items as $it) {
                     $title = $it['Title'] ?? 'Video';
                     $desc = $it['Description'] ?? '';
-                    $thumb = $it['Thumbnail'] ?? null;
+                    $thumb = self::pickThumb('streaming', [
+                        $it['Thumbnail'] ?? null,
+                        $it['Image'] ?? null,
+                        $it['Poster'] ?? null,
+                        $it['Thumb'] ?? null,
+                    ], '/assets/img/placeholders/video-480x270.png');
                     $duration = (int)($it['Duration'] ?? 0);
                     $src = $it['Url'] ?? ($it['URL'] ?? null);
                     $tags = ['video', $catName];
@@ -212,7 +304,13 @@ final class Normalizer {
         foreach ($videos as $v) {
             $title = $v['name'] ?? 'Exercise';
             $desc = $v['description'] ?? '';
-            $thumb = null;
+            $idForThumb = (string)($v['id'] ?? '');
+            $thumb = self::pickThumb('fitness', [
+                $v['thumbnail'] ?? null,
+                $v['thumb'] ?? null,
+                $v['image'] ?? null,
+                $idForThumb ? '/streamifyPro/assets/thumbnails/' . $idForThumb . '.jpg' : null,
+            ], '/assets/img/placeholders/fitness-480x270.png');
             $src = $v['url'] ?? null;
             $tags = ['fitness','exercise'];
             $out[] = self::mk([

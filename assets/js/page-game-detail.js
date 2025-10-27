@@ -4,7 +4,6 @@
   document.addEventListener('DOMContentLoaded', init);
   
   // Re-initialize when language changes
-  window.addEventListener('languageChanged', init);
 
   async function init() {
     const params = new URLSearchParams(window.location.search);
@@ -18,7 +17,7 @@
     }
 
     // Get current language
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const data = await fetchData('games', currentLang);
 
     // Find the category and game
@@ -72,7 +71,7 @@
     const playBtn = document.getElementById('gd-play');
 
     // Get current language and use Arabic translations if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const gameTitle = currentLang === 'ar' && game.title_ar ? game.title_ar : game.Title;
     const gameDesc = currentLang === 'ar' && game.description_ar ? game.description_ar : game.Description;
     

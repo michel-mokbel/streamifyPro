@@ -24,7 +24,7 @@ if ($user) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= get_language() ?>" dir="<?= get_direction() ?>">
 
 <head>
   <meta charset="UTF-8" />
@@ -85,22 +85,22 @@ if ($user) {
           <div class="language-options">
             <div class="row g-3">
               <div class="col-6">
-                <button class="btn btn-outline-primary w-100 language-option" data-lang="en">
+                <a href="set_language.php?lang=en" class="btn btn-outline-primary w-100 language-option" data-lang="en">
                   <div class="d-flex flex-column align-items-center">
                     <span class="fs-4 mb-2">🇺🇸</span>
                     <span class="fw-semibold">English</span>
                     <small class="text-muted">English</small>
                   </div>
-                </button>
+                </a>
               </div>
               <div class="col-6">
-                <button class="btn btn-outline-primary w-100 language-option" data-lang="ar">
+                <a href="set_language.php?lang=ar" class="btn btn-outline-primary w-100 language-option" data-lang="ar">
                   <div class="d-flex flex-column align-items-center">
                     <span class="fs-4 mb-2">🇸🇦</span>
                     <span class="fw-semibold">العربية</span>
                     <small class="text-muted">Arabic</small>
                   </div>
-                </button>
+                </a>
               </div>
             </div>
           </div>

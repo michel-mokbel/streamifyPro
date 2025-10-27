@@ -4,16 +4,13 @@
 
   document.addEventListener("DOMContentLoaded", init);
 
-  // Re-initialize when language changes
-  window.addEventListener("languageChanged", init);
-
   async function init() {
     const container = document.getElementById("streaming-content");
     if (!container) return;
 
     try {
-      // Get current language
-      const currentLang = localStorage.getItem("streamify_language") || "en";
+      // Get current language from HTML tag (set by PHP)
+      const currentLang = document.documentElement.getAttribute('lang') || "en";
       const data = await fetchData("streaming", currentLang);
 
       const bubbles = document.getElementById("streaming-category-bubbles");
@@ -155,10 +152,15 @@
     const watchLaterText =
       window.i18n?.t("streaming.watchLater") || "Watch Later";
 
-    // Get current language and use Arabic translations if available
-    const currentLang = localStorage.getItem("streamify_language") || "en";
+    // Get current language from HTML tag
+    const currentLang = document.documentElement.getAttribute('lang') || "en";
     const videoTitle =
       currentLang === "ar" && video.title_ar ? video.title_ar : video.Title;
+    
+    // Debug logging
+    if (currentLang === 'ar') {
+    //  console.log(`🎬 Streaming Card: Language=${currentLang}, Title=${video.Title}, Title_AR=${video.title_ar}, Using: ${videoTitle}`);
+    }
 
     wrap.innerHTML = `
       <div class="card shadow-sm h-100">

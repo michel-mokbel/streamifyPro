@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Cache</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .danger {
+            background: #dc3545;
+        }
+        .danger:hover {
+            background: #c82333;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧹 Clear Browser Cache & Storage</h1>
+    <p>Click the button below to clear all localStorage and sessionStorage data. This will fix any conflicts with the old language switching system.</p>
+    
+    <button onclick="clearAll()">Clear All Storage</button>
+    <button onclick="clearLanguageOnly()">Clear Language Data Only</button>
+    
+    <div id="result"></div>
+
+    <hr style="margin: 30px 0;">
+    
+    <h2>Current Storage Content:</h2>
+    <div style="text-align: left; background: #f5f5f5; padding: 15px; border-radius: 6px; font-family: monospace; font-size: 12px;">
+        <strong>localStorage:</strong>
+        <pre id="localStorage-content"></pre>
+        <strong>sessionStorage:</strong>
+        <pre id="sessionStorage-content"></pre>
+    </div>
+
+    <button onclick="location.href='index.php'" style="margin-top: 20px;">Go to Login Page</button>
+    <button onclick="location.href='home.php'" style="margin-top: 20px; background: #28a745;">Go to Home</button>
+
+    <script>
+        function displayStorage() {
+            const localStorageDiv = document.getElementById('localStorage-content');
+            const sessionStorageDiv = document.getElementById('sessionStorage-content');
+            
+            // Display localStorage
+            let localStorageContent = '';
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const value = localStorage.getItem(key);
+                localStorageContent += `${key}: ${value}\n`;
+            }
+            localStorageDiv.textContent = localStorageContent || '(empty)';
+            
+            // Display sessionStorage
+            let sessionStorageContent = '';
+            for (let i = 0; i < sessionStorage.length; i++) {
+                const key = sessionStorage.key(i);
+                const value = sessionStorage.getItem(key);
+                sessionStorageContent += `${key}: ${value}\n`;
+            }
+            sessionStorageDiv.textContent = sessionStorageContent || '(empty)';
+        }
+
+        function clearAll() {
+            localStorage.clear();
+            sessionStorage.clear();
+            
+            document.getElementById('result').innerHTML = 
+                '<div class="success">✅ All storage cleared! Please refresh the page or navigate to index.php</div>';
+            
+            displayStorage();
+        }
+
+        function clearLanguageOnly() {
+            const keysToRemove = [
+                'streamify_language',
+                'sp_ui_lang',
+                'streamify_lang',
+                'streamify_dir',
+                'language',
+                'ui_lang'
+            ];
+            
+            let removedCount = 0;
+            keysToRemove.forEach(key => {
+                if (localStorage.getItem(key)) {
+                    localStorage.removeItem(key);
+                    removedCount++;
+                }
+                if (sessionStorage.getItem(key)) {
+                    sessionStorage.removeItem(key);
+                    removedCount++;
+                }
+            });
+            
+            document.getElementById('result').innerHTML = 
+                `<div class="success">✅ Removed ${removedCount} language-related items. Please refresh the page.</div>`;
+            
+            displayStorage();
+        }
+
+        // Display storage on load
+        displayStorage();
+    </script>
+</body>
+</html>
+

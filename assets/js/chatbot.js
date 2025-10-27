@@ -1,6 +1,6 @@
 // Streamify Pro - Floating Chat Modal (i18n, theming, thinking indicator)
 (function(){
-  const API = '/api/llm_agent.php';
+  const API = '/streamifyPro/api/chatbot.php';
   const LANG_JSON = '/api/json/languages.json';
   const TRANSLATIONS_JSON = '/api/json/translations.json';
 
@@ -39,8 +39,19 @@
   // Utilities
   const $$ = (sel, ctx=document) => ctx.querySelector(sel);
 
+  function readPersist(key){
+    try { const v = localStorage.getItem(key); if (v!=null) return JSON.parse(v); } catch(_){}
+    try { const v = sessionStorage.getItem(key); if (v!=null) return JSON.parse(v); } catch(_){}
+    return null;
+  }
+  function writePersist(key, value){
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch(_){}
+    try { sessionStorage.setItem(key, JSON.stringify(value)); } catch(_){}
+  }
+
+  // Read language from HTML (set by PHP session) - DO NOT override!
   const state = {
-    lang: detectLang(),
+    lang: document.documentElement.getAttribute('lang') || 'en',
     dir: document.documentElement.getAttribute('dir') || 'ltr',
     i18n: I18N_DEFAULT.en,
     age: 6,
@@ -65,6 +76,11 @@
   }
 
   function detectLang(){
+    // Try main i18n system key first, then chatbot key for backward compatibility
+    const mainLang = readPersist('streamify_language');
+    if (mainLang && typeof mainLang === 'string') return mainLang.toLowerCase();
+    const persisted = readPersist('sp_ui_lang');
+    if (persisted && typeof persisted === 'string') return persisted.toLowerCase();
     const htmlLang = (document.documentElement.getAttribute('lang') || '').split('-')[0];
     if (htmlLang) return htmlLang.toLowerCase();
     // fallback: try to infer from body classes or other hints
@@ -79,29 +95,15 @@
         if (langPack && typeof langPack === 'object'){
           // Merge known keys only
           state.i18n = Object.assign({}, I18N_DEFAULT.en, I18N_DEFAULT[state.lang] || {}, langPack);
-          // Also update dir if provided
-          if (window.StreamifyTranslations.dir && window.StreamifyTranslations.dir[state.lang]){
-            state.dir = window.StreamifyTranslations.dir[state.lang];
-            document.documentElement.setAttribute('dir', state.dir);
-          }
+          // Read dir from HTML (set by PHP)
+          state.dir = document.documentElement.getAttribute('dir') || 'ltr';
           return;
         }
       }
     }catch(_){}
 
-    try{
-      // Fetch languages.json to confirm dir for chosen lang
-      const langRes = await fetch(LANG_JSON);
-      if (langRes.ok){
-        const langs = await langRes.json();
-        const list = langs.languages || langs;
-        const found = (list || []).find(l => (l.code||'').toLowerCase() === state.lang);
-        if (found && found.dir) {
-          state.dir = found.dir;
-          document.documentElement.setAttribute('dir', state.dir);
-        }
-      }
-    }catch(_){/* ignore */}
+    // Read direction from HTML (set by PHP session)
+    state.dir = document.documentElement.getAttribute('dir') || 'ltr';
 
     // Load translations.json if present; merge minimal keys we use
     try{
@@ -132,22 +134,24 @@
 
   const modal = document.createElement('div');
   modal.id='sp-chat-modal';
+  const backdrop = document.createElement('div');
+  backdrop.id='sp-chat-backdrop';
   modal.innerHTML = `
-    <div id="sp-chat-header">
+    <div id="sp-chat-header" style= "display: none">
       <div>
         <div id="sp-chat-title"></div>
         <div id="sp-chat-sub"></div>
       </div>
       <button id="sp-close" style="background:none;border:none;color:#fff;font-size:22px;line-height:1" aria-label="Close">×</button>
     </div>
-    <div id="sp-toolbar">
-      <div style="display:flex; gap:8px; align-items:center;">
+    <div id="sp-toolbar" style= "display: none">
+      <div style="display:none;">
         <label style="font-size:12px">${/* age */''}<span id="sp-age-label"></span></label>
         <input id="sp-age" type="number" min="2" max="14" value="6" style="width:64px">
         <label style="font-size:12px"><span id="sp-min-label"></span></label>
         <input id="sp-minutes" type="number" min="5" max="120" step="5" value="20" style="width:72px">
       </div>
-      <div style="display:flex; gap:8px; align-items:center;">
+      <div style="display:none; gap:8px; align-items:center; justify-content:flex-end;">
         <label style="font-size:12px"><span id="sp-lang-label"></span></label>
         <select id="sp-lang" style="min-width:90px">
           <option value="en">English</option>
@@ -174,7 +178,12 @@
     // Inject
     document.head.appendChild(style);
     document.body.appendChild(btn);
+    document.body.appendChild(backdrop);
     document.body.appendChild(modal);
+
+    // Ensure modal uses flex for column layout defined in CSS
+    const modalEl = $('#sp-chat-modal');
+    if (modalEl) modalEl.style.display = 'none';
 
     // Set labels/translations
     $('#sp-chat-title').textContent = state.i18n.title;
@@ -186,10 +195,8 @@
     $('#sp-lang-label').textContent = state.i18n.language + ':';
     $('#sp-lang').value = state.lang;
 
-    // RTL handling
-    if (state.dir === 'rtl') {
-      document.documentElement.setAttribute('dir','rtl');
-    }
+    // Read direction from HTML (set by PHP)
+    state.dir = document.documentElement.getAttribute('dir') || 'ltr';
 
     wire();
   });
@@ -232,60 +239,71 @@
       });
     };
 
-    function getChipPresets(){
-      const t = state.i18n;
-      const isArabic = state.lang === 'ar';
-      
-      return [
-        { 
-          key: 'chip_alphabet',
-          label: isArabic ? 'حروف الأبجدية' : 'Alphabet Videos',
-          makePrompt: (s) => isArabic ? 'أريد قائمة تشغيل للحروف الأبجدية' : 'Show me alphabet videos playlist'
-        },
-        {
-          key: 'chip_numbers',
-          label: isArabic ? 'الأرقام والرياضيات' : 'Numbers & Math',
-          makePrompt: (s) => isArabic ? 'أريد فيديوهات عن الأرقام والرياضيات' : 'I want numbers and math videos'
-        },
-        {
-          key: 'chip_animals',
-          label: isArabic ? 'الحيوانات والطبيعة' : 'Animals & Nature',
-          makePrompt: (s) => isArabic ? 'أريد فيديوهات عن الحيوانات' : 'Show me videos about animals'
-        },
-        {
-          key: 'chip_games',
-          label: isArabic ? 'ألعاب تفاعلية' : 'Interactive Games',
-          makePrompt: (s) => isArabic ? 'أريد ألعاب تفاعلية' : 'Suggest interactive games'
-        },
-        {
-          key: 'chip_music',
-          label: isArabic ? 'أغاني ومقاطع موسيقية' : 'Music & Songs',
-          makePrompt: (s) => isArabic ? 'أريد أغاني تعليمية' : 'Show me educational songs'
-        },
-        {
-          key: 'chip_fitness',
-          label: isArabic ? 'تمارين رياضية' : 'Fitness & Exercise',
-          makePrompt: (s) => isArabic ? 'أريد تمارين رياضية' : 'Give me fitness exercises'
-        },
-        {
-          key: 'chip_stories',
-          label: isArabic ? 'قصص وحكايات' : 'Stories',
-          makePrompt: (s) => isArabic ? 'أريد قصص تعليمية' : 'I want educational stories'
-        },
-        {
-          key: 'chip_science',
-          label: isArabic ? 'علوم واكتشافات' : 'Science',
-          makePrompt: (s) => isArabic ? 'أريد فيديوهات علمية' : 'Show me science videos'
-        }
-      ];
-    }
+  function getChipPresets(){
+    const t = state.i18n;
+    const isArabic = state.lang === 'ar';
 
+    return [
+      {
+        key: 'chip_alphabet',
+        label: isArabic ? 'حروف الأبجدية' : 'Alphabet Songs',
+        makePrompt: (s) => isArabic ? 'حروف الأبجدية' : 'Alphabet songs'
+      },
+      {
+        key: 'chip_animals',
+        label: isArabic ? 'فيديوهات الحيوانات' : 'Animal Videos',
+        makePrompt: (s) => isArabic ? 'فيديوهات عن الحيوانات' : 'Animal videos'
+      },
+      {
+        key: 'chip_games',
+        label: isArabic ? 'ألعاب للأطفال' : 'Games for Kids',
+        makePrompt: (s) => isArabic ? 'ألعاب للأطفال' : 'Games for kids'
+      },
+      {
+        key: 'chip_stories',
+        label: isArabic ? 'قصص قبل النوم' : 'Bedtime Stories',
+        makePrompt: (s) => isArabic ? 'قصص قبل النوم' : 'Bedtime stories'
+      },
+      {
+        key: 'chip_numbers',
+        label: isArabic ? 'تعلم الأرقام' : 'Learn Numbers',
+        makePrompt: (s) => isArabic ? 'تعلم الأرقام' : 'Learn numbers'
+      },
+      {
+        key: 'chip_dance',
+        label: isArabic ? 'رقص وحركة' : 'Dance & Movement',
+        makePrompt: (s) => isArabic ? 'فيديوهات رقص' : 'Dance videos'
+      },
+      {
+        key: 'chip_science',
+        label: isArabic ? 'علوم للأطفال' : 'Science for Kids',
+        makePrompt: (s) => isArabic ? 'علوم للأطفال' : 'Science for kids'
+      },
+      {
+        key: 'chip_music',
+        label: isArabic ? 'أغاني تعليمية' : 'Educational Songs',
+        makePrompt: (s) => isArabic ? 'أغاني تعليمية' : 'Educational songs'
+      }
+    ];
+  }
+
+    const setOpen = (open) => {
+      modal.style.display = open ? 'flex' : 'none';
+      backdrop.style.display = open ? 'block' : 'none';
+      if (open) {
+        // ensure chips visible at top of modal
+        const chips = $('#sp-chips');
+        if (chips) chips.scrollLeft = 0;
+        input.focus();
+      }
+    };
     const toggle = () => {
-      modal.style.display = (modal.style.display === 'block') ? 'none' : 'block';
-      if (modal.style.display === 'block') input.focus();
+      const open = (modal.style.display !== 'flex');
+      setOpen(open);
     };
     btn.addEventListener('click', toggle);
-    close.addEventListener('click', toggle);
+    close.addEventListener('click', () => setOpen(false));
+    backdrop.addEventListener('click', () => setOpen(false));
 
     const push = (text, who='user') => {
       const msg = document.createElement('div');
@@ -351,7 +369,7 @@
         const res = await fetch(API, {
           method:'POST',
           headers:{'Content-Type':'application/json'},
-          body: JSON.stringify({ message: text, language: state.lang, age: state.age, minutes: state.minutes })
+          body: JSON.stringify({ message: text, max_items: 8, debug: false })
         });
         const json = await res.json();
         // remove typing
@@ -383,9 +401,16 @@
     send.addEventListener('click', () => ask());
     input.addEventListener('keydown', (e)=>{ if(e.key==='Enter') ask(); });
 
-    // Rebuild chips when controls change
+    // Language change - redirect through PHP to update session
+    langSel.addEventListener('change', ()=>{ 
+      const newLang = langSel.value;
+      if (newLang && newLang !== state.lang) {
+        window.location.href = `set_language.php?lang=${newLang}`;
+      }
+    });
+    
+    // Rebuild chips when other controls change
     ['change','input'].forEach(evt => {
-      langSel.addEventListener(evt, ()=>{ state.lang = langSel.value; buildChips(); });
       ageInput.addEventListener(evt, ()=>{ state.age = parseInt(ageInput.value||'6',10); buildChips(); });
       minInput.addEventListener(evt, ()=>{ state.minutes = parseInt(minInput.value||'20',10); buildChips(); });
     });

@@ -48,6 +48,14 @@
       "en": "Back",
       "ar": "رجوع"
     },
+    "educational": {
+      "en": "Educational",
+      "ar": "تعليمي"
+    },
+    "entertainment": {
+      "en": "Entertainment",
+      "ar": "ترفيه"
+    },
     "next": {
       "en": "Next",
       "ar": "التالي"
@@ -305,6 +313,92 @@
     "rating": {
       "en": "Rating",
       "ar": "التقييم"
+    },
+    "loadMore": {
+      "en": "Load More",
+      "ar": "تحميل المزيد"
+    },
+    "more": {
+      "en": "more",
+      "ar": "المزيد"
+    }
+  },
+  "gameCategories": {
+    "Ben 10": {
+      "en": "Ben 10",
+      "ar": "بن 10"
+    },
+    "Boomerang": {
+      "en": "Boomerang",
+      "ar": "بوميرانج"
+    },
+    "Cartoon Network": {
+      "en": "Cartoon Network",
+      "ar": "كرتون نتورك"
+    },
+    "Crash the Bash": {
+      "en": "Crash the Bash",
+      "ar": "كراش ذا باش"
+    },
+    "Daniel Tiger": {
+      "en": "Daniel Tiger",
+      "ar": "دانيال تايجر"
+    },
+    "Dreamworks": {
+      "en": "Dreamworks",
+      "ar": "دريم ووركس"
+    },
+    "Looney Tunes": {
+      "en": "Looney Tunes",
+      "ar": "لوني تونز"
+    },
+    "Marvel": {
+      "en": "Marvel",
+      "ar": "مارفل"
+    },
+    "Mr. Bean": {
+      "en": "Mr. Bean",
+      "ar": "مستر بين"
+    },
+    "Nickelodeon": {
+      "en": "Nickelodeon",
+      "ar": "نيكلوديون"
+    },
+    "Scooby-Doo": {
+      "en": "Scooby-Doo",
+      "ar": "سكوبي دو"
+    },
+    "SpongeBob SquarePants": {
+      "en": "SpongeBob SquarePants",
+      "ar": "سبونج بوب"
+    },
+    "Star Wars": {
+      "en": "Star Wars",
+      "ar": "حرب النجوم"
+    },
+    "Teenage Mutant Ninja Turtles": {
+      "en": "Teenage Mutant Ninja Turtles",
+      "ar": "السلاحف النينجا"
+    },
+    "The Amazing World of Gumball": {
+      "en": "The Amazing World of Gumball",
+      "ar": "عالم غامبول المدهش"
+    },
+    "The Loud House": {
+      "en": "The Loud House",
+      "ar": "البيت الصاخب"
+    },
+    "The Smurfs": {
+      "en": "The Smurfs",
+      "ar": "السنافر"
+    },
+    "Tom and Jerry": {
+      "en": "Tom and Jerry",
+      "ar": "توم وجيري"
+    },
+    "Wacky Races": {
+      "en": "Wacky Races",
+      "ar": "سباقات واكي"
     }
   },
   "gameDetail": {
@@ -550,6 +644,10 @@
       "en": "Username",
       "ar": "اسم المستخدم"
     },
+    "email": {
+      "en": "Email",
+      "ar": "البريد الإلكتروني"
+    },
     "password": {
       "en": "Password",
       "ar": "كلمة المرور"
@@ -558,13 +656,93 @@
       "en": "Enter your username",
       "ar": "أدخل اسم المستخدم"
     },
+    "chooseUsername": {
+      "en": "Choose a username",
+      "ar": "اختر اسم مستخدم"
+    },
+    "enterEmail": {
+      "en": "your@email.com",
+      "ar": "بريدك@الإلكتروني.com"
+    },
     "enterPassword": {
-      "en": "Enter your password",
-      "ar": "أدخل كلمة المرور"
+      "en": "••••••••••",
+      "ar": "••••••••••"
     },
     "rememberMe": {
       "en": "Remember me",
       "ar": "تذكرني"
+    },
+    "welcomeBack": {
+      "en": "Welcome Back",
+      "ar": "مرحباً بعودتك"
+    },
+    "continueJourney": {
+      "en": "Continue your streaming journey",
+      "ar": "تابع رحلة البث الخاصة بك"
+    },
+    "joinStreamify": {
+      "en": "Join Streamify Pro",
+      "ar": "انضم إلى ستريميفاي برو"
+    },
+    "startJourney": {
+      "en": "Start your entertainment journey today",
+      "ar": "ابدأ رحلة الترفيه اليوم"
+    },
+    "createAccount": {
+      "en": "Create Account",
+      "ar": "إنشاء حساب"
+    },
+    "newToStreamify": {
+      "en": "New to Streamify?",
+      "ar": "جديد على ستريميفاي؟"
+    },
+    "alreadyHaveAccount": {
+      "en": "Already have an account?",
+      "ar": "لديك حساب بالفعل؟"
+    },
+    "ultimateHub": {
+      "en": "Your Ultimate Entertainment Hub",
+      "ar": "مركزك الترفيهي الشامل"
+    },
+    "feature1Title": {
+      "en": "10,000+ Movies & Shows",
+      "ar": "10,000+ فيلم ومسلسل"
+    },
+    "feature1Description": {
+      "en": "Unlimited streaming of blockbusters, series, and exclusive originals. 4K Ultra HD quality with no ads.",
+      "ar": "بث غير محدود للأفلام الرائجة والمسلسلات والأعمال الحصرية. جودة 4K Ultra HD بدون إعلانات."
+    },
+    "feature2Title": {
+      "en": "Browser Gaming",
+      "ar": "ألعاب المتصفح"
+    },
+    "feature2Description": {
+      "en": "Play premium HTML5 games instantly. No downloads, no waiting. From puzzles to action adventures.",
+      "ar": "العب ألعاب HTML5 المميزة فوراً. بدون تحميل، بدون انتظار. من الألغاز إلى مغامرات الأكشن."
+    },
+    "feature3Title": {
+      "en": "Live Fitness Classes",
+      "ar": "حصص اللياقة المباشرة"
+    },
+    "feature3Description": {
+      "en": "Join expert-led workouts from yoga to HIIT. Real-time coaching and personalized training programs.",
+      "ar": "انضم إلى تمارين يقودها خبراء من اليوغا إلى HIIT. تدريب فوري وبرامج تدريب مخصصة."
+    },
+    "feature4Title": {
+      "en": "Kids Safe Zone",
+      "ar": "منطقة آمنة للأطفال"
+    },
+    "feature4Description": {
+      "en": "Curated educational content for children. Parental controls and age-appropriate entertainment.",
+      "ar": "محتوى تعليمي منتقى للأطفال. رقابة أبوية وترفيه مناسب للعمر."
+    },
+    "startPremiumJourney": {
+      "en": "Start Your Premium Journey",
+      "ar": "ابدأ رحلتك المميزة"
+    },
+    "joinNow": {
+      "en": "Join Now",
+      "ar": "انضم الآن"
     }
   }
 }

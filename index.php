@@ -1,7 +1,9 @@
-<?php require_once __DIR__ . '/includes/session.php';
-require_guest(); ?>
+<?php 
+require_once __DIR__ . '/includes/session.php';
+require_guest(); 
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= get_language() ?>" dir="<?= get_direction() ?>">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,6 +12,7 @@ require_guest(); ?>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/i18n.js"></script>
     <style>
         body.login-page {
             min-height: 100vh;
@@ -67,7 +70,9 @@ require_guest(); ?>
             align-items: stretch;
             position: relative;
             z-index: 1;
+            flex-direction: row;
         }
+
 
         /* Left Side - Login Form */
         .login-section {
@@ -526,16 +531,33 @@ require_guest(); ?>
             }
 
             .login-section {
-                flex: 1;
+                flex: 0 0 auto;
                 padding: 2rem 1.5rem;
+                order: 1;
+            }
+
+            .feature-section {
+                flex: 0 0 auto;
+                padding: 2rem 1.5rem;
+                order: 2;
             }
 
             .login-card {
                 padding: 2rem 1.5rem;
             }
 
-            .feature-section {
-                display: none;
+            .feature-showcase {
+                max-width: 100%;
+                min-height: auto;
+                padding: 2rem 1.5rem;
+            }
+
+            .feature-title {
+                font-size: 1.5rem;
+            }
+
+            .feature-description {
+                font-size: 0.95rem;
             }
 
             .welcome-title {
@@ -560,24 +582,254 @@ require_guest(); ?>
             .brand-title {
                 font-size: 1.35rem;
             }
+
+            .feature-section {
+                padding: 1.5rem 1rem;
+            }
+
+            .feature-showcase {
+                padding: 1.75rem 1.25rem;
+            }
+
+            .feature-visual {
+                width: 90px;
+                height: 90px;
+                margin-bottom: 1.25rem;
+            }
+
+            .feature-visual i {
+                font-size: 2.5rem;
+            }
+
+            .feature-title {
+                font-size: 1.35rem;
+            }
+
+            .feature-description {
+                font-size: 0.875rem;
+            }
+
+            .carousel-nav {
+                gap: 1.25rem;
+            }
+
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+            }
+
+            .cta-button {
+                padding: 0.75rem 2rem;
+                font-size: 0.875rem;
+            }
+        }
+
+        /* Language Selector Styles */
+        .language-selector {
+            position: fixed;
+            top: 1.5rem;
+            right: 1.5rem;
+            z-index: 1000;
+        }
+
+        [dir="rtl"] .language-selector {
+            right: auto;
+            left: 1.5rem;
+        }
+
+        .language-dropdown {
+            position: relative;
+        }
+
+        .language-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1rem;
+            background: rgba(35, 39, 47, 0.75);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            color: #e8eaed;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .language-btn:hover {
+            background: rgba(45, 49, 57, 0.85);
+            border-color: #6366f1;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.3);
+        }
+
+        .language-btn i {
+            font-size: 1rem;
+            color: #8b5cf6;
+        }
+
+        .language-flag {
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+
+        .language-menu {
+            position: absolute;
+            top: calc(100% + 0.5rem);
+            right: 0;
+            min-width: 200px;
+            background: rgba(35, 39, 47, 0.95);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            padding: 0.5rem;
+            display: none;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            animation: slideDown 0.2s ease;
+        }
+
+        [dir="rtl"] .language-menu {
+            right: auto;
+            left: 0;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .language-menu.show {
+            display: block;
+        }
+
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.625rem 0.875rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: #e8eaed;
+            text-decoration: none;
+        }
+
+        .language-option:hover {
+            background: rgba(99, 102, 241, 0.15);
+            color: #e8eaed;
+        }
+
+        .language-option.active {
+            background: rgba(99, 102, 241, 0.25);
+            color: #a78bfa;
+        }
+
+        .language-option .language-flag {
+            font-size: 1.5rem;
+        }
+
+        .language-info {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .language-name {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .language-native {
+            font-size: 0.75rem;
+            color: #8b92a6;
+        }
+
+        .language-option.active .language-native {
+            color: #a78bfa;
+        }
+
+        .language-check {
+            color: #8b5cf6;
+            font-size: 1rem;
+            display: none;
+        }
+
+        .language-option.active .language-check {
+            display: block;
+        }
+
+        /* RTL Adjustments */
+        [dir="rtl"] .toggle-auth button {
+            margin-left: 0;
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .language-selector {
+                top: 1rem;
+                right: 1rem;
+            }
+
+            [dir="rtl"] .language-selector {
+                right: auto;
+                left: 1rem;
+            }
         }
     </style>
 </head>
 
 <body class="login-page">
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <div class="language-dropdown">
+            <button class="language-btn" id="languageBtn">
+                <i class="bi bi-globe"></i>
+                <span class="language-flag" id="currentFlag">🇺🇸</span>
+                <span id="currentLangName">English</span>
+                <i class="bi bi-chevron-down" style="font-size: 0.75rem;"></i>
+            </button>
+            <div class="language-menu" id="languageMenu">
+                <a href="set_language.php?lang=en" class="language-option active" data-lang="en" data-flag="🇺🇸" data-name="English" data-native="English">
+                    <span class="language-flag">🇺🇸</span>
+                    <div class="language-info">
+                        <span class="language-name">English</span>
+                        <span class="language-native">English</span>
+                    </div>
+                    <i class="bi bi-check-circle-fill language-check"></i>
+                </a>
+                <a href="set_language.php?lang=ar" class="language-option" data-lang="ar" data-flag="🇸🇦" data-name="Arabic" data-native="العربية">
+                    <span class="language-flag">🇸🇦</span>
+                    <div class="language-info">
+                        <span class="language-name">Arabic</span>
+                        <span class="language-native">العربية</span>
+                    </div>
+                    <i class="bi bi-check-circle-fill language-check"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="login-container">
         <!-- Left Side - Login Form -->
         <div class="login-section">
             <div class="login-card">
                 <div class="logo-wrapper">
                     <img src="assets/img/logo1.png" alt="Streamify Pro">
-                    <h1 class="brand-title">Streamify Pro</h1>
-                    <p class="brand-subtitle">Your Ultimate Entertainment Hub</p>
+                    <h1 class="brand-title" data-i18n="common.appName">Streamify Pro</h1>
+                    <p class="brand-subtitle" data-i18n="auth.ultimateHub">Your Ultimate Entertainment Hub</p>
                 </div>
 
                 <div class="welcome-section">
-                    <h2 class="welcome-title">Welcome Back</h2>
-                    <p class="welcome-subtitle">Continue your streaming journey</p>
+                    <h2 class="welcome-title" data-i18n="auth.welcomeBack">Welcome Back</h2>
+                    <p class="welcome-subtitle" data-i18n="auth.continueJourney">Continue your streaming journey</p>
                 </div>
 
                 <div id="authAlert" class="alert-danger d-none" role="alert"></div>
@@ -585,40 +837,40 @@ require_guest(); ?>
                 <form id="authForm" data-mode="login">
                     <!-- Login Mode -->
                     <div id="group-usernameOrEmail">
-                        <label class="form-label-text">Username</label>
+                        <label class="form-label-text" data-i18n="auth.username">Username</label>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="usernameOrEmail" name="username" placeholder="Enter your username" required />
+                            <input type="text" class="form-control" id="usernameOrEmail" name="username" data-i18n-placeholder="auth.enterUsername" placeholder="Enter your username" required />
                         </div>
                     </div>
 
                     <!-- Signup Mode -->
                     <div id="group-username" class="d-none">
-                        <label class="form-label-text">Username</label>
+                        <label class="form-label-text" data-i18n="auth.username">Username</label>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="signupUsername" name="signup_username" placeholder="Choose a username" />
+                            <input type="text" class="form-control" id="signupUsername" name="signup_username" data-i18n-placeholder="auth.chooseUsername" placeholder="Choose a username" />
                         </div>
                     </div>
 
                     <div id="group-email" class="d-none">
-                        <label class="form-label-text">Email</label>
+                        <label class="form-label-text" data-i18n="auth.email">Email</label>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="signupEmail" name="email" placeholder="your@email.com" />
+                            <input type="email" class="form-control" id="signupEmail" name="email" data-i18n-placeholder="auth.enterEmail" placeholder="your@email.com" />
                         </div>
                     </div>
 
-                    <label class="form-label-text">Password</label>
+                    <label class="form-label-text" data-i18n="auth.password">Password</label>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="••••••••••" required />
+                        <input type="password" class="form-control" id="password" name="password" data-i18n-placeholder="auth.enterPassword" placeholder="••••••••••" required />
                     </div>
 
                     <button id="submitBtn" class="btn-login" type="submit">
-                        <span>Sign In</span>
+                        <span data-i18n="auth.signIn">Sign In</span>
                     </button>
                 </form>
 
                 <div class="toggle-auth">
-                    <span id="toggleText">New to Streamify?</span>
-                    <button id="toggleBtn">Create Account</button>
+                    <span id="toggleText" data-i18n="auth.newToStreamify">New to Streamify?</span>
+                    <button id="toggleBtn" data-i18n="auth.createAccount">Create Account</button>
                 </div>
             </div>
         </div>
@@ -631,16 +883,16 @@ require_guest(); ?>
                     <div class="feature-visual">
                         <i class="bi bi-balloon-heart-fill"></i>
                     </div>
-                    <h2 class="feature-title">Kids Safe Zone</h2>
-                    <p class="feature-description">Curated educational content for children. Parental controls and age-appropriate entertainment.</p>
+                    <h2 class="feature-title" data-i18n="auth.feature4Title">Kids Safe Zone</h2>
+                    <p class="feature-description" data-i18n="auth.feature4Description">Curated educational content for children. Parental controls and age-appropriate entertainment.</p>
                 </div>
                 <!-- Slide 3 - Fitness -->
                 <div class="feature-slide" data-slide="2">
                     <div class="feature-visual">
                         <i class="bi bi-heart-pulse-fill"></i>
                     </div>
-                    <h2 class="feature-title">Live Fitness Classes</h2>
-                    <p class="feature-description">Join expert-led workouts from yoga to HIIT. Real-time coaching and personalized training programs.</p>
+                    <h2 class="feature-title" data-i18n="auth.feature3Title">Live Fitness Classes</h2>
+                    <p class="feature-description" data-i18n="auth.feature3Description">Join expert-led workouts from yoga to HIIT. Real-time coaching and personalized training programs.</p>
                 </div>
 
                 <!-- Slide 1 - Streaming -->
@@ -648,8 +900,8 @@ require_guest(); ?>
                     <div class="feature-visual">
                         <i class="bi bi-play-circle-fill"></i>
                     </div>
-                    <h2 class="feature-title">10,000+ Movies & Shows</h2>
-                    <p class="feature-description">Unlimited streaming of blockbusters, series, and exclusive originals. 4K Ultra HD quality with no ads.</p>
+                    <h2 class="feature-title" data-i18n="auth.feature1Title">10,000+ Movies & Shows</h2>
+                    <p class="feature-description" data-i18n="auth.feature1Description">Unlimited streaming of blockbusters, series, and exclusive originals. 4K Ultra HD quality with no ads.</p>
                 </div>
 
                 <!-- Slide 2 - Gaming -->
@@ -657,8 +909,8 @@ require_guest(); ?>
                     <div class="feature-visual">
                         <i class="bi bi-joystick"></i>
                     </div>
-                    <h2 class="feature-title">Browser Gaming</h2>
-                    <p class="feature-description">Play premium HTML5 games instantly. No downloads, no waiting. From puzzles to action adventures.</p>
+                    <h2 class="feature-title" data-i18n="auth.feature2Title">Browser Gaming</h2>
+                    <p class="feature-description" data-i18n="auth.feature2Description">Play premium HTML5 games instantly. No downloads, no waiting. From puzzles to action adventures.</p>
                 </div>
 
 
@@ -682,9 +934,9 @@ require_guest(); ?>
 
                 <!-- CTA Section -->
                 <div class="cta-section">
-                    <p class="cta-title">Start Your Premium Journey</p>
+                    <p class="cta-title" data-i18n="auth.startPremiumJourney">Start Your Premium Journey</p>
                     <button class="cta-button" onclick="document.getElementById('toggleBtn').click()">
-                        Join Now
+                        <span data-i18n="auth.joinNow">Join Now</span>
                     </button>
                 </div>
             </div>
@@ -734,11 +986,28 @@ require_guest(); ?>
             document.getElementById('signupUsername').required = isSignup;
             document.getElementById('signupEmail').required = isSignup;
             document.getElementById('password').required = true;
-            submitBtn.innerHTML = isSignup ? '<span>Create Account</span>' : '<span>Sign In</span>';
-            toggleText.textContent = isSignup ? 'Already have an account?' : 'New to Streamify?';
-            toggleBtn.textContent = isSignup ? 'Sign In' : 'Create Account';
-            welcomeTitle.textContent = isSignup ? 'Join Streamify Pro' : 'Welcome Back';
-            welcomeSubtitle.textContent = isSignup ? 'Start your entertainment journey today' : 'Continue your streaming journey';
+            
+            // Use i18n for dynamic text
+            if (window.i18n && window.i18n.t) {
+                submitBtn.innerHTML = isSignup ? 
+                    '<span data-i18n="auth.createAccount">' + window.i18n.t('auth.createAccount') + '</span>' : 
+                    '<span data-i18n="auth.signIn">' + window.i18n.t('auth.signIn') + '</span>';
+                toggleText.textContent = isSignup ? window.i18n.t('auth.alreadyHaveAccount') : window.i18n.t('auth.newToStreamify');
+                toggleText.setAttribute('data-i18n', isSignup ? 'auth.alreadyHaveAccount' : 'auth.newToStreamify');
+                toggleBtn.textContent = isSignup ? window.i18n.t('auth.signIn') : window.i18n.t('auth.createAccount');
+                toggleBtn.setAttribute('data-i18n', isSignup ? 'auth.signIn' : 'auth.createAccount');
+                welcomeTitle.textContent = isSignup ? window.i18n.t('auth.joinStreamify') : window.i18n.t('auth.welcomeBack');
+                welcomeTitle.setAttribute('data-i18n', isSignup ? 'auth.joinStreamify' : 'auth.welcomeBack');
+                welcomeSubtitle.textContent = isSignup ? window.i18n.t('auth.startJourney') : window.i18n.t('auth.continueJourney');
+                welcomeSubtitle.setAttribute('data-i18n', isSignup ? 'auth.startJourney' : 'auth.continueJourney');
+            } else {
+                // Fallback to English if i18n is not loaded
+                submitBtn.innerHTML = isSignup ? '<span>Create Account</span>' : '<span>Sign In</span>';
+                toggleText.textContent = isSignup ? 'Already have an account?' : 'New to Streamify?';
+                toggleBtn.textContent = isSignup ? 'Sign In' : 'Create Account';
+                welcomeTitle.textContent = isSignup ? 'Join Streamify Pro' : 'Welcome Back';
+                welcomeSubtitle.textContent = isSignup ? 'Start your entertainment journey today' : 'Continue your streaming journey';
+            }
         }
 
         toggleBtn.addEventListener('click', () => {
@@ -777,6 +1046,36 @@ require_guest(); ?>
                 }
             } catch (err) {
                 showError(err.message);
+            }
+        });
+
+        // Language Selector - Simple dropdown toggle and display
+        const languageBtn = document.getElementById('languageBtn');
+        const languageMenu = document.getElementById('languageMenu');
+        const languageOptions = document.querySelectorAll('.language-option');
+        const currentLang = document.documentElement.getAttribute('lang') || 'en';
+
+        // Set initial state based on current language
+        const activeOption = document.querySelector(`.language-option[data-lang="${currentLang}"]`);
+        if (activeOption) {
+            languageOptions.forEach(opt => opt.classList.remove('active'));
+            activeOption.classList.add('active');
+            const flag = activeOption.getAttribute('data-flag');
+            const name = activeOption.getAttribute('data-name');
+            document.getElementById('currentFlag').textContent = flag;
+            document.getElementById('currentLangName').textContent = name;
+        }
+
+        // Toggle language menu
+        languageBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            languageMenu.classList.toggle('show');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!languageBtn.contains(e.target) && !languageMenu.contains(e.target)) {
+                languageMenu.classList.remove('show');
             }
         });
 

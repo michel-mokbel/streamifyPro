@@ -4,7 +4,6 @@
   document.addEventListener('DOMContentLoaded', init);
   
   // Listen for language changes and reload content
-  window.addEventListener('languageChanged', init);
 
   async function init() {
     const params = new URLSearchParams(window.location.search);
@@ -20,8 +19,8 @@
   }
 
   async function fetchKids() {
-    // Get current language from i18n or localStorage
-    const currentLang = (window.i18n && window.i18n.currentLanguage) || localStorage.getItem('streamify_language') || 'en';
+    // Get current language from HTML lang attribute (set by PHP)
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const res = await fetch(`./api/api.php?route=kids&lang=${currentLang}`);
     if (!res.ok) throw new Error('Failed to load kids');
     return res.json();
@@ -47,7 +46,7 @@
     const video = (playlist.content || [])[currentIndex];
     if (!video) return;
     
-    const currentLang = (window.i18n && window.i18n.currentLanguage) || localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     
     // Use translated fields if available (for Arabic), otherwise use original
     const videoTitle = (currentLang === 'ar' && video.title_ar) ? video.title_ar : video.title;

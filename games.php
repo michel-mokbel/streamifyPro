@@ -39,7 +39,7 @@ include __DIR__ . '/includes/header.php'; ?>
         <div class="card shadow-sm game-card">
             <div class="position-relative">
                 <img src="" class="card-img-top" alt="" style="height: 180px; object-fit: cover;" />
-                <span class="position-absolute top-0 end-0 m-2 badge badge-premium d-none premium-badge"><i class="bi bi-star-fill me-1"></i><span data-i18n="games.premium">Premium</span></span>
+                <span id="educational-badge" class="position-absolute top-0 end-0 m-2 badge badge-premium d-none premium-badge"><i class="bi bi-star-fill me-1"></i><span data-i18n="games.premium">Premium</span></span>
             </div>
             <div class="card-body p-3">
                 <h5 class="card-title fs-6 game-title text-truncate"></h5>

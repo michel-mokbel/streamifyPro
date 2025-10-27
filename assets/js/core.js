@@ -37,7 +37,7 @@
   // Fetch helper
   async function fetchData(route, lang) {
     // Get language from parameter or localStorage
-    const currentLang = lang || localStorage.getItem('streamify_language') || 'en';
+    const currentLang = lang || document.documentElement.getAttribute('lang') || 'en';
     const url = `${API_BASE}${route}&lang=${currentLang}`;
     const response = await fetch(url);
     if (!response.ok) {

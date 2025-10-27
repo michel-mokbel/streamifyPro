@@ -48,7 +48,10 @@ if ($action === 'signup') {
     }
     json_error(500, 'Signup failed');
   }
+  // Preserve language preference during signup
+  $preservedLang = $_SESSION['ui_lang'] ?? 'en';
   $_SESSION['user'] = ['id' => $stmt->insert_id, 'username' => $username, 'email' => $email];
+  $_SESSION['ui_lang'] = $preservedLang;
   echo json_encode(['ok' => true, 'user' => $_SESSION['user']]);
   exit;
 }
@@ -68,7 +71,10 @@ if ($action === 'login') {
   if (!$user || !password_verify($password, $user['password_hash'])) {
     json_error(401, 'Invalid credentials');
   }
+  // Preserve language preference during login
+  $preservedLang = $_SESSION['ui_lang'] ?? 'en';
   $_SESSION['user'] = ['id' => (int)$user['user_id'], 'username' => $user['username'], 'email' => $user['email']];
+  $_SESSION['ui_lang'] = $preservedLang;
   echo json_encode(['ok' => true, 'user' => $_SESSION['user']]);
   exit;
 }

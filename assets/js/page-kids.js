@@ -5,7 +5,6 @@
   document.addEventListener('DOMContentLoaded', init);
   
   // Listen for language changes and reload content
-  window.addEventListener('languageChanged', init);
 
   async function init() {
     const grid = document.getElementById('kids-channels');
@@ -15,8 +14,8 @@
   }
 
   async function fetchKids() {
-    // Get current language from i18n or localStorage
-    const currentLang = (window.i18n && window.i18n.currentLanguage) || localStorage.getItem('streamify_language') || 'en';
+    // Get current language from HTML lang attribute (set by PHP)
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const res = await fetch(`./api/api.php?route=kids&lang=${currentLang}`);
     if (!res.ok) throw new Error('Failed to load kids');
     return res.json();
@@ -24,7 +23,7 @@
 
   function renderChannels(container, channels) {
     container.innerHTML = '';
-    const currentLang = (window.i18n && window.i18n.currentLanguage) || localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     
     channels.forEach(ch => {
       // Use translated fields if available (for Arabic), otherwise use original

@@ -1,15 +1,13 @@
 (function () {
   'use strict';
 
+  // Initialize on DOM ready
   document.addEventListener('DOMContentLoaded', initWatchLaterPage);
-  
-  // Listen for language changes and reload content
-  window.addEventListener('languageChanged', initWatchLaterPage);
 
   function initWatchLaterPage() {
     const container = document.getElementById('wl-list');
     if (!container) {
-      console.log('WatchLater container not found');
+     // console.log('WatchLater container not found');
       return;
     }
 
@@ -17,18 +15,17 @@
       ? readCookieList(COOKIE_KEYS.watchLater)
       : [];
 
-    console.log('WatchLater list:', list);
+   // console.log('WatchLater list:', list);
 
     if (!Array.isArray(list) || list.length === 0) {
       let noItemsText = 'No items saved for later.';
-      if (window.i18n && window.i18n.t) {
+      if (window.i18n && typeof window.i18n.t === 'function') {
         const translated = window.i18n.t('watchLater.noItems');
-        // Only use translation if it's not the key itself
-        if (translated !== 'watchLater.noItems') {
+        if (translated && translated !== 'watchLater.noItems') {
           noItemsText = translated;
         }
       }
-      console.log('Setting empty state:', noItemsText);
+   //   console.log('Setting empty state:', noItemsText);
       container.innerHTML = `<div class="alert alert-info">${noItemsText}</div>`;
       return;
     }
@@ -177,7 +174,7 @@
     const watchLaterText = window.i18n?.t('streaming.watchLater') || 'Watch Later';
     
     // Get current language and use Arabic translations if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const videoTitle = currentLang === 'ar' && item.title_ar ? item.title_ar : item.title;
     
     wrap.innerHTML = `
@@ -336,7 +333,7 @@
     const watchLaterText = window.i18n?.t('streaming.watchLater') || 'Watch Later';
     
     // Get current language and use Arabic title if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const title = currentLang === 'ar' && item.title_ar ? item.title_ar : (item.title || fitnessVideoText);
     
     // Category logic: Use Arabic category if in Arabic, otherwise use English category
@@ -423,9 +420,9 @@
     const container = document.getElementById('wl-list');
     if (container && container.children.length === 0) {
       let noItemsText = 'No items saved for later.';
-      if (window.i18n && window.i18n.t) {
+      if (window.i18n && typeof window.i18n.t === 'function') {
         const translated = window.i18n.t('watchLater.noItems');
-        if (translated !== 'watchLater.noItems') {
+        if (translated && translated !== 'watchLater.noItems') {
           noItemsText = translated;
         }
       }

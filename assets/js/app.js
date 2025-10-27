@@ -216,11 +216,11 @@
    */
   async function loadView(view, params = {}) {
     try {
-      console.log(`Loading view: ${view}`, params);
+      //console.log(`Loading view: ${view}`, params);
       
       // Special case for game-detail view
       if (view === 'game-detail') {
-        console.log('Loading game-detail view...');
+       // console.log('Loading game-detail view...');
         // Make sure we have game data in state
         if (!STATE.viewData.gameDetail) {
           console.error('No game detail data found in state');
@@ -714,7 +714,7 @@
    * @param {object} params - Optional parameters
    */
   async function initGamesView(params = {}) {
-    console.log('App.js: initGamesView called');
+   // console.log('App.js: initGamesView called');
     const contentContainer = document.getElementById('games-content');
     if (!contentContainer) {
       console.error('Games content container not found');
@@ -724,10 +724,10 @@
     try {
       // If we have a specific game ID, show the detail view
       if (params.gameId) {
-        console.log('Loading game detail for ID:', params.gameId);
+      //  console.log('Loading game detail for ID:', params.gameId);
         await loadGameDetail(params.gameId, contentContainer);
       } else {
-        console.log('Loading games categories from app.js');
+       // console.log('Loading games categories from app.js');
         // Otherwise load the category listing
         await loadGameCategories(contentContainer);
       }
@@ -1157,7 +1157,7 @@
    */
   async function fetchData(route, lang) {
     // Get language from parameter or localStorage
-    const currentLang = lang || localStorage.getItem('streamify_language') || 'en';
+    const currentLang = lang || document.documentElement.getAttribute('lang') || 'en';
     const url = `${API_BASE}${route}&lang=${currentLang}`;
     const response = await fetch(url);
     if (!response.ok) {

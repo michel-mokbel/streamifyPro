@@ -1687,6 +1687,11 @@ a:hover {
     left: 0;
 }
 
+[dir="rtl"] #educational-badge {
+    right: auto !important;
+    left: 0;
+}
+
 [dir="rtl"] .position-absolute.bottom-0.end-0 {
     right: auto;
     left: 0;

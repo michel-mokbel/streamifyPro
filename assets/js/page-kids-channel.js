@@ -5,7 +5,6 @@
   document.addEventListener('DOMContentLoaded', init);
   
   // Listen for language changes and reload content
-  window.addEventListener('languageChanged', init);
 
   async function init() {
     const params = new URLSearchParams(window.location.search);
@@ -18,15 +17,15 @@
   }
 
   async function fetchKids() {
-    // Get current language from i18n or localStorage
-    const currentLang = (window.i18n && window.i18n.currentLanguage) || localStorage.getItem('streamify_language') || 'en';
+    // Get current language from HTML lang attribute (set by PHP)
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const res = await fetch(`./api/api.php?route=kids&lang=${currentLang}`);
     if (!res.ok) throw new Error('Failed to load kids');
     return res.json();
   }
 
   function renderChannel(channel) {
-    const currentLang = (window.i18n && window.i18n.currentLanguage) || localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     
     // Use translated fields if available (for Arabic), otherwise use original
     const channelName = (currentLang === 'ar' && channel.name_ar) ? channel.name_ar : channel.name;
@@ -57,7 +56,7 @@
       const collapseId = `pl-${playlist.id}`;
       section.innerHTML = `
         <div class="card shadow-sm overflow-hidden">
-          <div class="card-header bg-white d-flex align-items-center justify-content-between playlist-toggle" role="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${isFirst ? 'true' : 'false'}" aria-controls="${collapseId}">
+          <div class="card-header d-flex align-items-center justify-content-between playlist-toggle" role="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="${isFirst ? 'true' : 'false'}" aria-controls="${collapseId}">
             <div class="d-flex align-items-center">
               <img src="${playlist.profileImage || ''}" alt="${playlistName}" width="36" height="36" class="rounded me-2" />
               <h3 class="h5 mb-0">${playlistName}</h3>

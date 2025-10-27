@@ -5,7 +5,6 @@
   document.addEventListener('DOMContentLoaded', init);
   
   // Re-initialize when language changes
-  window.addEventListener('languageChanged', init);
 
   async function init() {
     const container = document.getElementById('fitness-content');
@@ -16,7 +15,7 @@
 
     try {
       // Get current language
-      const currentLang = localStorage.getItem('streamify_language') || 'en';
+      const currentLang = document.documentElement.getAttribute('lang') || 'en';
       
       // Fetch fitness data with language parameter
       const response = await fetch(`./api/api.php?route=fitness&lang=${currentLang}`);
@@ -58,7 +57,7 @@
     wrapper.dataset.videoId = video.id;
     
     // Get current language and use Arabic translations if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const title = currentLang === 'ar' && video.name_ar ? video.name_ar : (video.name || formatTitle(video.filename));
     
     // Category logic: Use Arabic category if in Arabic, otherwise use English category

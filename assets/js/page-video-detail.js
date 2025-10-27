@@ -4,7 +4,6 @@
   document.addEventListener('DOMContentLoaded', init);
   
   // Re-initialize when language changes
-  window.addEventListener('languageChanged', init);
 
   async function init() {
     // console.log('Video Detail - Starting init...');
@@ -22,7 +21,7 @@
     }
 
     // Get current language
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
    // console.log('Video Detail - Current language:', currentLang);
     
     try {
@@ -71,7 +70,7 @@
     // console.log('Rendering video:', video);
     
     // Get current language and use Arabic translations if available
-    const currentLang = localStorage.getItem('streamify_language') || 'en';
+    const currentLang = document.documentElement.getAttribute('lang') || 'en';
     const videoTitle = currentLang === 'ar' && video.title_ar ? video.title_ar : video.Title;
     const videoDesc = currentLang === 'ar' && video.description_ar ? video.description_ar : video.Description;
     

@@ -28,7 +28,7 @@ include __DIR__ . '/includes/header.php'; ?>
         <div class="col-md-4">
             <a class="text-decoration-none" href="kids.php">
                 <div class="card shadow-sm p-4 h-100 position-relative">
-                    <span class="badge bg-success position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;">Educational</span>
+                    <span id="educational-badge" class="badge bg-success position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;" data-i18n="common.educational">Educational</span>
                     <div class="d-flex align-items-start">
                         <div class="icon-badge bg-success-subtle text-success me-3">
                             <i class="bi bi-people"></i>
@@ -45,7 +45,7 @@ include __DIR__ . '/includes/header.php'; ?>
         <div class="col-md-4">
             <a class="text-decoration-none" href="fitness.php">
                 <div class="card shadow-sm p-4 h-100 position-relative">
-                    <span class="badge bg-success position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;">Educational</span>
+                    <span id="educational-badge" class="badge bg-success position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;" data-i18n="common.educational">Educational</span>
                     <div class="d-flex align-items-start">
                         <div class="icon-badge bg-warning-subtle text-warning me-3">
                             <i class="bi bi-activity"></i>
@@ -62,7 +62,7 @@ include __DIR__ . '/includes/header.php'; ?>
         <div class="col-md-4">
             <a class="text-decoration-none" href="streaming.php">
                 <div class="card shadow-sm p-4 h-100 position-relative">
-                    <span class="badge bg-primary position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;">Entertainment</span>
+                    <span  id="educational-badge" class="badge bg-primary position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;" data-i18n="common.entertainment">Entertainment</span>
                     <div class="d-flex align-items-start">
                         <div class="icon-badge bg-primary-subtle text-primary me-3">
                             <i class="bi bi-film"></i>
@@ -79,7 +79,7 @@ include __DIR__ . '/includes/header.php'; ?>
         <div class="col-md-4">
             <a class="text-decoration-none" href="games.php">
                 <div class="card shadow-sm p-4 h-100 position-relative">
-                    <span class="badge bg-primary position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;">Entertainment</span>
+                    <span  id="educational-badge" class="badge bg-primary position-absolute top-0 end-0 m-3" style="font-size: 0.7rem; font-weight: 600;" data-i18n="common.entertainment">Entertainment</span>
                     <div class="d-flex align-items-start">
                         <div class="icon-badge bg-danger-subtle text-danger me-3">
                             <i class="bi bi-joystick"></i>
